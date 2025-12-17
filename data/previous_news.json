@@ -1,52 +1,185 @@
 [
   {
+    "title": "Weeks after raising $100M, investors pump another $180M into hot Indian startup MoEngage",
+    "url": "https://techcrunch.com/2025/12/16/weeks-after-raising-100m-investors-pump-another-180m-into-hot-indian-startup-moengage/",
+    "source": "TechCrunch",
+    "signal_type": "GENERAL_AI"
+  },
+  {
+    "title": "Monzo board reportedly pushed out CEO Anil over IPO timing",
+    "url": "https://techcrunch.com/2025/12/16/monzo-board-reportedly-pushed-out-ceo-anil-over-ipo-timing/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Tesla engaged in deceptive marketing for Autopilot and Full Self-Driving, judge rules",
+    "url": "https://techcrunch.com/2025/12/16/tesla-engaged-in-deceptive-marketing-for-autopilot-and-full-self-driving-judge-rules/",
+    "source": "TechCrunch",
+    "signal_type": "AI_POLICY",
+    "change_type": "ONGOING",
+    "impact": {
+      "affected_roles": [],
+      "skills": [],
+      "interview_relevance": "LOW",
+      "why": "General AI industry update."
+    },
+    "llm_reasoning": "AI development matters for engineers and companies in the next 3 to 6 months"
+  },
+  {
     "title": "How Luminar\u2019s doomed Volvo deal helped drag the company into bankruptcy",
-    "link": "https://techcrunch.com/2025/12/16/how-luminars-doomed-volvo-deal-helped-drag-the-company-into-bankruptcy/",
-    "published": "Tue, 16 Dec 2025 22:43:00 +0000"
+    "url": "https://techcrunch.com/2025/12/16/how-luminars-doomed-volvo-deal-helped-drag-the-company-into-bankruptcy/",
+    "source": "TechCrunch"
   },
   {
     "title": "WikiFlix shows us what Netflix would have been like 100 years ago",
-    "link": "https://techcrunch.com/2025/12/16/wikiflix-shows-us-what-netflix-would-have-been-like-100-years-ago/",
-    "published": "Tue, 16 Dec 2025 21:58:32 +0000"
+    "url": "https://techcrunch.com/2025/12/16/wikiflix-shows-us-what-netflix-would-have-been-like-100-years-ago/",
+    "source": "TechCrunch"
   },
   {
     "title": "X updates its terms, files countersuit to lay claim to the \u2018Twitter\u2019 trademark after newcomer\u2019s challenge",
-    "link": "https://techcrunch.com/2025/12/16/x-updates-its-terms-files-countersuit-to-lay-claim-to-the-twitter-trademark-after-newcomers-challenge/",
-    "published": "Tue, 16 Dec 2025 21:11:48 +0000"
+    "url": "https://techcrunch.com/2025/12/16/x-updates-its-terms-files-countersuit-to-lay-claim-to-the-twitter-trademark-after-newcomers-challenge/",
+    "source": "TechCrunch",
+    "signal_type": "GENERAL_AI"
   },
   {
     "title": "Study shows Instacart may be charging some shoppers 20% more for the same product",
-    "link": "https://techcrunch.com/2025/12/16/study-shows-instacart-may-be-charging-some-shoppers-20-more-for-the-same-product/",
-    "published": "Tue, 16 Dec 2025 20:56:18 +0000"
+    "url": "https://techcrunch.com/2025/12/16/study-shows-instacart-may-be-charging-some-shoppers-20-more-for-the-same-product/",
+    "source": "TechCrunch"
   },
   {
     "title": "Slate crosses 150,000 reservations despite waning EV truck enthusiasm",
-    "link": "https://techcrunch.com/2025/12/16/slate-crosses-150000-reservations-despite-waning-ev-truck-enthusiasm/",
-    "published": "Tue, 16 Dec 2025 20:05:49 +0000"
+    "url": "https://techcrunch.com/2025/12/16/slate-crosses-150000-reservations-despite-waning-ev-truck-enthusiasm/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "DoorDash rolls out Zesty, an AI social app for discovering new restaurants",
+    "url": "https://techcrunch.com/2025/12/16/doordash-rolls-out-zesty-an-ai-social-app-for-discovering-new-restaurants/",
+    "source": "TechCrunch",
+    "signal_type": "CONSUMER_AI"
+  },
+  {
+    "title": "Meta\u2019s AI glasses can now help you hear conversations better",
+    "url": "https://techcrunch.com/2025/12/16/metas-ai-glasses-can-now-help-you-hear-conversations-better/",
+    "source": "TechCrunch",
+    "signal_type": "CONSUMER_AI"
+  },
+  {
+    "title": "OpenAI continues on its \u2018code red\u2019 warpath with new image generation model",
+    "url": "https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/",
+    "source": "TechCrunch",
+    "signal_type": "FOUNDATION_MODEL",
+    "change_type": "ONGOING",
+    "impact": {
+      "affected_roles": [
+        "ML Engineer",
+        "Applied Scientist"
+      ],
+      "skills": [
+        "Prompt Engineering",
+        "Model Evaluation",
+        "LLMs"
+      ],
+      "interview_relevance": "HIGH",
+      "why": "Indicates changes in foundation model capabilities."
+    },
+    "llm_reasoning": "OpenAI\u2019s new image generation model"
+  },
+  {
+    "title": "Uber Eats alum lands $14M seed from a16z to fix WhatsApp chaos for LatAm\u2019s doctors",
+    "url": "https://techcrunch.com/2025/12/16/uber-eats-alum-lands-14m-seed-from-a16z-to-fix-whatsapp-chaos-for-latams-doctors/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Google tests an email-based productivity assistant",
+    "url": "https://techcrunch.com/2025/12/16/google-tests-an-email-based-productivity-assistant/",
+    "source": "TechCrunch",
+    "signal_type": "GENERAL_AI"
+  },
+  {
+    "title": "Whole Foods to install smart food waste bins from Mill starting in 2027",
+    "url": "https://techcrunch.com/2025/12/16/whole-foods-to-install-smart-food-waste-bins-from-mill-starting-in-2027/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Netflix doubles down on video podcasts with iHeartMedia deal",
+    "url": "https://techcrunch.com/2025/12/16/netflix-doubles-down-on-video-podcasts-with-iheartmedia-deal/",
+    "source": "TechCrunch"
   },
   {
     "title": "AI will make formal verification go mainstream",
-    "link": "https://martin.kleppmann.com/2025/12/08/ai-formal-verification.html",
-    "published": 1765919689
+    "url": "https://martin.kleppmann.com/2025/12/08/ai-formal-verification.html",
+    "source": "HackerNews",
+    "signal_type": "GENERAL_AI"
   },
   {
     "title": "alpr.watch",
-    "link": "https://alpr.watch/",
-    "published": 1765904059
+    "url": "https://alpr.watch/",
+    "source": "HackerNews"
   },
   {
     "title": "No Graphics API",
-    "link": "https://www.sebastianaaltonen.com/blog/no-graphics-api",
-    "published": 1765912817
+    "url": "https://www.sebastianaaltonen.com/blog/no-graphics-api",
+    "source": "HackerNews"
   },
   {
-    "title": "Ty: A fast Python type checker and LSP",
-    "link": "https://astral.sh/blog/ty",
-    "published": 1765918365
+    "title": "Announcing the Beta release of ty",
+    "url": "https://astral.sh/blog/ty",
+    "source": "HackerNews"
+  },
+  {
+    "title": "VA Linux: The biggest dotcom IPO",
+    "url": "https://dfarq.homeip.net/va-linux-the-biggest-dotcom-ipo/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Annual Production of 1/72 (22mm) scale plastic soldiers, 1958-2025",
+    "url": "https://plasticsoldierreview.com/ShowFeature.aspx?id=27",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Subsets (YC S23) is hiring engineers in Copenhagen, Denmark",
+    "url": "https://www.workatastartup.com/companies/subsets",
+    "source": "HackerNews"
   },
   {
     "title": "GPT Image 1.5",
-    "link": "https://openai.com/index/new-chatgpt-images-is-here/",
-    "published": 1765908427
+    "url": "https://openai.com/index/new-chatgpt-images-is-here/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "No AI* Here \u2013 A Response to Mozilla's Next Chapter",
+    "url": "https://www.waterfox.com/blog/no-ai-here-response-to-mozilla/",
+    "source": "HackerNews",
+    "signal_type": "GENERAL_AI"
+  },
+  {
+    "title": "Pricing Changes for GitHub Actions",
+    "url": "https://resources.github.com/actions/2026-pricing-changes-for-github-actions/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Introduction to Software Development Tooling (2024)",
+    "url": "https://bernsteinbear.com/isdt/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Mozilla appoints new CEO Anthony Enzor-Demeo",
+    "url": "https://blog.mozilla.org/en/mozilla/leadership/mozillas-next-chapter-anthony-enzor-demeo-new-ceo/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "40 percent of fMRI signals do not correspond to actual brain activity",
+    "url": "https://www.tum.de/en/news-and-events/all-news/press-releases/details/40-percent-of-mri-signals-do-not-correspond-to-actual-brain-activity",
+    "source": "HackerNews",
+    "signal_type": "GENERAL_AI"
+  },
+  {
+    "title": "A Guide to Magnetizing N48 Magnets in Ansys Maxwell",
+    "url": "https://blog.ozeninc.com/resources/from-datasheet-to-demagnetization-a-guide-to-magnetizing-n48-magnets-in-ansys-maxwell",
+    "source": "HackerNews"
+  },
+  {
+    "title": "I ported JustHTML from Python to JavaScript with Codex CLI and GPT-5.2 in hours",
+    "url": "https://simonwillison.net/2025/Dec/15/porting-justhtml/",
+    "source": "HackerNews"
   }
 ]

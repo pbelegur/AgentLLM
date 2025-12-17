@@ -1,11 +1,25 @@
 Good morning.
 
-Here’s what actually matters today:
+Here are the AI signals that actually matter today:
 
-1. How Luminar’s doomed Volvo deal helped drag the company into bankruptcy — General industry update.
-2. WikiFlix shows us what Netflix would have been like 100 years ago — General industry update.
-3. X updates its terms, files countersuit to lay claim to the ‘Twitter’ trademark after newcomer’s challenge — This reflects ongoing advances in AI usage.
-4. Study shows Instacart may be charging some shoppers 20% more for the same product — General industry update.
-5. Slate crosses 150,000 reservations despite waning EV truck enthusiasm — General industry update.
+1. OpenAI continues on its ‘code red’ warpath with new image generation model
+   Signal type: FOUNDATION_MODEL
+   Temporal status: ONGOING
+   Source: TechCrunch
+   Impact (rule-based): Indicates changes in foundation model capabilities.
+   Impact (LLM reasoning): OpenAI’s new image generation model
+   Roles: ML Engineer, Applied Scientist
+   Skills: Prompt Engineering, Model Evaluation, LLMs
+   Interview relevance: HIGH
+   Link: https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/
 
-Overall, these updates show how AI continues to shape products, hiring, and company strategy.
+2. Tesla engaged in deceptive marketing for Autopilot and Full Self-Driving, judge rules
+   Signal type: AI_POLICY
+   Temporal status: ONGOING
+   Source: TechCrunch
+   Impact (rule-based): General AI industry update.
+   Impact (LLM reasoning): AI development matters for engineers and companies in the next 3 to 6 months
+   Roles: N/A
+   Skills: N/A
+   Interview relevance: LOW
+   Link: https://techcrunch.com/2025/12/16/tesla-engaged-in-deceptive-marketing-for-autopilot-and-full-self-driving-judge-rules/
