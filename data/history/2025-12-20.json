@@ -1,0 +1,302 @@
+{
+  "date": "2025-12-20",
+  "signals": [
+    {
+      "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
+      "url": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/",
+      "source": "TechCrunch",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models",
+        "policy"
+      ],
+      "priority": "HIGH",
+      "score": 14
+    },
+    {
+      "title": "OpenAI allows users to directly adjust ChatGPT’s enthusiasm level",
+      "url": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/",
+      "source": "TechCrunch",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "HIGH",
+      "score": 13
+    },
+    {
+      "title": "ChatGPT update lets users customize a warmer and more enthusiastic bot",
+      "url": "https://mashable.com/article/chatgpt-personality-settings-lets-users-choose-warmer-bot",
+      "source": "Mashable (Tech)",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models",
+        "products"
+      ],
+      "priority": "MED",
+      "score": 11
+    },
+    {
+      "title": "Claude's Chrome plugin is now available to all paid users",
+      "url": "https://www.engadget.com/ai/claudes-chrome-plugin-is-now-available-to-all-paid-users-221024295.html?src=rss",
+      "source": "Engadget",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "Gemini 3 Pro vs. 2.5 Pro in Pokemon Crystal",
+      "url": "https://blog.jcz.dev/gemini-3-pro-vs-25-pro-in-pokemon-crystal",
+      "source": "HackerNews",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "Show HN: Claude Code Plugin to play music when waiting on user input",
+      "url": "https://github.com/Sevii/agent-marketplace/blob/main/plugins/elevator-music/README.md",
+      "source": "HackerNews",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "Detailed balance in large language model-driven agents",
+      "url": "https://arxiv.org/abs/2512.10047",
+      "source": "HackerNews",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "agents",
+        "models"
+      ],
+      "priority": "MED",
+      "score": 9
+    },
+    {
+      "title": "Garage – An S3 object store so reliable you can run it outside datacenters",
+      "url": "https://garagehq.deuxfleurs.fr/",
+      "source": "HackerNews",
+      "tag": "INFRA",
+      "topics": [],
+      "priority": "MED",
+      "score": 7
+    },
+    {
+      "title": "MIRA – An open-source persistent AI entity with memory",
+      "url": "https://github.com/taylorsatula/mira-OSS",
+      "source": "HackerNews",
+      "tag": "OSS_RELEASE",
+      "topics": [
+        "open_source"
+      ],
+      "priority": "MED",
+      "score": 7
+    },
+    {
+      "title": "New York Governor Kathy Hochul signs RAISE Act to regulate AI safety",
+      "url": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/",
+      "source": "TechCrunch",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "NOAA deploys new generation of AI-driven global weather models",
+      "url": "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+      "source": "HackerNews",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "models"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "The US Government Has a Big New AI Science Project Brewing, With Big Tech's Help",
+      "url": "https://www.cnet.com/tech/services-and-software/the-us-government-has-a-big-new-ai-science-project-brewing-with-big-techs-help/#ftag=CAD590a51e",
+      "source": "CNET",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [],
+      "priority": "LOW",
+      "score": 4
+    },
+    {
+      "title": "OpenAI’s Stargate Data Center Approved in Michigan as American Anger Starts to Boil",
+      "url": "https://gizmodo.com/openais-stargate-data-center-approved-in-michigan-as-american-anger-starts-to-boil-2000701890",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 4
+    },
+    {
+      "title": "Google will end dark web reports that alerted users to leaked data",
+      "url": "https://arstechnica.com/gadgets/2025/12/google-is-shutting-down-dark-web-reports-in-january-because-they-werent-helpful/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Google is reviving wearable gesture controls, but only for the Pixel Watch 4",
+      "url": "https://arstechnica.com/gadgets/2025/12/google-is-reviving-wearable-gesture-controls-but-only-for-the-pixel-watch-4/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Want to link from Google’s app store to your app? That’ll be $2–4 per install",
+      "url": "https://www.theverge.com/news/848540/google-app-fees-external-link-downloads-alternative-payments",
+      "source": "The Verge",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Google Assistant will stick around a bit longer than expected for some Android users",
+      "url": "https://www.engadget.com/ai/google-assistant-will-stick-around-a-bit-longer-than-expected-for-some-android-users-130000178.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "YouTube bans two popular channels that created fake AI movie trailers",
+      "url": "https://arstechnica.com/google/2025/12/youtube-bans-two-popular-channels-that-created-fake-ai-movie-trailers/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 2
+    },
+    {
+      "title": "Nebula Awards Yelled at Until They Completely Ban Use of AI by Nominees",
+      "url": "https://gizmodo.com/nebula-awards-yelled-at-until-they-completely-ban-use-of-ai-by-nominees-2000702137",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 2
+    },
+    {
+      "title": "LG TVs’ unremovable Copilot shortcut is the least of smart TVs’ AI problems",
+      "url": "https://arstechnica.com/gadgets/2025/12/lg-tvs-unremovable-copilot-shortcut-is-the-least-of-smart-tvs-ai-problems/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Scammers in China Are Using AI-Generated Images to Get Refunds",
+      "url": "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "6 Scary Predictions for AI in 2026",
+      "url": "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "This Chrome Extension Turns LinkedIn Posts About AI Into Facts About Allen Iverson",
+      "url": "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "The Ultra-Realistic AI Face Swapping Platform Driving Romance Scams",
+      "url": "https://www.wired.com/story/the-ultra-realistic-ai-face-swapping-platform-driving-romance-scams/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "‘Wicked’ Director Jon M. Chu on ‘What Makes Art Beautiful’ in the AI Era",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast-wicked-director-jon-m-chu/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Ex-Splunk execs’ startup Resolve AI hits $1 billion valuation with Series A",
+      "url": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Where are investors placing their bets next year? AI, AI, AI.",
+      "url": "https://techcrunch.com/2025/12/19/where-are-investors-placing-their-bets-next-year-ai-ai-ai/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Known uses voice AI to help you go on more in-person dates",
+      "url": "https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "YouTube pulls the plug on popular AI-generated fake movie trailer channels",
+      "url": "https://mashable.com/article/youtube-shuts-down-ai-channels-screen-culture-kh-studio",
+      "source": "Mashable (Tech)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Rest in Hell, Fake AI-Made YouTube Trailers",
+      "url": "https://gizmodo.com/rest-in-hell-fake-ai-made-youtube-trailers-2000701825",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    }
+  ]
+}

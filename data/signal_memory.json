@@ -1,5 +1,5 @@
 {
-  "Yann LeCun confirms his new \u2018world model\u2019 startup, reportedly seeks $5B+ valuation": {
+  "Yann LeCun confirms his new ‘world model’ startup, reportedly seeks $5B+ valuation": {
     "signal_type": "FOUNDATION_MODEL",
     "first_seen": "2025-12-19",
     "last_seen": "2025-12-20",
@@ -17,10 +17,229 @@
     "last_seen": "2025-12-20",
     "count": 2
   },
-  "Elon Musk\u2019s $56B Tesla pay package restored by Delaware Supreme Court": {
+  "Elon Musk’s $56B Tesla pay package restored by Delaware Supreme Court": {
     "signal_type": "AI_POLICY",
     "first_seen": "2025-12-19",
     "last_seen": "2025-12-20",
     "count": 2
+  },
+  "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/": {
+    "first_seen": "2025-12-20T20:37:08.639307",
+    "last_seen": "2025-12-20T21:49:22.631067",
+    "count": 18,
+    "signal_type": "FOUNDATION_MODEL",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.engadget.com/gaming/valve-discontinued-the-last-remaining-lcd-model-of-the-steam-deck-171548195.html?src=rss": {
+    "first_seen": "2025-12-20T20:37:08.639334",
+    "last_seen": "2025-12-20T20:37:08.639334",
+    "count": 1,
+    "signal_type": "FOUNDATION_MODEL"
+  },
+  "https://hn-wrapped.kadoa.com?year=2025": {
+    "first_seen": "2025-12-20T20:37:08.639345",
+    "last_seen": "2025-12-20T21:19:31.813574",
+    "count": 18,
+    "signal_type": "FOUNDATION_MODEL"
+  },
+  "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/": {
+    "first_seen": "2025-12-20T20:46:29.294663",
+    "last_seen": "2025-12-20T21:49:22.631044",
+    "count": 17,
+    "signal_type": "AI_POLICY",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://github.com/DGoettlich/history-llms": {
+    "first_seen": "2025-12-20T20:46:29.294679",
+    "last_seen": "2025-12-20T21:19:31.813548",
+    "count": 17,
+    "signal_type": "FOUNDATION_MODEL"
+  },
+  "https://gizmodo.com/openais-stargate-data-center-approved-in-michigan-as-american-anger-starts-to-boil-2000701890": {
+    "first_seen": "2025-12-20T20:46:29.294697",
+    "last_seen": "2025-12-20T21:49:22.631133",
+    "count": 18,
+    "signal_type": "FOUNDATION_MODEL",
+    "tag": "OTHER"
+  },
+  "https://arxiv.org/abs/2512.10047": {
+    "first_seen": "2025-12-20T20:46:29.294706",
+    "last_seen": "2025-12-20T21:49:22.631101",
+    "count": 18,
+    "signal_type": "FOUNDATION_MODEL",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://arstechnica.com/google/2025/12/youtube-bans-two-popular-channels-that-created-fake-ai-movie-trailers/": {
+    "first_seen": "2025-12-20T20:46:29.294712",
+    "last_seen": "2025-12-20T21:49:22.631157",
+    "count": 18,
+    "signal_type": "AI_POLICY",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/": {
+    "first_seen": "2025-12-20T20:46:29.294716",
+    "last_seen": "2025-12-20T21:49:22.631118",
+    "count": 17,
+    "signal_type": "AI_POLICY",
+    "tag": "PRODUCT_FEATURE"
+  },
+  "https://gizmodo.com/nebula-awards-yelled-at-until-they-completely-ban-use-of-ai-by-nominees-2000702137": {
+    "first_seen": "2025-12-20T20:46:29.294719",
+    "last_seen": "2025-12-20T21:49:22.631162",
+    "count": 18,
+    "signal_type": "AI_POLICY",
+    "tag": "OTHER"
+  },
+  "https://karpathy.bearblog.dev/year-in-review-2025/": {
+    "first_seen": "2025-12-20T20:46:29.294729",
+    "last_seen": "2025-12-20T21:19:31.813577",
+    "count": 17,
+    "signal_type": "FOUNDATION_MODEL"
+  },
+  "https://techcrunch.com/2025/12/19/elon-musks-56b-tesla-pay-package-restored-by-delaware-supreme-court/": {
+    "first_seen": "2025-12-20T20:46:29.294733",
+    "last_seen": "2025-12-20T21:19:25.967684",
+    "count": 16,
+    "signal_type": "AI_POLICY"
+  },
+  "https://mashable.com/article/chatgpt-personality-settings-lets-users-choose-warmer-bot": {
+    "first_seen": "2025-12-20T20:46:29.294737",
+    "last_seen": "2025-12-20T21:49:22.631077",
+    "count": 18,
+    "signal_type": "FOUNDATION_MODEL",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.engadget.com/ai/claudes-chrome-plugin-is-now-available-to-all-paid-users-221024295.html?src=rss": {
+    "first_seen": "2025-12-20T20:46:29.294741",
+    "last_seen": "2025-12-20T21:49:22.631084",
+    "count": 18,
+    "signal_type": "FOUNDATION_MODEL",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://blog.jcz.dev/gemini-3-pro-vs-25-pro-in-pokemon-crystal": {
+    "first_seen": "2025-12-20T21:49:22.631089",
+    "last_seen": "2025-12-20T21:49:22.631089",
+    "count": 1,
+    "tag": "MODEL_RELEASE"
+  },
+  "https://github.com/Sevii/agent-marketplace/blob/main/plugins/elevator-music/README.md": {
+    "first_seen": "2025-12-20T21:49:22.631096",
+    "last_seen": "2025-12-20T21:49:22.631096",
+    "count": 1,
+    "tag": "MODEL_RELEASE"
+  },
+  "https://garagehq.deuxfleurs.fr/": {
+    "first_seen": "2025-12-20T21:49:22.631106",
+    "last_seen": "2025-12-20T21:49:22.631106",
+    "count": 1,
+    "tag": "INFRA"
+  },
+  "https://github.com/taylorsatula/mira-OSS": {
+    "first_seen": "2025-12-20T21:49:22.631112",
+    "last_seen": "2025-12-20T21:49:22.631112",
+    "count": 1,
+    "tag": "OSS_RELEASE"
+  },
+  "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models": {
+    "first_seen": "2025-12-20T21:49:22.631123",
+    "last_seen": "2025-12-20T21:49:22.631123",
+    "count": 1,
+    "tag": "PRODUCT_FEATURE"
+  },
+  "https://www.cnet.com/tech/services-and-software/the-us-government-has-a-big-new-ai-science-project-brewing-with-big-techs-help/#ftag=CAD590a51e": {
+    "first_seen": "2025-12-20T21:49:22.631128",
+    "last_seen": "2025-12-20T21:49:22.631128",
+    "count": 1,
+    "tag": "PRODUCT_FEATURE"
+  },
+  "https://arstechnica.com/gadgets/2025/12/google-is-shutting-down-dark-web-reports-in-january-because-they-werent-helpful/": {
+    "first_seen": "2025-12-20T21:49:22.631138",
+    "last_seen": "2025-12-20T21:49:22.631138",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/gadgets/2025/12/google-is-reviving-wearable-gesture-controls-but-only-for-the-pixel-watch-4/": {
+    "first_seen": "2025-12-20T21:49:22.631143",
+    "last_seen": "2025-12-20T21:49:22.631143",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://www.theverge.com/news/848540/google-app-fees-external-link-downloads-alternative-payments": {
+    "first_seen": "2025-12-20T21:49:22.631147",
+    "last_seen": "2025-12-20T21:49:22.631147",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/ai/google-assistant-will-stick-around-a-bit-longer-than-expected-for-some-android-users-130000178.html?src=rss": {
+    "first_seen": "2025-12-20T21:49:22.631152",
+    "last_seen": "2025-12-20T21:49:22.631152",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/gadgets/2025/12/lg-tvs-unremovable-copilot-shortcut-is-the-least-of-smart-tvs-ai-problems/": {
+    "first_seen": "2025-12-20T21:49:22.631167",
+    "last_seen": "2025-12-20T21:49:22.631167",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/": {
+    "first_seen": "2025-12-20T21:49:22.631171",
+    "last_seen": "2025-12-20T21:49:22.631171",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/": {
+    "first_seen": "2025-12-20T21:49:22.631176",
+    "last_seen": "2025-12-20T21:49:22.631176",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/": {
+    "first_seen": "2025-12-20T21:49:22.631181",
+    "last_seen": "2025-12-20T21:49:22.631181",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/the-ultra-realistic-ai-face-swapping-platform-driving-romance-scams/": {
+    "first_seen": "2025-12-20T21:49:22.631186",
+    "last_seen": "2025-12-20T21:49:22.631186",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/uncanny-valley-podcast-wicked-director-jon-m-chu/": {
+    "first_seen": "2025-12-20T21:49:22.631191",
+    "last_seen": "2025-12-20T21:49:22.631191",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/": {
+    "first_seen": "2025-12-20T21:49:22.631195",
+    "last_seen": "2025-12-20T21:49:22.631195",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/19/where-are-investors-placing-their-bets-next-year-ai-ai-ai/": {
+    "first_seen": "2025-12-20T21:49:22.631200",
+    "last_seen": "2025-12-20T21:49:22.631200",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/": {
+    "first_seen": "2025-12-20T21:49:22.631205",
+    "last_seen": "2025-12-20T21:49:22.631205",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/youtube-shuts-down-ai-channels-screen-culture-kh-studio": {
+    "first_seen": "2025-12-20T21:49:22.631210",
+    "last_seen": "2025-12-20T21:49:22.631210",
+    "count": 1,
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/rest-in-hell-fake-ai-made-youtube-trailers-2000701825": {
+    "first_seen": "2025-12-20T21:49:22.631214",
+    "last_seen": "2025-12-20T21:49:22.631214",
+    "count": 1,
+    "tag": "OTHER"
   }
 }

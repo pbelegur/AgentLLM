@@ -1,784 +1,1027 @@
 [
   {
-    "title": "Sequoia partner spreads debunked Brown shooting theory, testing new leadership",
-    "url": "https://techcrunch.com/2025/12/19/sequoia-partner-spreads-debunked-brown-shooting-theory-testing-new-leadership/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "LG TVs’ unremovable Copilot shortcut is the least of smart TVs’ AI problems",
+    "url": "https://arstechnica.com/gadgets/2025/12/lg-tvs-unremovable-copilot-shortcut-is-the-least-of-smart-tvs-ai-problems/",
+    "source": "Ars Technica"
   },
   {
-    "title": "Ex-Splunk execs\u2019 startup Resolve AI hits $1 billion valuation with Series A",
+    "title": "Riot Games is making an anti-cheat change that could be rough on older PCs",
+    "url": "https://arstechnica.com/gadgets/2025/12/some-valorant-players-need-to-update-their-pc-bios-to-keep-anti-cheat-software-happy/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "YouTube bans two popular channels that created fake AI movie trailers",
+    "url": "https://arstechnica.com/google/2025/12/youtube-bans-two-popular-channels-that-created-fake-ai-movie-trailers/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Peacock showing ads upon launch opens the door for more disruptive streaming ads",
+    "url": "https://arstechnica.com/gadgets/2025/12/peacock-showing-ads-upon-launch-opens-the-door-for-more-disruptive-streaming-ads/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "RAM and SSD prices are still climbing—here’s our best advice for PC builders",
+    "url": "https://arstechnica.com/gadgets/2025/12/for-just-a-couple-of-months-in-the-middle-of-2025-it-was-an-ok-time-to-build-a-pc/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Software leaks point to the first Apple Silicon “iMac Pro,” among other devices",
+    "url": "https://arstechnica.com/gadgets/2025/12/leaked-debug-kit-suggests-apple-is-testing-a-new-imac-pro-among-many-other-macs/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Google will end dark web reports that alerted users to leaked data",
+    "url": "https://arstechnica.com/gadgets/2025/12/google-is-shutting-down-dark-web-reports-in-january-because-they-werent-helpful/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "How to break free from smart TV ads and tracking",
+    "url": "https://arstechnica.com/gadgets/2025/12/the-ars-technica-guide-to-dumb-tvs/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Chatbot-powered toys rebuked for discussing sexual, dangerous topics with kids",
+    "url": "https://arstechnica.com/gadgets/2025/12/chatbot-powered-toys-rebuked-for-discussing-sexual-dangerous-topics-with-kids/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Cable channel subscribers grew for the first time in 8 years last quarter",
+    "url": "https://arstechnica.com/gadgets/2025/12/cable-channel-subscribers-grew-for-the-first-time-in-years-last-quarter/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Kindle Scribe Colorsoft brings color e-ink to Amazon’s 11-inch e-reader",
+    "url": "https://arstechnica.com/gadgets/2025/12/kindle-scribe-colorsoft-brings-color-e-ink-to-amazons-11-inch-e-reader/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "AMD’s next-gen “FSR Redstone” brings big gains, as long as you’re using a new GPU",
+    "url": "https://arstechnica.com/gadgets/2025/12/amds-fsr-redstone-upscaling-claims-to-close-the-gap-with-nvidias-dlss/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Google is reviving wearable gesture controls, but only for the Pixel Watch 4",
+    "url": "https://arstechnica.com/gadgets/2025/12/google-is-reviving-wearable-gesture-controls-but-only-for-the-pixel-watch-4/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Pebble maker announces Index 01, a smart-ish ring for under $100",
+    "url": "https://arstechnica.com/gadgets/2025/12/resurrected-pebble-maker-announces-a-kind-of-smart-ring-for-capturing-audio-notes/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Paramount tries to swipe Warner Bros. from Netflix with a hostile takeover",
+    "url": "https://arstechnica.com/gadgets/2025/12/paramount-says-it-could-get-antitrust-approval-for-wbd-before-netflix/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Streaming service makes rare decision to lower its monthly fees",
+    "url": "https://arstechnica.com/gadgets/2025/12/fubo-lowers-its-prices-by-up-to-15-after-losing-nbcuniversal-channels/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Netflix’s $72B WB acquisition confounds the future of movie theaters, streaming",
+    "url": "https://arstechnica.com/gadgets/2025/12/netflixs-72b-wb-acquisition-confounds-the-future-of-movie-theaters-streaming/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "SteamOS tested on dedicated GPUs: No, it’s not always faster than Windows",
+    "url": "https://arstechnica.com/gadgets/2025/12/steamos-vs-windows-on-dedicated-gpus-its-complicated-but-windows-has-an-edge/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "Engineer proves that Kohler’s smart toilet cameras aren’t very private",
+    "url": "https://arstechnica.com/gadgets/2025/12/despite-accessing-user-data-kohler-still-says-its-smart-toilet-cameras-use-e2ee/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "OnePlus 15 finally gets FCC clearance after government shutdown delay—preorders live",
+    "url": "https://arstechnica.com/gadgets/2025/12/oneplus-15-finally-gets-fcc-clearance-after-government-shutdown-delay-preorders-live/",
+    "source": "Ars Technica"
+  },
+  {
+    "title": "WIRED Roundup: The 5 Tech and Politics Trends That Shaped 2025",
+    "url": "https://www.wired.com/story/uncanny-valley-podcast-wired-roundup-tech-politics-trends-2025/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "Introducing a New Chapter for ‘Uncanny Valley’",
+    "url": "https://www.wired.com/story/uncanny-valley-podcast-new-chapter-for-uncanny-valley/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "Scammers in China Are Using AI-Generated Images to Get Refunds",
+    "url": "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "6 Scary Predictions for AI in 2026",
+    "url": "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "This Chrome Extension Turns LinkedIn Posts About AI Into Facts About Allen Iverson",
+    "url": "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "The Ultra-Realistic AI Face Swapping Platform Driving Romance Scams",
+    "url": "https://www.wired.com/story/the-ultra-realistic-ai-face-swapping-platform-driving-romance-scams/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "Opposed to Data Centers? The Working Families Party Wants You to Run for Office",
+    "url": "https://www.wired.com/story/opposed-to-data-centers-the-working-families-party-wants-you-to-run-for-office/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "A Filmmaker Made a Sam Altman Deepfake—and Got Unexpectedly Attached",
+    "url": "https://www.wired.com/story/a-filmmaker-made-a-sam-altman-deepfake-and-got-unexpectedly-attached/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "‘Wicked’ Director Jon M. Chu on ‘What Makes Art Beautiful’ in the AI Era",
+    "url": "https://www.wired.com/story/uncanny-valley-podcast-wicked-director-jon-m-chu/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "People Are Paying to Get Their Chatbots High on ‘Drugs’",
+    "url": "https://www.wired.com/story/people-are-paying-to-get-their-chatbots-high-on-drugs/",
+    "source": "WIRED (AI)"
+  },
+  {
+    "title": "‘It felt so wrong’: Colin Angle on iRobot, the FTC, and the Amazon deal that never was",
+    "url": "https://techcrunch.com/2025/12/20/it-felt-so-wrong-colin-angle-on-irobot-the-ftc-and-the-amazon-deal-that-never-was/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "OpenAI allows users to directly adjust ChatGPT’s enthusiasm level",
+    "url": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "New York Governor Kathy Hochul signs RAISE Act to regulate AI safety",
+    "url": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Sequoia partner spreads debunked Brown shooting theory, testing new leadership",
+    "url": "https://techcrunch.com/2025/12/19/sequoia-partner-spreads-debunked-brown-shooting-theory-testing-new-leadership/",
+    "source": "TechCrunch"
+  },
+  {
+    "title": "Ex-Splunk execs’ startup Resolve AI hits $1 billion valuation with Series A",
     "url": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [
-        "ai"
-      ],
-      "matched_companies": [],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [],
-      "output": "GENERAL_AI"
-    },
-    "signal_type": "GENERAL_AI",
-    "drop_trace": {
-      "agent": "SignalClassificationAgent",
-      "reason": "Filtered low-value category",
-      "details": {
-        "signal_type": "GENERAL_AI",
-        "classification_trace": {
-          "agent": "SignalClassificationAgent",
-          "matched_patterns": [],
-          "output": "GENERAL_AI"
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
     "title": "Rocket Lab wins another defense-related space contract",
     "url": "https://techcrunch.com/2025/12/19/rocket-lab-wins-another-defense-related-space-contract/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
     "title": "Building venture-backable companies in heavily regulated spaces",
     "url": "https://techcrunch.com/2025/12/19/building-venture-backable-companies-in-heavily-regulated-spaces/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
-    "title": "Former Patagonia CEO Rose Marcario resigns from Rivian\u2019s board",
+    "title": "Former Patagonia CEO Rose Marcario resigns from Rivian’s board",
     "url": "https://techcrunch.com/2025/12/19/former-patagonia-ceo-rose-marcario-resigns-from-rivians-board/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
     "title": "Where are investors placing their bets next year? AI, AI, AI.",
     "url": "https://techcrunch.com/2025/12/19/where-are-investors-placing-their-bets-next-year-ai-ai-ai/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [
-        "ai"
-      ],
-      "matched_companies": [],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [],
-      "output": "GENERAL_AI"
-    },
-    "signal_type": "GENERAL_AI",
-    "drop_trace": {
-      "agent": "SignalClassificationAgent",
-      "reason": "Filtered low-value category",
-      "details": {
-        "signal_type": "GENERAL_AI",
-        "classification_trace": {
-          "agent": "SignalClassificationAgent",
-          "matched_patterns": [],
-          "output": "GENERAL_AI"
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
     "title": "Cursor continues acquisition spree with Graphite deal",
     "url": "https://techcrunch.com/2025/12/19/cursor-continues-acquisition-spree-with-graphite-deal/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
-    "title": "Elon Musk\u2019s $56B Tesla pay package restored by Delaware Supreme Court",
+    "title": "Elon Musk’s $56B Tesla pay package restored by Delaware Supreme Court",
     "url": "https://techcrunch.com/2025/12/19/elon-musks-56b-tesla-pay-package-restored-by-delaware-supreme-court/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [
-        "tesla"
-      ],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [
-        "policy/regulation"
-      ],
-      "output": "AI_POLICY"
-    },
-    "signal_type": "AI_POLICY",
-    "temporal_trace": {
-      "agent": "TemporalChangeAgent",
-      "previous_count": 1,
-      "decision": "ONGOING"
-    },
-    "change_type": "ONGOING",
-    "impact": {
-      "affected_roles": [],
-      "skills": [],
-      "interview_relevance": "LOW",
-      "why": "General AI industry update."
-    },
-    "llm_reasoning": "LLM synthesis disabled (fast mode)."
+    "source": "TechCrunch"
   },
   {
-    "title": "Anonymous messaging app NGL was acquired by \u2018EarnPhone\u2019 startup Mode Mobile",
+    "title": "Anonymous messaging app NGL was acquired by ‘EarnPhone’ startup Mode Mobile",
     "url": "https://techcrunch.com/2025/12/19/anonymous-messaging-app-ngl-was-acquired-by-earnphone-startup-mode-mobile/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
     "title": "Hundreds of Cisco customers are vulnerable to new Chinese hacking campaign, researchers say",
     "url": "https://techcrunch.com/2025/12/19/hundreds-of-cisco-customers-are-vulnerable-to-new-chinese-hacking-campaign-researchers-say/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [
-        "ai"
-      ],
-      "matched_companies": [],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [],
-      "output": "GENERAL_AI"
-    },
-    "signal_type": "GENERAL_AI",
-    "drop_trace": {
-      "agent": "SignalClassificationAgent",
-      "reason": "Filtered low-value category",
-      "details": {
-        "signal_type": "GENERAL_AI",
-        "classification_trace": {
-          "agent": "SignalClassificationAgent",
-          "matched_patterns": [],
-          "output": "GENERAL_AI"
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
-    "title": "Yann LeCun confirms his new \u2018world model\u2019 startup, reportedly seeks $5B+ valuation",
+    "title": "Yann LeCun confirms his new ‘world model’ startup, reportedly seeks $5B+ valuation",
     "url": "https://techcrunch.com/2025/12/19/yann-lecun-confirms-his-new-world-model-startup-reportedly-seeks-5b-valuation/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [
-        "model"
-      ],
-      "matched_companies": [],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [
-        "openai/llm/model"
-      ],
-      "output": "FOUNDATION_MODEL"
-    },
-    "signal_type": "FOUNDATION_MODEL",
-    "temporal_trace": {
-      "agent": "TemporalChangeAgent",
-      "previous_count": 1,
-      "decision": "ONGOING"
-    },
-    "change_type": "ONGOING",
-    "impact": {
-      "affected_roles": [
-        "Applied Scientist",
-        "ML Engineer"
-      ],
-      "skills": [
-        "Model Evaluation",
-        "LLMs",
-        "Prompt Engineering"
-      ],
-      "interview_relevance": "HIGH",
-      "why": "Indicates changes in foundation model capabilities."
-    },
-    "llm_reasoning": "LLM synthesis disabled (fast mode)."
+    "source": "TechCrunch"
   },
   {
     "title": "Netflix is betting on podcasts to become the new daytime talk show",
     "url": "https://techcrunch.com/2025/12/19/netflix-is-betting-on-podcasts-to-become-the-new-daytime-talk-show/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
     "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
     "url": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [
-        "ai"
-      ],
-      "matched_companies": [
-        "openai"
-      ],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [
-        "openai/llm/model"
-      ],
-      "output": "FOUNDATION_MODEL"
-    },
-    "signal_type": "FOUNDATION_MODEL",
-    "temporal_trace": {
-      "agent": "TemporalChangeAgent",
-      "previous_count": 1,
-      "decision": "ONGOING"
-    },
-    "change_type": "ONGOING",
-    "impact": {
-      "affected_roles": [
-        "Applied Scientist",
-        "ML Engineer"
-      ],
-      "skills": [
-        "Model Evaluation",
-        "LLMs",
-        "Prompt Engineering"
-      ],
-      "interview_relevance": "HIGH",
-      "why": "Indicates changes in foundation model capabilities."
-    },
-    "llm_reasoning": "LLM synthesis disabled (fast mode)."
+    "source": "TechCrunch"
   },
   {
     "title": "Known uses voice AI to help you go on more in-person dates",
     "url": "https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [
-        "ai"
-      ],
-      "matched_companies": [],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [],
-      "output": "GENERAL_AI"
-    },
-    "signal_type": "GENERAL_AI",
-    "drop_trace": {
-      "agent": "SignalClassificationAgent",
-      "reason": "Filtered low-value category",
-      "details": {
-        "signal_type": "GENERAL_AI",
-        "classification_trace": {
-          "agent": "SignalClassificationAgent",
-          "matched_patterns": [],
-          "output": "GENERAL_AI"
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
     "title": "Netflix acquires gaming avatar maker Ready Player Me",
     "url": "https://techcrunch.com/2025/12/19/netflix-acquires-gaming-avatar-maker-ready-player-me/",
-    "source": "TechCrunch",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "TechCrunch"
   },
   {
-    "title": "8-bit Bol\u00e9ro",
-    "url": "https://linusakesson.net/music/bolero/index.php",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "Meta is developing a new image and video model for a 2026 release, report says",
+    "url": "https://techcrunch.com/2025/12/19/meta-is-developing-a-new-image-and-video-model-for-a-2026-release-report-says/",
+    "source": "TechCrunch"
   },
   {
-    "title": "Garage \u2013 An S3 object store so reliable you can run it outside datacenters",
-    "url": "https://garagehq.deuxfleurs.fr/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "Krafton hikes India bet with new $670M fund",
+    "url": "https://techcrunch.com/2025/12/19/krafton-hikes-india-bet-with-new-670m-fund/",
+    "source": "TechCrunch"
   },
   {
-    "title": "Gh-actions-lockfile: generate and verify lockfiles for GitHub Actions",
-    "url": "https://gh-actions-lockfile.net",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "Data center investments reached $61 billion in 2025, report finds",
+    "url": "https://mashable.com/article/data-center-investments-reach-61-billion-dollars",
+    "source": "Mashable (Tech)"
   },
   {
-    "title": "Fuzix on a Raspberry Pi Pico",
-    "url": "https://ewpratten.com/blog/fuzix-pi-pico",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "ChatGPT update lets users customize a warmer and more enthusiastic bot",
+    "url": "https://mashable.com/article/chatgpt-personality-settings-lets-users-choose-warmer-bot",
+    "source": "Mashable (Tech)"
   },
   {
-    "title": "Mistral OCR 3",
-    "url": "https://mistral.ai/news/mistral-ocr-3",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "Stuff Your Kindle Day is live until Dec. 20 — download wintery books for free ahead of the holidays",
+    "url": "https://mashable.com/article/stuff-your-kindle-day-december-2025",
+    "source": "Mashable (Tech)"
   },
   {
-    "title": "Carolina Cloud \u2013 One third the cost of AWS for data science workloads",
-    "url": "https://carolinacloud.io/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "Smarter wallets choose this — Windows 11 Pro just $10",
+    "url": "https://mashable.com/article/dec-20-microsoft-windows-11-pro",
+    "source": "Mashable (Tech)"
   },
   {
-    "title": "Charles Proxy",
-    "url": "https://www.charlesproxy.com/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "Stop losing your stuff in the new year — this slim tracker card is just $24",
+    "url": "https://mashable.com/article/dec-20-magtag-ultra-slim-tracker-card-with-apple-find-my",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "The 11 best Windows laptops of 2025",
+    "url": "https://mashable.com/roundup/best-windows-laptop-2025-tested",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Put a powerful MacBook Pro under the tree for less than $450",
+    "url": "https://mashable.com/article/dec-19-apple-macbook-pro-i5",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "The iPhone Fold is coming. You may not get one for years.",
+    "url": "https://mashable.com/article/apple-iphone-fold-2026",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Amazon confirms years-long Russian cyberattack against AWS customers devices",
+    "url": "https://mashable.com/article/amazon-aws-russian-years-long-cyberattack",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Set up a home streaming center with 57% off the Roku 4K HDR Streambar SE and Wireless Bass Bundle",
+    "url": "https://mashable.com/article/dec-19-roku-4k-hdr-streambar-se-wireless-bass-bundle-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "The 16-inch HP OmniBook 5 is $500 off at Walmart",
+    "url": "https://mashable.com/article/dec-19-hp-omnibook-5-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "This LG 65-inch OLED TV just dropped to its lowest price ever — and it arrives before Christmas",
+    "url": "https://mashable.com/article/dec-19-lg-65-inch-oled-ai-tv-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "This plug-and-play 3D printer Is $299 and arrives before Christmas",
+    "url": "https://mashable.com/article/dec-19-elegoo-centauri-carbon-3d-printer-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Driverless Waymo seemingly drives straight into oncoming traffic in viral video",
+    "url": "https://mashable.com/article/waymo-robotaxi-footage-wrong-side-of-road-viral-video",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Ring in the new year with a new phone: The Samsung Galaxy Z Flip 7 is at its lowest price yet",
+    "url": "https://mashable.com/article/dec-19-samsung-galaxy-z-flip-7-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Save over $400 on the Philips 4400 Series Espresso Machine, and dont worry, itll arrive by Christmas",
+    "url": "https://mashable.com/article/dec-19-philips-4400-series-espresso-machine-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "YouTube pulls the plug on popular AI-generated fake movie trailer channels",
+    "url": "https://mashable.com/article/youtube-shuts-down-ai-channels-screen-culture-kh-studio",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "LG TVs will let users delete unwanted Copilot shortcuts",
+    "url": "https://mashable.com/article/lg-tv-microsoft-copilot-delete-shortcuts",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Samsung and LG preview new Micro RGB TVs. OK, but what are Micro RGB TVs?",
+    "url": "https://mashable.com/article/micro-rgb-tv-explained-samsung-lg",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "The ASUS ROG Swift gaming monitor is down to its best-ever price at Amazon — save $400",
+    "url": "https://mashable.com/article/dec-19-asus-rog-swift-gaming-monitor-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Nintendo Switch 2 in 2025: the hot consoles first year evaluated",
+    "url": "https://mashable.com/article/nintendo-switch-2-year-review",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "The 60+ best Christmas gifts for 2025: Find unique gift ideas youd never think of on your own",
+    "url": "https://mashable.com/article/best-christmas-gifts-2025",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Score the Apple Watch Series 11 for its best-ever price at Amazon — save $100 right now",
+    "url": "https://mashable.com/article/dec-19-apple-watch-series-11-deal",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "TikTok Awards 2025 live: Stream the show now",
+    "url": "https://mashable.com/article/watch-2025-tiktok-awards-live-stream",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "Don’t get scrooged: Your essential guide to spotting and stopping holiday scams",
+    "url": "https://mashable.com/article/holiday-scams-prevention-australia",
+    "source": "Mashable (Tech)"
+  },
+  {
+    "title": "NFL Week 16: How to Watch Packers vs. Bears, Bills vs. Browns and More Games From Anywhere",
+    "url": "https://www.cnet.com/tech/services-and-software/nfl-week-16-how-to-watch-bills-vs-browns-steelers-vs-lions-and-other-games-from-anywhere/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "I Bought a Used iPhone 13 Mini and Learned a Hard Lesson",
+    "url": "https://www.cnet.com/tech/mobile/i-bought-a-used-iphone-13-mini-and-learned-a-hard-lesson/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Netflix: 23 of Absolute Best Sci-Fi TV Shows You Should Stream Right Now",
+    "url": "https://www.cnet.com/tech/services-and-software/best-sci-fi-tv-shows-on-netflix-2025/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "The Future of Wireless Headphones is Here: Your Guide to Bluetooth 6.0",
+    "url": "https://www.cnet.com/tech/mobile/bluetooth-6-0-the-future-of-wireless-headphones/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "How to Watch James Madison vs. Oregon: Start Time, TV Channel for CFP First Round Game Today",
+    "url": "https://www.cnet.com/tech/services-and-software/how-to-watch-james-madison-vs-oregon-start-time-tv-channel-for-cfp-first-round-game-today/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "iPhone 18: Everything We Know About Apple's 2026 Phone Lineup",
+    "url": "https://www.cnet.com/tech/mobile/iphone-18-pro-rumors-release-date-price-design-specs/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "How to Watch Tulane vs. Ole Miss: Start Time, TV Channel for CFP 1st Round Game Today",
+    "url": "https://www.cnet.com/tech/services-and-software/how-to-watch-tulane-vs-ole-miss-start-time-tv-channel-cfp/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Improve Your Sleep Routine With This 10-3-2-1-0 Hack Tonight",
+    "url": "https://www.cnet.com/health/sleep/lets-be-real-your-sleep-routine-is-a-mess-try-this-10-3-2-1-0-hack-tonight/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Today's NYT Strands Hints, Answers and Help for Dec. 20 #657",
+    "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-and-help-for-dec-20-657/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Today's Wordle Hints, Answer and Help for Dec. 20, #1645",
+    "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-and-help-for-dec-20-1645/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Today's NYT Connections Hints, Answers and Help for Dec. 20, #923",
+    "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-and-help-for-dec-20-923/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "How to Watch Miami vs. Texas A&M : Start Time, TV Channel for CFP First Round Game Today",
+    "url": "https://www.cnet.com/tech/services-and-software/how-to-watch-miami-vs-texas-a-m-start-time-tv-channel-for-cfp-first-round-game-today/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Today's NYT Mini Crossword Answers for Saturday, Dec. 20",
+    "url": "https://www.cnet.com/tech/gaming/todays-nyt-mini-crossword-answers-for-saturday-dec-20/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Today's NYT Connections: Sports Edition Hints and Answers for Dec. 20, #453",
+    "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-sports-edition-hints-and-answers-for-dec-20-453/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "These Were Wordle's Toughest 10 Words of 2025. How Many Did You Get?",
+    "url": "https://www.cnet.com/tech/gaming/new-study-reveals-wordles-top-10-toughest-words-of-2025/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "TikTok Signs Agreements With US Investors. What's Next for Creators and Users?",
+    "url": "https://www.cnet.com/tech/services-and-software/tiktok-signs-deal-to-spin-off-u-s-operations-whats-next-for-creators-and-users/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Best T-Mobile Plans: How to Choose and Which Ones to Pick in 2026",
+    "url": "https://www.cnet.com/tech/mobile/best-t-mobile-plans/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Roku's Holiday Streaming Deals: Three Months of Free Apple TV, $1 Howdy and More",
+    "url": "https://www.cnet.com/deals/rokus-holiday-streaming-deals-three-months-of-free-apple-tv-1-howdy-and-more/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Strava Yearly Roundup Now Requires $80 Subscription",
+    "url": "https://www.cnet.com/health/fitness/strava-yearly-roundup-now-requires-80-subscription/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Why Samsung's Latest Chip Breakthrough Matters for Upcoming Galaxy Phones",
+    "url": "https://www.cnet.com/tech/mobile/why-samsungs-latest-chip-breakthrough-matters-for-upcoming-galaxy-phones/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "What You Need to Play Red Dead Redemption on iOS and Android",
+    "url": "https://www.cnet.com/tech/gaming/how-to-play-red-dead-redemption-ios-android-netflix/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Flying Home for the Holidays? How to Put Your Passport on Your iPhone",
+    "url": "https://www.cnet.com/tech/mobile/iphone-users-can-now-add-their-passport-to-apple-wallet-heres-how-to-do-it/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "Here's When to Watch the Anthony Joshua vs. Jake Paul Fight Tonight",
+    "url": "https://www.cnet.com/tech/services-and-software/watch-anthony-joshua-vs-jake-paul-fight-netflix/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "The 25 Best Xbox Games Right Now",
+    "url": "https://www.cnet.com/tech/gaming/best-xbox-games-for-xbox-one-series-x-s/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "The US Government Has a Big New AI Science Project Brewing, With Big Tech's Help",
+    "url": "https://www.cnet.com/tech/services-and-software/the-us-government-has-a-big-new-ai-science-project-brewing-with-big-techs-help/#ftag=CAD590a51e",
+    "source": "CNET"
+  },
+  {
+    "title": "He Got a Bunch of Money Again",
+    "url": "https://gizmodo.com/he-got-a-bunch-of-money-again-2000702249",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "The ‘Steel Ball Run’ Anime Rides to Netflix in March",
+    "url": "https://gizmodo.com/the-steel-ball-run-anime-rides-to-netflix-in-march-2000702216",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Rest in Hell, Fake AI-Made YouTube Trailers",
+    "url": "https://gizmodo.com/rest-in-hell-fake-ai-made-youtube-trailers-2000701825",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Volkswagen’s Microbus-Style EV Will Not Come Back in 2026",
+    "url": "https://gizmodo.com/volkswagens-microbus-style-ev-will-not-come-back-in-2026-2000699575",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Nebula Awards Yelled at Until They Completely Ban Use of AI by Nominees",
+    "url": "https://gizmodo.com/nebula-awards-yelled-at-until-they-completely-ban-use-of-ai-by-nominees-2000702137",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "‘Man of Tomorrow’ Has Finally Found Its Brainiac",
+    "url": "https://gizmodo.com/man-of-tomorrow-has-finally-found-its-brainiac-2000702241",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "The True ‘My Hero Academia’ Finale Arrives Next Year",
+    "url": "https://gizmodo.com/the-true-my-hero-academia-finale-arrives-next-year-2000701806",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "AI Image Generators Default to the Same 12 Photo Styles, Study Finds",
+    "url": "https://gizmodo.com/ai-image-generators-default-to-the-same-12-photo-styles-study-finds-2000702012",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Double Cosmic Explosion Gives Birth to Unprecedented ‘Superkilonova’",
+    "url": "https://gizmodo.com/double-cosmic-explosion-gives-birth-to-unprecedented-superkilonova-2000700820",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "A Brief History of Klingon-Federation Conflict",
+    "url": "https://gizmodo.com/star-trek-every-klingon-federation-war-explained-2000701584",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "What James Cameron Changed in ‘Avatar: Fire and Ash’ After Audiences Saw ‘Way of Water’",
+    "url": "https://gizmodo.com/what-james-cameron-changed-in-avatar-fire-and-ash-after-audiences-saw-way-of-water-2000702090",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Runaway Black Hole Escapes Its Galaxy—and It’s Leaving Baby Stars in Its Wake",
+    "url": "https://gizmodo.com/runaway-black-hole-escapes-its-galaxy-and-its-leaving-baby-stars-in-its-wake-2000701981",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "These Laser Beams Could Power Military Drones 5,000 Feet in the Air",
+    "url": "https://gizmodo.com/these-laser-beams-could-power-military-drones-5000-feet-in-the-air-2000702020",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "From Spidey to Snoopy, Hollywood’s Acquisition Mania Has Come for ‘Peanuts’",
+    "url": "https://gizmodo.com/sony-peanuts-snoopy-charlie-brown-2000701919",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Hotspots Capable of Driving Catastrophic Mega-Hurricanes Are Spreading Across the Oceans",
+    "url": "https://gizmodo.com/hotspots-capable-of-driving-catastrophic-mega-hurricanes-are-spreading-across-the-oceans-2000702025",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "‘My Hero Academia’ Carried the Shonen Anime Torch to a Triumphant Finish",
+    "url": "https://gizmodo.com/my-hero-academia-boku-no-anime-review-series-finale-crunchyroll-kohei-horikoshi-2000701820",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Instacart to Pay $60 Million in Refunds for Allegedly Deceiving Customers",
+    "url": "https://gizmodo.com/instacart-to-pay-60-million-in-refunds-for-allegedly-deceiving-customers-2000701915",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "A Starlink Satellite Is Tumbling Toward Earth After a Strange Anomaly in Orbit",
+    "url": "https://gizmodo.com/a-starlink-satellite-is-tumbling-toward-earth-after-a-strange-anomaly-in-orbit-2000701874",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "Frank Darabont Reveals the Real Story Behind Why He Didn’t Take on ‘The Dark Tower’",
+    "url": "https://gizmodo.com/frank-darabont-reveals-the-real-story-behind-why-he-didnt-take-on-the-dark-tower-2000701920",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "OpenAI’s Stargate Data Center Approved in Michigan as American Anger Starts to Boil",
+    "url": "https://gizmodo.com/openais-stargate-data-center-approved-in-michigan-as-american-anger-starts-to-boil-2000701890",
+    "source": "Gizmodo"
+  },
+  {
+    "title": "The Verge’s 2025 holiday gift guide",
+    "url": "https://www.theverge.com/tech/809421/holiday-gift-guide-2025",
+    "source": "The Verge"
+  },
+  {
+    "title": "Sony’s XM5 headphones and the latest Kindle round out this week’s best deals",
+    "url": "https://www.theverge.com/gadgets/848353/sony-wh-1000xm5-headphones-amazon-kindle-deal-sale",
+    "source": "The Verge"
+  },
+  {
+    "title": "The best last-minute Christmas gifts you can grab for under $50",
+    "url": "https://www.theverge.com/gadgets/848134/best-last-minute-christmas-gifts-under-50-2025",
+    "source": "The Verge"
+  },
+  {
+    "title": "The LCD Steam Deck is done",
+    "url": "https://www.theverge.com/news/848595/the-lcd-steam-deck-is-done",
+    "source": "The Verge"
+  },
+  {
+    "title": "Dogpile&#8217;s puzzles mix Balatro, Tetris, and a pile of puppies",
+    "url": "https://www.theverge.com/entertainment/848041/dogpile-review-inde-game-steam-balatro-puppies",
+    "source": "The Verge"
+  },
+  {
+    "title": "You can buy your Xbox Ally an official pair of anti-drift joysticks",
+    "url": "https://www.theverge.com/games/848568/xbox-ally-gulikit-tmr-joysticks",
+    "source": "The Verge"
+  },
+  {
+    "title": "‘Friend slop’ made co-op gaming goofier than ever in 2025",
+    "url": "https://www.theverge.com/entertainment/845347/friend-slop-co-op-games-2025",
+    "source": "The Verge"
+  },
+  {
+    "title": "Rivian’s AI pivot is about more than chasing Tesla",
+    "url": "https://www.theverge.com/transportation/846783/rivian-ai-autonomy-day-self-driving-lidar-chip-tesla",
+    "source": "The Verge"
+  },
+  {
+    "title": "The sold-out Nex Playground made my kids laugh and cry",
+    "url": "https://www.theverge.com/games/848449/nex-playground-review-nintendo-wii-microsoft-kinect-motion-tracking-camera",
+    "source": "The Verge"
+  },
+  {
+    "title": "Want to link from Google’s app store to your app? That’ll be $2–4 per install",
+    "url": "https://www.theverge.com/news/848540/google-app-fees-external-link-downloads-alternative-payments",
+    "source": "The Verge"
+  },
+  {
+    "title": "Sony's first EV with Honda will let you remotely play PS5 in your car",
+    "url": "https://www.engadget.com/transportation/evs/sonys-first-ev-with-honda-will-let-you-remotely-play-ps5-in-your-car-202359091.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Game publisher says cheaper Switch 2 cartridges are coming in since-deleted post",
+    "url": "https://www.engadget.com/gaming/nintendo/game-publisher-says-cheaper-switch-2-cartridges-are-coming-in-since-deleted-post-191145230.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Valve discontinued the last remaining LCD model of the Steam Deck",
+    "url": "https://www.engadget.com/gaming/valve-discontinued-the-last-remaining-lcd-model-of-the-steam-deck-171548195.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "The 10 best white elephant gifts worth fighting over for 2025",
+    "url": "https://www.engadget.com/the-10-best-white-elephant-gifts-worth-fighting-over-for-2025-150516281.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "The best Christmas gift ideas everyone on your 2025 holiday shopping list will love",
+    "url": "https://www.engadget.com/the-best-christmas-gift-ideas-everyone-on-your-2025-holiday-shopping-list-will-love-170018978.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "AirTags are back on sale for $65 for a four-pack",
+    "url": "https://www.engadget.com/deals/airtags-are-back-on-sale-for-65-for-a-four-pack-202333618.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "AirPods Pro 3 drop to a record low of $199",
+    "url": "https://www.engadget.com/deals/airpods-pro-3-drop-to-a-record-low-of-199-222806196.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Google Assistant will stick around a bit longer than expected for some Android users",
+    "url": "https://www.engadget.com/ai/google-assistant-will-stick-around-a-bit-longer-than-expected-for-some-android-users-130000178.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Claude's Chrome plugin is now available to all paid users",
+    "url": "https://www.engadget.com/ai/claudes-chrome-plugin-is-now-available-to-all-paid-users-221024295.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Mark Zuckerberg's nonprofit cuts ties with the immigration advocacy group he co-founded",
+    "url": "https://www.engadget.com/big-tech/mark-zuckerbergs-nonprofit-cuts-ties-with-the-immigration-advocacy-group-he-co-founded-183447900.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Netflix is acquiring game avatar maker Ready Player Me",
+    "url": "https://www.engadget.com/gaming/netflix-is-acquiring-game-avatar-maker-ready-player-me-204443001.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Get up to 78 percent off ExpressVPN two-year plans for the holidays",
+    "url": "https://www.engadget.com/deals/get-up-to-78-percent-off-expressvpn-two-year-plans-for-the-holidays-194912043.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "The best iPad deals this week include the iPad mini for $100 off",
+    "url": "https://www.engadget.com/deals/the-best-ipad-deals-this-week-include-the-ipad-mini-for-100-off-150020342.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Apple's USB-C Magic Mouse is back on sale for $68",
+    "url": "https://www.engadget.com/deals/apples-usb-c-magic-mouse-is-back-on-sale-for-68-175424709.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "The best Secret Santa gift ideas for 2025: Affordable gifts you can still get from Lego, Apple, Yeti and more",
+    "url": "https://www.engadget.com/the-best-secret-santa-gift-ideas-for-2025-affordable-gifts-you-can-still-get-from-lego-apple-yeti-and-more-130014284.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "We have more details on the TikTok deal, including some ownership statistics",
+    "url": "https://www.engadget.com/social-media/we-have-more-details-on-the-tiktok-deal-including-some-ownership-statistics-163003507.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "One of our favorite budgeting apps is 50 percent off right now",
+    "url": "https://www.engadget.com/deals/one-of-our-favorite-budgeting-apps-is-50-percent-off-right-now-154056703.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Engadget's favorite games of 2025",
+    "url": "https://www.engadget.com/gaming/engadgets-favorite-games-of-2025-153000109.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "The best board games to gift and play with the family for the 2025 holiday season",
+    "url": "https://www.engadget.com/the-best-board-games-to-gift-and-play-with-the-family-for-the-2025-holiday-season-125529223.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Engadget Podcast: 2025 was the year of AI, smartglasses and spineless Big Tech",
+    "url": "https://www.engadget.com/social-media/engadget-podcast-2025-was-the-year-of-ai-smartglasses-and-spineless-big-tech-143000338.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "MasterClass deal: Get 50 percent off subscriptions for the holidays",
+    "url": "https://www.engadget.com/deals/masterclass-deal-get-50-percent-off-subscriptions-for-the-holidays-150520715.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "The best subscription box gifts for 2025",
+    "url": "https://www.engadget.com/the-best-subscription-box-gifts-for-2025-130037236.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "The 12 best last-minute Christmas gifts for 2025 that will arrive by December 24",
+    "url": "https://www.engadget.com/the-12-best-last-minute-christmas-gifts-for-2025-that-will-arrive-by-december-24-140037753.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "A total League of Legends revamp is coming in 2027",
+    "url": "https://www.engadget.com/gaming/a-total-league-of-legends-revamp-is-coming-in-2027-130000644.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Pick up the Samsung P9 microSD Express card for Switch 2 while it's down to a record low",
+    "url": "https://www.engadget.com/deals/pick-up-the-samsung-p9-microsd-express-card-for-switch-2-while-its-down-to-a-record-low-141947013.html?src=rss",
+    "source": "Engadget"
+  },
+  {
+    "title": "Backing Up Spotify",
+    "url": "https://annas-archive.li/blog/backing-up-spotify.html",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Biscuit is a specialized PostgreSQL index for fast pattern matching LIKE queries",
+    "url": "https://github.com/CrystallineCore/Biscuit",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Immersa: Open-source Web-based 3D Presentation Tool",
+    "url": "https://github.com/ertugrulcetin/immersa",
+    "source": "HackerNews"
+  },
+  {
+    "title": "NTP at NIST Boulder Has Lost Power",
+    "url": "https://lists.nanog.org/archives/list/nanog@lists.nanog.org/message/ACADD3NKOG2QRWZ56OSNNG7UIEKKTZXL/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Pure Silicon Demo Coding: No CPU, No Memory, Just 4k Gates",
+    "url": "https://www.a1k0n.net/2025/12/19/tiny-tapeout-demo.html",
+    "source": "HackerNews"
+  },
+  {
+    "title": "X-59 3D Printing",
+    "url": "https://www.nasa.gov/stem-content/x-59-3d-printing/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Go ahead, self-host Postgres",
+    "url": "https://pierce.dev/notes/go-ahead-self-host-postgres#user-content-fn-1",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Depot (YC W23) Is Hiring an Enterprise Support Engineer (Remote/US)",
+    "url": "https://www.ycombinator.com/companies/depot/jobs/jhGxVjO-enterprise-support-engineer",
+    "source": "HackerNews"
+  },
+  {
+    "title": "OpenSCAD is kinda neat",
+    "url": "https://nuxx.net/blog/2025/12/20/openscad-is-kinda-neat/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Show HN: HN Wrapped 2025 - an LLM reviews your year on HN",
+    "url": "https://hn-wrapped.kadoa.com?year=2025",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Gemini 3 Pro vs. 2.5 Pro in Pokemon Crystal",
+    "url": "https://blog.jcz.dev/gemini-3-pro-vs-25-pro-in-pokemon-crystal",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Ireland’s Diarmuid Early wins world Microsoft Excel title",
+    "url": "https://www.bbc.com/news/articles/cj4qzgvxxgvo",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Big GPUs don't need big PCs",
+    "url": "https://www.jeffgeerling.com/blog/2025/big-gpus-dont-need-big-pcs",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Log level 'error' should mean that something needs to be fixed",
+    "url": "https://utcc.utoronto.ca/~cks/space/blog/programming/ErrorsShouldRequireFixing",
+    "source": "HackerNews"
+  },
+  {
+    "title": "I spent a week without IPv4 (2023)",
+    "url": "https://www.apalrd.net/posts/2023/network_ipv6/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "You have reached the end of the internet",
+    "url": "https://hmpg.net/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Detailed balance in large language model-driven agents",
+    "url": "https://arxiv.org/abs/2512.10047",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Skills Officially Comes to Codex",
+    "url": "https://developers.openai.com/codex/skills/",
+    "source": "HackerNews"
   },
   {
     "title": "CSS Grid Lanes",
     "url": "https://webkit.org/blog/17660/introducing-css-grid-lanes/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "HackerNews"
   },
   {
-    "title": "Android introduces $2-4 install fee and 10\u201320% cut for US external content links",
-    "url": "https://support.google.com/googleplay/android-developer/answer/16470497?hl=en",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "Mistral OCR 3",
+    "url": "https://mistral.ai/news/mistral-ocr-3",
+    "source": "HackerNews"
   },
   {
-    "title": "A better zip bomb (2019)",
-    "url": "https://www.bamsoftware.com/hacks/zipbomb/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "A train-sized tunnel is now carrying electricity under South London",
+    "url": "https://www.ianvisits.co.uk/articles/a-train-sized-tunnel-is-now-carrying-electricity-under-south-london-86221/",
+    "source": "HackerNews"
   },
   {
-    "title": "TP-Link Tapo C200: Hardcoded Keys, Buffer Overflows and Privacy",
-    "url": "https://www.evilsocket.net/2025/12/18/TP-Link-Tapo-C200-Hardcoded-Keys-Buffer-Overflows-and-Privacy-in-the-Era-of-AI-Assisted-Reverse-Engineering/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "New Quantum Antenna Reveals a Hidden Terahertz World",
+    "url": "https://www.sciencedaily.com/releases/2025/12/251213032617.htm",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Shallow trees with heavy leaves (2020)",
+    "url": "https://cp4space.hatsya.com/2020/12/13/shallow-trees-with-heavy-leaves/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Reflections on AI at the End of 2025",
+    "url": "https://antirez.com/news/157",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Why do people leave comments on OpenBenches?",
+    "url": "https://shkspr.mobi/blog/2025/12/why-do-people-leave-comments-on-openbenches/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Garage – An S3 object store so reliable you can run it outside datacenters",
+    "url": "https://garagehq.deuxfleurs.fr/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "MIRA – An open-source persistent AI entity with memory",
+    "url": "https://github.com/taylorsatula/mira-OSS",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Show HN: Claude Code Plugin to play music when waiting on user input",
+    "url": "https://github.com/Sevii/agent-marketplace/blob/main/plugins/elevator-music/README.md",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Privacy doesn't mean anything anymore, anonymity does",
+    "url": "https://servury.com/blog/privacy-is-marketing-anonymity-is-architecture/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Charles Proxy",
+    "url": "https://www.charlesproxy.com/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Mathematicians don't care about foundations (2022)",
+    "url": "https://matteocapucci.wordpress.com/2022/12/21/mathematicians-dont-care-about-foundations/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Maximizing Compression of Apple II Hi-Res Images",
+    "url": "http://deater.net/weave/vmwprod/hgr_compress/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "PowerShell's curl runs JavaScript code with system access",
+    "url": "https://support.microsoft.com/en-us/topic/powershell-5-1-preventing-script-execution-from-web-content-7cb95559-655e-43fd-a8bd-ceef2406b705",
+    "source": "HackerNews"
   },
   {
     "title": "Graphite is joining Cursor",
     "url": "https://cursor.com/blog/graphite",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
-  },
-  {
-    "title": "A tagging system for documentation review comments",
-    "url": "https://blog.techdocs.studio/p/a-tagging-system-for-documentation-review-comments",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "source": "HackerNews"
   },
   {
     "title": "LLM Year in Review",
     "url": "https://karpathy.bearblog.dev/year-in-review-2025/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [
-        "llm"
-      ],
-      "matched_companies": [],
-      "decision": true
-    },
-    "classification_trace": {
-      "agent": "SignalClassificationAgent",
-      "matched_patterns": [
-        "openai/llm/model"
-      ],
-      "output": "FOUNDATION_MODEL"
-    },
-    "signal_type": "FOUNDATION_MODEL",
-    "temporal_trace": {
-      "agent": "TemporalChangeAgent",
-      "previous_count": 1,
-      "decision": "ONGOING"
-    },
-    "change_type": "ONGOING",
-    "impact": {
-      "affected_roles": [],
-      "skills": [],
-      "interview_relevance": "LOW",
-      "why": "General AI industry update."
-    },
-    "llm_reasoning": "LLM synthesis disabled (fast mode)."
+    "source": "HackerNews"
   },
   {
-    "title": "Data Bank \u2013 Nuforc \u2013 Latest UFO Sightings",
-    "url": "https://nuforc.org/databank/",
-    "source": "HackerNews",
-    "decision_trace": {
-      "agent": "AIRelevanceAgent",
-      "matched_ai_keywords": [],
-      "matched_companies": [],
-      "decision": false
-    },
-    "drop_trace": {
-      "agent": "AIRelevanceAgent",
-      "reason": "Not AI-relevant",
-      "details": {
-        "decision_trace": {
-          "agent": "AIRelevanceAgent",
-          "matched_ai_keywords": [],
-          "matched_companies": [],
-          "decision": false
-        }
-      }
-    }
+    "title": "A proof of concept of a semistable C++ vector container",
+    "url": "https://github.com/joaquintides/semistable_vector",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Arduino UNO Q bridges high-performance computing with real-time control",
+    "url": "https://www.arduino.cc/product-uno-q/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Hash tables in Go and advantage of self-hosted compilers",
+    "url": "https://rushter.com/blog/go-and-hashmaps/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Airbus to migrate critical apps to a sovereign Euro cloud",
+    "url": "https://www.theregister.com/2025/12/19/airbus_sovereign_cloud/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "A terminal emulator that runs in your terminal. Powered by Turbo Vision",
+    "url": "https://github.com/magiblot/tvterm",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Show HN: Chart Preview – Preview environments for Helm charts on every PR",
+    "url": "https://news.ycombinator.com/item?id=46337764",
+    "source": "HackerNews"
+  },
+  {
+    "title": "What Does a Database for SSDs Look Like?",
+    "url": "https://brooker.co.za/blog/2025/12/15/database-for-ssd.html",
+    "source": "HackerNews"
+  },
+  {
+    "title": "NOAA deploys new generation of AI-driven global weather models",
+    "url": "https://www.noaa.gov/news-release/noaa-deploys-new-generation-of-ai-driven-global-weather-models",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Brown/MIT shooting suspect found dead, officials say",
+    "url": "https://www.washingtonpost.com/nation/2025/12/18/brown-university-shooting-person-of-interest/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "History LLMs: Models trained exclusively on pre-1913 texts",
+    "url": "https://github.com/DGoettlich/history-llms",
+    "source": "HackerNews"
+  },
+  {
+    "title": "8-bit Boléro",
+    "url": "https://linusakesson.net/music/bolero/index.php",
+    "source": "HackerNews"
+  },
+  {
+    "title": "TP-Link Tapo C200: Hardcoded Keys, Buffer Overflows and Privacy",
+    "url": "https://www.evilsocket.net/2025/12/18/TP-Link-Tapo-C200-Hardcoded-Keys-Buffer-Overflows-and-Privacy-in-the-Era-of-AI-Assisted-Reverse-Engineering/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Fuzix on a Raspberry Pi Pico",
+    "url": "https://ewpratten.com/blog/fuzix-pi-pico",
+    "source": "HackerNews"
+  },
+  {
+    "title": "A better zip bomb (2019)",
+    "url": "https://www.bamsoftware.com/hacks/zipbomb/",
+    "source": "HackerNews"
+  },
+  {
+    "title": "Show HN: TinyPDF – 3kb pdf library (70x smaller than jsPDF)",
+    "url": "https://github.com/Lulzx/tinypdf",
+    "source": "HackerNews"
   }
 ]
