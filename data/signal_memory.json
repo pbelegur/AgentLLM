@@ -1,0 +1,26 @@
+{
+  "Yann LeCun confirms his new \u2018world model\u2019 startup, reportedly seeks $5B+ valuation": {
+    "signal_type": "FOUNDATION_MODEL",
+    "first_seen": "2025-12-19",
+    "last_seen": "2025-12-20",
+    "count": 2
+  },
+  "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors": {
+    "signal_type": "FOUNDATION_MODEL",
+    "first_seen": "2025-12-19",
+    "last_seen": "2025-12-20",
+    "count": 2
+  },
+  "LLM Year in Review": {
+    "signal_type": "FOUNDATION_MODEL",
+    "first_seen": "2025-12-19",
+    "last_seen": "2025-12-20",
+    "count": 2
+  },
+  "Elon Musk\u2019s $56B Tesla pay package restored by Delaware Supreme Court": {
+    "signal_type": "AI_POLICY",
+    "first_seen": "2025-12-19",
+    "last_seen": "2025-12-20",
+    "count": 2
+  }
+}

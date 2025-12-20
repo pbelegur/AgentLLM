@@ -1,52 +1,784 @@
 [
   {
-    "title": "DoorDash rolls out Zesty, an AI social app for discovering new restaurants",
-    "link": "https://techcrunch.com/2025/12/16/doordash-rolls-out-zesty-an-ai-social-app-for-discovering-new-restaurants/",
-    "published": "Tue, 16 Dec 2025 18:48:43 +0000"
+    "title": "Sequoia partner spreads debunked Brown shooting theory, testing new leadership",
+    "url": "https://techcrunch.com/2025/12/19/sequoia-partner-spreads-debunked-brown-shooting-theory-testing-new-leadership/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
   },
   {
-    "title": "Meta\u2019s AI glasses can now help you hear conversations better",
-    "link": "https://techcrunch.com/2025/12/16/metas-ai-glasses-can-now-help-you-hear-conversations-better/",
-    "published": "Tue, 16 Dec 2025 18:30:55 +0000"
+    "title": "Ex-Splunk execs\u2019 startup Resolve AI hits $1 billion valuation with Series A",
+    "url": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [
+        "ai"
+      ],
+      "matched_companies": [],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [],
+      "output": "GENERAL_AI"
+    },
+    "signal_type": "GENERAL_AI",
+    "drop_trace": {
+      "agent": "SignalClassificationAgent",
+      "reason": "Filtered low-value category",
+      "details": {
+        "signal_type": "GENERAL_AI",
+        "classification_trace": {
+          "agent": "SignalClassificationAgent",
+          "matched_patterns": [],
+          "output": "GENERAL_AI"
+        }
+      }
+    }
   },
   {
-    "title": "OpenAI continues on its \u2018code red\u2019 warpath with new image generation model",
-    "link": "https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/",
-    "published": "Tue, 16 Dec 2025 18:22:50 +0000"
+    "title": "Rocket Lab wins another defense-related space contract",
+    "url": "https://techcrunch.com/2025/12/19/rocket-lab-wins-another-defense-related-space-contract/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
   },
   {
-    "title": "How Luminar\u2019s doomed Volvo deal helped drag the company into bankruptcy",
-    "link": "https://techcrunch.com/2025/12/16/how-luminars-doomed-volvo-deal-helped-drag-the-company-into-bankruptcy/",
-    "published": "Tue, 16 Dec 2025 18:13:44 +0000"
+    "title": "Building venture-backable companies in heavily regulated spaces",
+    "url": "https://techcrunch.com/2025/12/19/building-venture-backable-companies-in-heavily-regulated-spaces/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
   },
   {
-    "title": "Uber Eats alum lands $14M seed from a16z to fix WhatsApp chaos for LatAm\u2019s doctors",
-    "link": "https://techcrunch.com/2025/12/16/uber-eats-alum-lands-14m-seed-from-a16z-to-fix-whatsapp-chaos-for-latams-doctors/",
-    "published": "Tue, 16 Dec 2025 18:11:58 +0000"
+    "title": "Former Patagonia CEO Rose Marcario resigns from Rivian\u2019s board",
+    "url": "https://techcrunch.com/2025/12/19/former-patagonia-ceo-rose-marcario-resigns-from-rivians-board/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
   },
   {
-    "title": "alpr.watch",
-    "link": "https://alpr.watch/",
-    "published": 1765904059
+    "title": "Where are investors placing their bets next year? AI, AI, AI.",
+    "url": "https://techcrunch.com/2025/12/19/where-are-investors-placing-their-bets-next-year-ai-ai-ai/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [
+        "ai"
+      ],
+      "matched_companies": [],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [],
+      "output": "GENERAL_AI"
+    },
+    "signal_type": "GENERAL_AI",
+    "drop_trace": {
+      "agent": "SignalClassificationAgent",
+      "reason": "Filtered low-value category",
+      "details": {
+        "signal_type": "GENERAL_AI",
+        "classification_trace": {
+          "agent": "SignalClassificationAgent",
+          "matched_patterns": [],
+          "output": "GENERAL_AI"
+        }
+      }
+    }
   },
   {
-    "title": "No Graphics API",
-    "link": "https://www.sebastianaaltonen.com/blog/no-graphics-api",
-    "published": 1765912817
+    "title": "Cursor continues acquisition spree with Graphite deal",
+    "url": "https://techcrunch.com/2025/12/19/cursor-continues-acquisition-spree-with-graphite-deal/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
   },
   {
-    "title": "40 percent of fMRI signals do not correspond to actual brain activity",
-    "link": "https://www.tum.de/en/news-and-events/all-news/press-releases/details/40-percent-of-mri-signals-do-not-correspond-to-actual-brain-activity",
-    "published": 1765892817
+    "title": "Elon Musk\u2019s $56B Tesla pay package restored by Delaware Supreme Court",
+    "url": "https://techcrunch.com/2025/12/19/elon-musks-56b-tesla-pay-package-restored-by-delaware-supreme-court/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [
+        "tesla"
+      ],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [
+        "policy/regulation"
+      ],
+      "output": "AI_POLICY"
+    },
+    "signal_type": "AI_POLICY",
+    "temporal_trace": {
+      "agent": "TemporalChangeAgent",
+      "previous_count": 1,
+      "decision": "ONGOING"
+    },
+    "change_type": "ONGOING",
+    "impact": {
+      "affected_roles": [],
+      "skills": [],
+      "interview_relevance": "LOW",
+      "why": "General AI industry update."
+    },
+    "llm_reasoning": "LLM synthesis disabled (fast mode)."
   },
   {
-    "title": "Mozilla appoints new CEO Anthony Enzor-Demeo",
-    "link": "https://blog.mozilla.org/en/mozilla/leadership/mozillas-next-chapter-anthony-enzor-demeo-new-ceo/",
-    "published": 1765893194
+    "title": "Anonymous messaging app NGL was acquired by \u2018EarnPhone\u2019 startup Mode Mobile",
+    "url": "https://techcrunch.com/2025/12/19/anonymous-messaging-app-ngl-was-acquired-by-earnphone-startup-mode-mobile/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
   },
   {
-    "title": "The World Happiness Report is beset with methodological problems",
-    "link": "https://yaschamounk.substack.com/p/the-world-happiness-report-is-a-sham",
-    "published": 1765843609
+    "title": "Hundreds of Cisco customers are vulnerable to new Chinese hacking campaign, researchers say",
+    "url": "https://techcrunch.com/2025/12/19/hundreds-of-cisco-customers-are-vulnerable-to-new-chinese-hacking-campaign-researchers-say/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [
+        "ai"
+      ],
+      "matched_companies": [],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [],
+      "output": "GENERAL_AI"
+    },
+    "signal_type": "GENERAL_AI",
+    "drop_trace": {
+      "agent": "SignalClassificationAgent",
+      "reason": "Filtered low-value category",
+      "details": {
+        "signal_type": "GENERAL_AI",
+        "classification_trace": {
+          "agent": "SignalClassificationAgent",
+          "matched_patterns": [],
+          "output": "GENERAL_AI"
+        }
+      }
+    }
+  },
+  {
+    "title": "Yann LeCun confirms his new \u2018world model\u2019 startup, reportedly seeks $5B+ valuation",
+    "url": "https://techcrunch.com/2025/12/19/yann-lecun-confirms-his-new-world-model-startup-reportedly-seeks-5b-valuation/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [
+        "model"
+      ],
+      "matched_companies": [],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [
+        "openai/llm/model"
+      ],
+      "output": "FOUNDATION_MODEL"
+    },
+    "signal_type": "FOUNDATION_MODEL",
+    "temporal_trace": {
+      "agent": "TemporalChangeAgent",
+      "previous_count": 1,
+      "decision": "ONGOING"
+    },
+    "change_type": "ONGOING",
+    "impact": {
+      "affected_roles": [
+        "Applied Scientist",
+        "ML Engineer"
+      ],
+      "skills": [
+        "Model Evaluation",
+        "LLMs",
+        "Prompt Engineering"
+      ],
+      "interview_relevance": "HIGH",
+      "why": "Indicates changes in foundation model capabilities."
+    },
+    "llm_reasoning": "LLM synthesis disabled (fast mode)."
+  },
+  {
+    "title": "Netflix is betting on podcasts to become the new daytime talk show",
+    "url": "https://techcrunch.com/2025/12/19/netflix-is-betting-on-podcasts-to-become-the-new-daytime-talk-show/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
+    "url": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [
+        "ai"
+      ],
+      "matched_companies": [
+        "openai"
+      ],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [
+        "openai/llm/model"
+      ],
+      "output": "FOUNDATION_MODEL"
+    },
+    "signal_type": "FOUNDATION_MODEL",
+    "temporal_trace": {
+      "agent": "TemporalChangeAgent",
+      "previous_count": 1,
+      "decision": "ONGOING"
+    },
+    "change_type": "ONGOING",
+    "impact": {
+      "affected_roles": [
+        "Applied Scientist",
+        "ML Engineer"
+      ],
+      "skills": [
+        "Model Evaluation",
+        "LLMs",
+        "Prompt Engineering"
+      ],
+      "interview_relevance": "HIGH",
+      "why": "Indicates changes in foundation model capabilities."
+    },
+    "llm_reasoning": "LLM synthesis disabled (fast mode)."
+  },
+  {
+    "title": "Known uses voice AI to help you go on more in-person dates",
+    "url": "https://techcrunch.com/2025/12/19/known-uses-voice-ai-to-help-you-go-on-more-in-person-dates/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [
+        "ai"
+      ],
+      "matched_companies": [],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [],
+      "output": "GENERAL_AI"
+    },
+    "signal_type": "GENERAL_AI",
+    "drop_trace": {
+      "agent": "SignalClassificationAgent",
+      "reason": "Filtered low-value category",
+      "details": {
+        "signal_type": "GENERAL_AI",
+        "classification_trace": {
+          "agent": "SignalClassificationAgent",
+          "matched_patterns": [],
+          "output": "GENERAL_AI"
+        }
+      }
+    }
+  },
+  {
+    "title": "Netflix acquires gaming avatar maker Ready Player Me",
+    "url": "https://techcrunch.com/2025/12/19/netflix-acquires-gaming-avatar-maker-ready-player-me/",
+    "source": "TechCrunch",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "8-bit Bol\u00e9ro",
+    "url": "https://linusakesson.net/music/bolero/index.php",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Garage \u2013 An S3 object store so reliable you can run it outside datacenters",
+    "url": "https://garagehq.deuxfleurs.fr/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Gh-actions-lockfile: generate and verify lockfiles for GitHub Actions",
+    "url": "https://gh-actions-lockfile.net",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Fuzix on a Raspberry Pi Pico",
+    "url": "https://ewpratten.com/blog/fuzix-pi-pico",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Mistral OCR 3",
+    "url": "https://mistral.ai/news/mistral-ocr-3",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Carolina Cloud \u2013 One third the cost of AWS for data science workloads",
+    "url": "https://carolinacloud.io/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Charles Proxy",
+    "url": "https://www.charlesproxy.com/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "CSS Grid Lanes",
+    "url": "https://webkit.org/blog/17660/introducing-css-grid-lanes/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Android introduces $2-4 install fee and 10\u201320% cut for US external content links",
+    "url": "https://support.google.com/googleplay/android-developer/answer/16470497?hl=en",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "A better zip bomb (2019)",
+    "url": "https://www.bamsoftware.com/hacks/zipbomb/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "TP-Link Tapo C200: Hardcoded Keys, Buffer Overflows and Privacy",
+    "url": "https://www.evilsocket.net/2025/12/18/TP-Link-Tapo-C200-Hardcoded-Keys-Buffer-Overflows-and-Privacy-in-the-Era-of-AI-Assisted-Reverse-Engineering/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "Graphite is joining Cursor",
+    "url": "https://cursor.com/blog/graphite",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "A tagging system for documentation review comments",
+    "url": "https://blog.techdocs.studio/p/a-tagging-system-for-documentation-review-comments",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
+  },
+  {
+    "title": "LLM Year in Review",
+    "url": "https://karpathy.bearblog.dev/year-in-review-2025/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [
+        "llm"
+      ],
+      "matched_companies": [],
+      "decision": true
+    },
+    "classification_trace": {
+      "agent": "SignalClassificationAgent",
+      "matched_patterns": [
+        "openai/llm/model"
+      ],
+      "output": "FOUNDATION_MODEL"
+    },
+    "signal_type": "FOUNDATION_MODEL",
+    "temporal_trace": {
+      "agent": "TemporalChangeAgent",
+      "previous_count": 1,
+      "decision": "ONGOING"
+    },
+    "change_type": "ONGOING",
+    "impact": {
+      "affected_roles": [],
+      "skills": [],
+      "interview_relevance": "LOW",
+      "why": "General AI industry update."
+    },
+    "llm_reasoning": "LLM synthesis disabled (fast mode)."
+  },
+  {
+    "title": "Data Bank \u2013 Nuforc \u2013 Latest UFO Sightings",
+    "url": "https://nuforc.org/databank/",
+    "source": "HackerNews",
+    "decision_trace": {
+      "agent": "AIRelevanceAgent",
+      "matched_ai_keywords": [],
+      "matched_companies": [],
+      "decision": false
+    },
+    "drop_trace": {
+      "agent": "AIRelevanceAgent",
+      "reason": "Not AI-relevant",
+      "details": {
+        "decision_trace": {
+          "agent": "AIRelevanceAgent",
+          "matched_ai_keywords": [],
+          "matched_companies": [],
+          "decision": false
+        }
+      }
+    }
   }
 ]

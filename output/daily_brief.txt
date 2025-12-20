@@ -2,24 +2,24 @@ Good morning.
 
 Here are the AI signals that actually matter today:
 
-1. OpenAI continues on its ‘code red’ warpath with new image generation model
+1. Trained LLMs exclusively on pre-1913 texts
    Signal type: FOUNDATION_MODEL
-   Temporal status: ONGOING
-   Source: TechCrunch
-   Impact (rule-based): Indicates changes in foundation model capabilities.
-   Impact (LLM reasoning): OpenAI’s new image generation model
-   Roles: ML Engineer, Applied Scientist
-   Skills: Prompt Engineering, Model Evaluation, LLMs
-   Interview relevance: HIGH
-   Link: https://techcrunch.com/2025/12/16/openai-continues-on-its-code-red-warpath-with-new-image-generation-model/
-
-2. Tesla engaged in deceptive marketing for Autopilot and Full Self-Driving, judge rules
-   Signal type: AI_POLICY
-   Temporal status: ONGOING
-   Source: TechCrunch
+   Temporal status: NEW
+   Source: HackerNews
    Impact (rule-based): General AI industry update.
-   Impact (LLM reasoning): AI development matters for engineers and companies in the next 3 to 6 months
+   Impact (LLM reasoning): LLM synthesis disabled (fast mode).
    Roles: N/A
    Skills: N/A
    Interview relevance: LOW
-   Link: https://techcrunch.com/2025/12/16/tesla-engaged-in-deceptive-marketing-for-autopilot-and-full-self-driving-judge-rules/
+   Link: https://github.com/DGoettlich/history-llms
+
+2. FunctionGemma 270M Model
+   Signal type: FOUNDATION_MODEL
+   Temporal status: NEW
+   Source: HackerNews
+   Impact (rule-based): Indicates changes in foundation model capabilities.
+   Impact (LLM reasoning): LLM synthesis disabled (fast mode).
+   Roles: Applied Scientist, ML Engineer
+   Skills: Model Evaluation, Prompt Engineering, LLMs
+   Interview relevance: HIGH
+   Link: https://blog.google/technology/developers/functiongemma/
