@@ -188,9 +188,10 @@ def update_signal_memory(item, memory):
 
 
 def save_daily_history(signals):
-    # Save a compact snapshot for trends (don’t dump huge traces)
-    d = today_utc_str()
-    path = f"data/history/{d}.json"
+    # Save timestamped snapshots so trends move during the day
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H00")
+    path = f"data/history/{stamp}.json"
+
     compact = []
     for s in signals:
         compact.append({
@@ -202,19 +203,20 @@ def save_daily_history(signals):
             "priority": s.get("priority"),
             "score": s.get("score", 0),
         })
-    save_json(path, {"date": d, "signals": compact})
+
+    save_json(path, {"date": stamp, "signals": compact})
+
 
 
 def load_history(days=HISTORY_DAYS):
-    # Load up to N days of saved history files (best-effort)
+    ensure_dirs()
+    files = [f for f in os.listdir("data/history") if f.endswith(".json")]
+    files.sort()  # timestamped names will sort correctly
     hist = []
-    for fname in sorted(os.listdir("data/history")):
-        if not fname.endswith(".json"):
-            continue
+    for fname in files[-days:]:
         hist.append(load_json(os.path.join("data/history", fname), default=None))
-    hist = [h for h in hist if h and "signals" in h]
-    # Keep last N entries
-    return hist[-days:]
+    return [h for h in hist if h and "signals" in h]
+
 
 
 # =========================================================
@@ -600,6 +602,24 @@ def generate_brief(signals):
     return "\n".join(lines)
 
 
+def atomic_save_json(path: str, obj):
+    """
+    Write JSON atomically so the UI never reads a half-written file.
+    """
+    ensure_dirs()
+    tmp_path = path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+
+def save_latest_snapshot(payload: dict):
+    payload = dict(payload)
+    payload["generated_at_utc"] = datetime.now(timezone.utc).isoformat()
+    atomic_save_json("data/latest.json", payload)
+
+
+
 # =========================================================
 # MAIN ORCHESTRATOR
 # =========================================================
@@ -669,6 +689,27 @@ def run_pipeline():
 
     # brief
     brief = generate_brief(selected)
+
+        # Save a "latest" snapshot for the UI to read quickly
+    save_latest_snapshot({
+        "brief": brief,
+        "signals": selected,
+        "builder_radar": builder_radar,
+        "product_watch": product_watch,
+        "action_queue": action_queue[:25],
+        "topic_trends": topics[:25],
+        "new_since_yesterday": new_items[:25],
+        "stats": {
+            "raw_total": len(all_news),
+            "kept_after_relevance": len(kept),
+            "selected": len(selected),
+            "builder_radar": len(builder_radar),
+            "product_watch": len(product_watch),
+            "dropped": len(dropped),
+        }
+    })
+
+
 
     return {
         "brief": brief,

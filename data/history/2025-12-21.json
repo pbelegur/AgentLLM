@@ -1,5 +1,5 @@
 {
-  "date": "2025-12-20",
+  "date": "2025-12-21",
   "signals": [
     {
       "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
@@ -231,51 +231,6 @@
       "score": 1
     },
     {
-      "title": "Scammers in China Are Using AI-Generated Images to Get Refunds",
-      "url": "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/",
-      "source": "WIRED (AI)",
-      "tag": "OTHER",
-      "topics": [],
-      "priority": "LOW",
-      "score": 1
-    },
-    {
-      "title": "6 Scary Predictions for AI in 2026",
-      "url": "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/",
-      "source": "WIRED (AI)",
-      "tag": "OTHER",
-      "topics": [],
-      "priority": "LOW",
-      "score": 1
-    },
-    {
-      "title": "This Chrome Extension Turns LinkedIn Posts About AI Into Facts About Allen Iverson",
-      "url": "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/",
-      "source": "WIRED (AI)",
-      "tag": "OTHER",
-      "topics": [],
-      "priority": "LOW",
-      "score": 1
-    },
-    {
-      "title": "The Ultra-Realistic AI Face Swapping Platform Driving Romance Scams",
-      "url": "https://www.wired.com/story/the-ultra-realistic-ai-face-swapping-platform-driving-romance-scams/",
-      "source": "WIRED (AI)",
-      "tag": "OTHER",
-      "topics": [],
-      "priority": "LOW",
-      "score": 1
-    },
-    {
-      "title": "‘Wicked’ Director Jon M. Chu on ‘What Makes Art Beautiful’ in the AI Era",
-      "url": "https://www.wired.com/story/uncanny-valley-podcast-wicked-director-jon-m-chu/",
-      "source": "WIRED (AI)",
-      "tag": "OTHER",
-      "topics": [],
-      "priority": "LOW",
-      "score": 1
-    },
-    {
       "title": "Ex-Splunk execs’ startup Resolve AI hits $1 billion valuation with Series A",
       "url": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/",
       "source": "TechCrunch",
@@ -297,6 +252,51 @@
       "title": "Rest in Hell, Fake AI-Made YouTube Trailers",
       "url": "https://gizmodo.com/rest-in-hell-fake-ai-made-youtube-trailers-2000701825",
       "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "AI Image Generators Default to the Same 12 Photo Styles, Study Finds",
+      "url": "https://gizmodo.com/ai-image-generators-default-to-the-same-12-photo-styles-study-finds-2000702012",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Engadget Podcast: 2025 was the year of AI, smartglasses and spineless Big Tech",
+      "url": "https://www.engadget.com/social-media/engadget-podcast-2025-was-the-year-of-ai-smartglasses-and-spineless-big-tech-143000338.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Scammers in China Are Using AI-Generated Images to Get Refunds",
+      "url": "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "6 Scary Predictions for AI in 2026",
+      "url": "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "This Chrome Extension Turns LinkedIn Posts About AI Into Facts About Allen Iverson",
+      "url": "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/",
+      "source": "WIRED (AI)",
       "tag": "OTHER",
       "topics": [],
       "priority": "LOW",

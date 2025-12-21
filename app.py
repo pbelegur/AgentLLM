@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, request
 import time
 import main
+import os
+import json
 
 app = Flask(__name__)
 
@@ -9,21 +11,21 @@ _last_run_ts = 0.0
 _last_result = None
 
 
+def _read_latest():
+    try:
+        if os.path.exists("data/latest.json"):
+            with open("data/latest.json", "r", encoding="utf-8") as f:
+                return json.load(f)
+    except Exception:
+        return None
+    return None
+
+
 def _get_bool(name: str, default: bool) -> bool:
     v = request.args.get(name, None)
     if v is None:
         return default
     return v.lower() in ("1", "true", "yes", "y", "on")
-
-
-def _get_int(name: str, default: int) -> int:
-    v = request.args.get(name, None)
-    if v is None:
-        return default
-    try:
-        return int(v)
-    except Exception:
-        return default
 
 
 def _strip_heavy_fields(payload: dict) -> dict:
@@ -81,7 +83,16 @@ def run():
     include_dropped = _get_bool("include_dropped", False)
     mode = request.args.get("mode", "product").lower()
 
-    data, cached = _run_cached(force=force)
+    # If scheduler is running, serve the latest snapshot (fast + always updating)
+    if not force:
+        latest = _read_latest()
+        if latest is not None:
+            data = latest
+            cached = True  # means served from latest.json
+        else:
+            data, cached = _run_cached(force=False)
+    else:
+        data, cached = _run_cached(force=True)
 
     if not include_dropped:
         data = dict(data)
@@ -103,61 +114,93 @@ def ui():
   <meta charset="utf-8"/>
   <title>AI Radar</title>
   <style>
-    body { font-family: Arial, sans-serif; background:#0b1020; color:#e7e7e7; margin:0; }
-    .wrap { max-width: 1200px; margin: 26px auto; padding: 0 18px; }
-    .bar { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:16px 18px;
-           background: linear-gradient(90deg, #1a1f3a, #0b2a2a); border-radius: 14px; border:1px solid rgba(255,255,255,.08);}
-    .btn { padding:10px 12px; border-radius:10px; border:1px solid rgba(255,255,255,.14);
-           background:#141a33; color:#fff; cursor:pointer; font-weight:700; }
-    .btn.secondary { background:#102636; }
-    .btn.good { background:#10311f; }
-    .tabs { display:flex; gap:10px; margin-top:14px; flex-wrap:wrap; }
-    .tab { padding:10px 12px; border-radius:10px; border:1px solid rgba(255,255,255,.14);
-           background:#0f1530; cursor:pointer; font-weight:700; }
-    .tab.active { background:#18224a; }
-    .muted { color: rgba(255,255,255,.7); font-size: 13px; }
-    .card { margin-top:14px; padding:16px; border-radius:14px; background:#0f1530; border:1px solid rgba(255,255,255,.08); }
-    .pill { display:inline-block; padding:3px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.12);
-            font-size:12px; margin-right:8px; color: rgba(255,255,255,.85); }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b1020; color:#e7e7e7; margin:0; }
+    .wrap { max-width: 980px; margin: 22px auto; padding: 0 16px; }
+    .top { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; padding:14px 14px;
+           background:#101735; border-radius: 12px; border:1px solid rgba(255,255,255,.08); }
+    .title { font-size:18px; font-weight:850; }
+    .sub { font-size:12px; color: rgba(255,255,255,.65); margin-top:4px; }
+    .btns { display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    button { padding:9px 10px; border-radius:10px; border:1px solid rgba(255,255,255,.14);
+             background:#141a33; color:#fff; cursor:pointer; font-weight:650; }
+    button.secondary { background:#102636; }
+    button.good { background:#10311f; }
+    .meta { margin:10px 2px; font-size:12px; color: rgba(255,255,255,.7); }
+    details { margin-top:12px; background:#0f1530; border-radius:12px; border:1px solid rgba(255,255,255,.08); }
+    summary { padding:12px 14px; cursor:pointer; font-weight:800; }
+    .box { padding: 0 14px 14px 14px; }
+    .item { padding:10px 0; border-top:1px solid rgba(255,255,255,.08); }
+    .item:first-child { border-top:none; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:6px; color: rgba(255,255,255,.7); font-size:12px; }
+    .badge { display:inline-block; padding:2px 8px; border:1px solid rgba(255,255,255,.14); border-radius:999px; }
     a { color:#7dd3fc; text-decoration:none; }
-    pre { white-space: pre-wrap; word-wrap: break-word; background:#0a0f22; padding:12px; border-radius:12px; overflow:auto; }
-    .grid { display:grid; grid-template-columns: 1fr; gap: 12px; }
-    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
+    pre { white-space: pre-wrap; word-wrap: break-word; background:#0a0f22; padding:12px; border-radius:10px; overflow:auto; }
+    .small { font-size:13px; color: rgba(255,255,255,.88); margin-top:6px; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="bar">
-      <div>
-        <div style="font-size:20px;font-weight:900;">AI Radar</div>
-        <div class="muted">Builder • Actions • Topics • Products</div>
-      </div>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <button class="btn" onclick="load(false)">Run (cached)</button>
-        <button class="btn secondary" onclick="load(true)">Force refresh</button>
-        <button class="btn good" onclick="toggleDebug()">Toggle debug</button>
-        <button class="btn" onclick="toggleDropped()">Toggle dropped</button>
-      </div>
+<div class="wrap">
+  <div class="top">
+    <div>
+      <div class="title">AI Radar</div>
+      <div class="sub">Simple view: brief + lists (Builder, Actions, Topics, Products)</div>
     </div>
-
-    <div id="meta" class="muted" style="margin-top:10px;"></div>
-
-    <div class="tabs">
-      <div class="tab active" id="tab-summary" onclick="setTab('summary')">Summary</div>
-      <div class="tab" id="tab-builder" onclick="setTab('builder')">Builder Radar</div>
-      <div class="tab" id="tab-actions" onclick="setTab('actions')">Action Queue</div>
-      <div class="tab" id="tab-topics" onclick="setTab('topics')">Topic Tracker</div>
-      <div class="tab" id="tab-products" onclick="setTab('products')">Product Watch</div>
+    <div class="btns">
+      <button onclick="load(false)">Run (cached)</button>
+      <button class="secondary" onclick="load(true)">Force refresh</button>
+      <button class="good" onclick="toggleDebug()">Debug</button>
+      <button onclick="toggleDropped()">Dropped</button>
     </div>
-
-    <div id="content"></div>
-    <div id="raw" class="card" style="display:none;"></div>
   </div>
+
+  <div id="meta" class="meta"></div>
+
+  <details open>
+    <summary>Brief</summary>
+    <div class="box">
+      <pre id="brief"></pre>
+    </div>
+  </details>
+
+  <details open>
+    <summary>New since last snapshot</summary>
+    <div class="box" id="new"></div>
+  </details>
+
+  <details>
+    <summary>Builder Radar</summary>
+    <div class="box" id="builder"></div>
+  </details>
+
+  <details>
+    <summary>Action Queue</summary>
+    <div class="box" id="actions"></div>
+  </details>
+
+  <details>
+    <summary>Topic Tracker</summary>
+    <div class="box" id="topics"></div>
+  </details>
+
+  <details>
+    <summary>Product Watch</summary>
+    <div class="box" id="products"></div>
+  </details>
+
+  <details id="droppedWrap" style="display:none;">
+    <summary>Dropped</summary>
+    <div class="box" id="dropped"></div>
+  </details>
+
+  <details id="rawWrap" style="display:none;">
+    <summary>Debug JSON</summary>
+    <div class="box"><pre id="raw"></pre></div>
+  </details>
+</div>
 
 <script>
 let DEBUG = false;
 let SHOW_DROPPED = false;
-let TAB = "summary";
 
 function esc(s){
   return (s ?? "").toString()
@@ -166,72 +209,53 @@ function esc(s){
     .replaceAll("'","&#039;");
 }
 
-function setTab(t){
-  TAB = t;
-  document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
-  document.getElementById("tab-"+t).classList.add("active");
-  load(false);
-}
-
-function toggleDebug(){ DEBUG = !DEBUG; load(false); }
-function toggleDropped(){ SHOW_DROPPED = !SHOW_DROPPED; load(false); }
-
-function renderSignalCard(s){
-  const title = esc(s.title);
+function fmtItem(s, showAction=true){
+  const title = esc(s.title || "");
   const url = esc(s.url || "#");
   const src = esc(s.source || "");
   const tag = esc(s.tag || "");
-  const pr = esc(s.priority || "");
-  const ch = esc(s.change_type || "");
-  const topics = (s.topics || []).map(t => `<span class="pill">${esc(t)}</span>`).join("");
+  const pr  = esc(s.priority || "");
+  const ch  = esc(s.change_type || "");
+  const topics = (s.topics || []).slice(0,6).map(t => `<span class="badge">${esc(t)}</span>`).join(" ");
   const action = esc(s.action || "");
 
   return `
-    <div class="card">
-      <div style="font-size:16px;font-weight:900;">
+    <div class="item">
+      <div style="font-weight:850;">
         <a href="${url}" target="_blank" rel="noreferrer">${title}</a>
       </div>
-      <div class="muted" style="margin-top:6px;">
-        <span class="pill">${src}</span>
-        <span class="pill">${tag}</span>
-        <span class="pill">${pr}</span>
-        <span class="pill">${ch}</span>
+      <div class="row">
+        <span class="badge">${src}</span>
+        <span class="badge">${tag}</span>
+        <span class="badge">${pr}</span>
+        <span class="badge">${ch}</span>
       </div>
-      <div style="margin-top:8px;">${topics}</div>
-      <div style="margin-top:10px;"><b>Action:</b> ${action}</div>
+      ${topics ? `<div class="row">${topics}</div>` : ""}
+      ${showAction && action ? `<div class="small"><b>Action:</b> ${action}</div>` : ""}
     </div>
   `;
 }
 
-function renderDropped(dropped){
-  if(!SHOW_DROPPED) return "";
-  const items = (dropped || []).map(d => {
-    const t = esc(d.title || "");
-    const src = esc(d.source || "");
-    const agent = esc((d.drop_trace && d.drop_trace.agent) || "");
-    const reason = esc((d.drop_trace && d.drop_trace.reason) || "");
-    return `<div style="margin-bottom:10px;">
-              <div style="font-weight:800;">${t}</div>
-              <div class="muted">${src} • ${agent} • ${reason}</div>
-            </div>`;
-  }).join("");
-  return `<div class="card"><div style="font-weight:900;margin-bottom:8px;">Dropped</div>${items}</div>`;
+function fmtTopic(t){
+  const topic = esc(t.topic);
+  const c7 = esc(t.count_7d);
+  const ct = esc(t.count_today);
+  const d = t.delta_vs_yesterday;
+  const delta = (d === null || d === undefined) ? "—" : (d > 0 ? `+${d}` : `${d}`);
+  return `
+    <div class="item">
+      <div style="font-weight:850;">${topic}</div>
+      <div class="row">
+        <span class="badge">7d: ${c7}</span>
+        <span class="badge">today: ${ct}</span>
+        <span class="badge">Δ: ${esc(delta)}</span>
+      </div>
+    </div>
+  `;
 }
 
-function renderTopics(trends){
-  const rows = (trends || []).map(t => {
-    const topic = esc(t.topic);
-    const c7 = esc(t.count_7d);
-    const ct = esc(t.count_today);
-    const d = t.delta_vs_yesterday;
-    const delta = d > 0 ? `+${d}` : `${d}`;
-    return `<div class="card">
-              <div style="font-weight:900;">${topic}</div>
-              <div class="muted">7d: ${c7} • today: ${ct} • Δ vs yesterday: ${esc(delta)}</div>
-            </div>`;
-  }).join("");
-  return `<div class="grid">${rows}</div>`;
-}
+function toggleDebug(){ DEBUG = !DEBUG; load(false); }
+function toggleDropped(){ SHOW_DROPPED = !SHOW_DROPPED; load(false); }
 
 async function load(force){
   const mode = DEBUG ? "debug" : "product";
@@ -241,52 +265,67 @@ async function load(force){
 
   const meta = data._meta || {};
   const stats = data.stats || {};
+  const updated = data.generated_at_utc ? ` • updated: ${data.generated_at_utc}` : "";
   document.getElementById("meta").textContent =
-    `cached: ${meta.cached} • mode: ${meta.mode} • ttl: ${meta.ttl}s • raw: ${stats.raw_total} • selected: ${stats.selected}`;
+    `cached: ${meta.cached} • mode: ${meta.mode} • ttl: ${meta.ttl}s • raw: ${stats.raw_total} • selected: ${stats.selected}` + updated;
 
-  let html = "";
+  document.getElementById("brief").textContent = data.brief || "";
 
-  if(TAB === "summary"){
-    html += `<div class="card"><div style="font-weight:900;margin-bottom:8px;">Brief</div><pre>${esc(data.brief)}</pre></div>`;
-    html += `<div class="card"><div style="font-weight:900;margin-bottom:8px;">New since yesterday</div>` +
-            (data.new_since_yesterday || []).slice(0,10).map(renderSignalCard).join("") +
-            `</div>`;
-    html += renderDropped(data.dropped);
+  const newItems = (data.new_since_yesterday || data.new_since_last || data.new || data.signals || []).slice(0,10);
+  document.getElementById("new").innerHTML =
+    newItems.length ? newItems.map(s => fmtItem(s, true)).join("") : `<div class="item">No new items yet.</div>`;
 
-  } else if(TAB === "builder"){
-    html += `<div class="card"><div style="font-weight:900;margin-bottom:8px;">Builder Radar</div></div>`;
-    html += (data.builder_radar || []).map(renderSignalCard).join("");
-    html += renderDropped(data.dropped);
+  document.getElementById("builder").innerHTML =
+    (data.builder_radar || []).slice(0,20).map(s => fmtItem(s, true)).join("") || `<div class="item">No builder signals.</div>`;
 
-  } else if(TAB === "actions"){
-    html += `<div class="card"><div style="font-weight:900;margin-bottom:8px;">Action Queue</div><div class="muted">Sorted by priority + score</div></div>`;
-    html += (data.action_queue || []).map(renderSignalCard).join("");
-    html += renderDropped(data.dropped);
+  document.getElementById("actions").innerHTML =
+    (data.action_queue || []).slice(0,25).map(s => fmtItem(s, true)).join("") || `<div class="item">No actions.</div>`;
 
-  } else if(TAB === "topics"){
-    html += `<div class="card"><div style="font-weight:900;margin-bottom:8px;">Topic Tracker</div><div class="muted">Counts from saved daily history</div></div>`;
-    html += renderTopics(data.topic_trends || []);
-    html += renderDropped(data.dropped);
+  document.getElementById("topics").innerHTML =
+    (data.topic_trends || []).slice(0,25).map(fmtTopic).join("") || `<div class="item">No topic history yet.</div>`;
 
-  } else if(TAB === "products"){
-    html += `<div class="card"><div style="font-weight:900;margin-bottom:8px;">Product Watch</div></div>`;
-    html += (data.product_watch || []).map(renderSignalCard).join("");
-    html += renderDropped(data.dropped);
+  document.getElementById("products").innerHTML =
+    (data.product_watch || []).slice(0,20).map(s => fmtItem(s, true)).join("") || `<div class="item">No product signals.</div>`;
+
+  // Dropped
+  const droppedWrap = document.getElementById("droppedWrap");
+  if(SHOW_DROPPED){
+    droppedWrap.style.display = "block";
+    const dropped = data.dropped || [];
+    document.getElementById("dropped").innerHTML =
+      dropped.length ? dropped.map(d => {
+        const t = esc(d.title || "");
+        const src = esc(d.source || "");
+        const agent = esc((d.drop_trace && d.drop_trace.agent) || "");
+        const reason = esc((d.drop_trace && d.drop_trace.reason) || "");
+        return `<div class="item">
+                  <div style="font-weight:850;">${t}</div>
+                  <div class="row">
+                    <span class="badge">${src}</span>
+                    <span class="badge">${agent}</span>
+                    <span class="badge">${reason}</span>
+                  </div>
+                </div>`;
+      }).join("") : `<div class="item">No dropped items.</div>`;
+  } else {
+    droppedWrap.style.display = "none";
+    document.getElementById("dropped").innerHTML = "";
   }
 
-  document.getElementById("content").innerHTML = html;
-
-  const raw = document.getElementById("raw");
+  // Debug JSON
+  const rawWrap = document.getElementById("rawWrap");
   if(DEBUG){
-    raw.style.display = "block";
-    raw.innerHTML = `<div style="font-weight:900;margin-bottom:8px;">Debug JSON</div><pre>${esc(JSON.stringify(data, null, 2))}</pre>`;
+    rawWrap.style.display = "block";
+    document.getElementById("raw").textContent = JSON.stringify(data, null, 2);
   } else {
-    raw.style.display = "none";
-    raw.innerHTML = "";
+    rawWrap.style.display = "none";
+    document.getElementById("raw").textContent = "";
   }
 }
 
 load(false);
+// Refresh UI every 60s (reads latest snapshot; doesn't hammer RSS)
+setInterval(() => load(false), 60000);
 </script>
 </body>
 </html>
