@@ -3,7 +3,7 @@ import requests
 import json
 import os
 import re
-from datetime import datetime, timezone, date
+from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import defaultdict, Counter
 
@@ -21,15 +21,13 @@ HISTORY_DAYS = 7            # trends window
 CACHE_TTL_SECONDS = 120     # UI cache
 
 ENABLE_DROPPED = True       # keep drop reasons
-ENABLE_LLM = False          # legacy placeholder; pipeline is rule-based by default
 
 # --- Optional local LLM annotator (runs only on selected Top-N) ---
-ENABLE_LLM_ANNOTATOR = True   # set True after you install/run Ollama locally
+ENABLE_LLM_ANNOTATOR = True
 LLM_MODEL = os.getenv("LLM_MODEL", "qwen2.5:1.5b")
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
 LLM_ANNOTATE_TOP_N = 5       # only annotate the first N of the ranked list
 LLM_TIMEOUT_SECONDS = 35
-
 
 # =========================================================
 # SOURCES
@@ -49,7 +47,6 @@ RSS_FEEDS = {
 HN_TOPSTORIES_URL = "https://hacker-news.firebaseio.com/v0/topstories.json"
 HN_ITEM_URL = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 
-
 # =========================================================
 # STORAGE
 # =========================================================
@@ -58,7 +55,6 @@ RAW_NEWS_PATH = "data/raw_news.json"
 SIGNAL_MEMORY_PATH = "data/signal_memory.json"
 LATEST_PATH = "data/latest.json"
 HISTORY_DIR = "data/history"
-
 
 # =========================================================
 # SIGNAL ONTOLOGY (rule layer)
@@ -77,7 +73,6 @@ AI_COMPANIES = [
     "ollama", "groq", "perplexity", "xai"
 ]
 
-# Rule tags used in your current pipeline
 RULE_TAGS = [
     "MODEL_RELEASE", "SDK_CHANGE", "OSS_RELEASE", "DEPRECATION",
     "CVE_SECURITY", "OUTAGE", "PRICING", "PRODUCT_FEATURE",
@@ -89,7 +84,6 @@ TOPIC_SET = [
     "open_source", "devtools", "products", "hiring"
 ]
 
-
 # =========================================================
 # FILE UTILS
 # =========================================================
@@ -98,7 +92,6 @@ def ensure_dirs():
     os.makedirs("data", exist_ok=True)
     os.makedirs(HISTORY_DIR, exist_ok=True)
 
-
 def load_json(path, default):
     try:
         with open(path, "r", encoding="utf-8") as f:
@@ -106,12 +99,10 @@ def load_json(path, default):
     except Exception:
         return default
 
-
 def save_json(path, obj):
     ensure_dirs()
     with open(path, "w", encoding="utf-8") as f:
         json.dump(obj, f, indent=2, ensure_ascii=False)
-
 
 def atomic_save_json(path: str, obj):
     ensure_dirs()
@@ -120,12 +111,10 @@ def atomic_save_json(path: str, obj):
         json.dump(obj, f, indent=2, ensure_ascii=False)
     os.replace(tmp_path, path)
 
-
 def save_latest_snapshot(payload: dict):
     payload = dict(payload)
     payload["generated_at_utc"] = datetime.now(timezone.utc).isoformat()
     atomic_save_json(LATEST_PATH, payload)
-
 
 # =========================================================
 # INGESTION
@@ -141,7 +130,6 @@ def fetch_rss(feed_name: str, url: str, limit: int):
             "source": feed_name
         })
     return items
-
 
 def fetch_hn_top(limit: int):
     ids = requests.get(HN_TOPSTORIES_URL, timeout=20).json()[:limit]
@@ -165,7 +153,6 @@ def fetch_hn_top(limit: int):
                 out.append(it)
     return out
 
-
 def dedupe_items(items):
     seen = set()
     out = []
@@ -176,7 +163,6 @@ def dedupe_items(items):
         seen.add(key)
         out.append(it)
     return out
-
 
 # =========================================================
 # AGENTS (rule layer)
@@ -197,7 +183,6 @@ class AIRelevanceAgent:
         }
         return decision, item
 
-
 class EntityAgent:
     def process(self, item: dict):
         t = (item.get("title") or "").lower()
@@ -208,13 +193,17 @@ class EntityAgent:
         item["entities"] = sorted(set(entities))
         return item
 
-
 class TaggingAgent:
     def process(self, item: dict):
         t = (item.get("title") or "").lower()
 
         tag = "OTHER"
-        if any(x in t for x in ["cve", "vulnerability", "security flaw", "zero-day", "exploit"]):
+
+        # Security: avoid false positives on "exploitation" (abuse context).
+        # Only treat "exploit" as CVE_SECURITY when it's clearly about hacking/vulns.
+        if any(x in t for x in ["cve", "vulnerability", "security flaw", "zero-day"]) or (
+            "exploit" in t and any(x in t for x in ["vulnerability", "security", "hack", "breach", "attack"])
+        ):
             tag = "CVE_SECURITY"
         elif any(x in t for x in ["outage", "down", "incident", "service disruption"]):
             tag = "OUTAGE"
@@ -240,7 +229,6 @@ class TaggingAgent:
         item["tag"] = tag
         item["tag_trace"] = {"agent": "TaggingAgent", "tag": tag}
         return item
-
 
 class TopicAgent:
     def process(self, item: dict):
@@ -272,7 +260,6 @@ class TopicAgent:
 
         item["topics"] = sorted(topics)
         return item
-
 
 class PriorityAgent:
     def process(self, item: dict):
@@ -313,7 +300,6 @@ class PriorityAgent:
         item["priority"] = priority
         return item
 
-
 class TemporalChangeAgent:
     def __init__(self, memory: dict):
         self.memory = memory
@@ -353,7 +339,6 @@ class TemporalChangeAgent:
                 self.memory[k]["count"] = int(self.memory[k].get("count", 0)) + 1
                 self.memory[k]["tag"] = it.get("tag")
 
-
 class ActionAgent:
     def process(self, item: dict):
         tag = item.get("tag", "OTHER")
@@ -379,7 +364,6 @@ class ActionAgent:
         item["action"] = action
         return item
 
-
 # =========================================================
 # OPTIONAL LLM AGENT (Top-N semantic enrichment)
 # =========================================================
@@ -395,8 +379,7 @@ class LLMAnnotatorAgent:
       - llm_topics (optional refined topics)
       - llm_action (optional refined action)
       - llm_confidence (0-100)
-
-    It does NOT override your rule outputs unless confidence is high.
+      - llm_why (short reason)
     """
 
     ALLOWED_TAGS = {
@@ -411,7 +394,7 @@ class LLMAnnotatorAgent:
     }
 
     def __init__(self, model: str):
-        self.model = model or "llama3.1"
+        self.model = model or "qwen2.5:1.5b"
 
     def _extract_json(self, s: str):
         if not s:
@@ -446,19 +429,25 @@ class LLMAnnotatorAgent:
         rule_tag = item.get("tag", "OTHER")
         rule_topics = item.get("topics", [])
 
-        prompt = (
-            "Given a tech headline, produce a compact annotation as JSON ONLY.\n"
-            "Headline: " + title + "\n"
-            "Source: " + source + "\n\n"
-            "Return JSON with keys:\n"
-            "summary: string (1-2 sentences, no hype)\n"
-            "tag: one of " + ", ".join(sorted(self.ALLOWED_TAGS)) + "\n"
-            "topics: array of 0-4 from " + ", ".join(sorted(self.ALLOWED_TOPICS)) + "\n"
-            "action: string (one concrete engineering next step)\n"
-            "confidence: integer 0-100\n\n"
-            "If the headline is not actually AI-related, set tag=OTHER, topics=[], confidence<=40.\n"
-            "Be conservative. Output ONLY JSON."
-        )
+        prompt = f"""
+You are an assistant that classifies tech headlines into engineering-relevant AI signals.
+
+Return ONLY valid JSON (no markdown, no extra text) with exactly these keys:
+summary: string (1-2 sentences, neutral)
+tag: one of [MODEL_RELEASE, SDK_CHANGE, OSS_RELEASE, DEPRECATION, CVE_SECURITY, OUTAGE, PRICING, PRODUCT_FEATURE, HIRING, INFRA, RESEARCH, OTHER]
+topics: array of 0-4 from [models, agents, inference, training, gpu, security, policy, open_source, devtools, products, hiring]
+action: string (one concrete next step an engineer can take)
+confidence: integer 0-100
+why: short string (why you picked this tag)
+
+Rules:
+- If this is NOT actually an AI/engineering signal, tag=OTHER, topics=[], confidence<=40.
+- "exploitation" in a policy/abuse context is NOT CVE_SECURITY. CVE_SECURITY is for vulnerabilities/patching.
+- Be conservative. If unsure, lower confidence.
+
+Headline: {title}
+Source: {source}
+""".strip()
 
         raw = self._ollama_generate(prompt)
         obj = self._extract_json(raw)
@@ -477,6 +466,8 @@ class LLMAnnotatorAgent:
 
         summary = obj.get("summary", "")
         action = obj.get("action", "")
+        why = obj.get("why", "")
+
         conf = obj.get("confidence", 0)
         try:
             conf = int(conf)
@@ -489,6 +480,7 @@ class LLMAnnotatorAgent:
         item["llm_topics"] = topics
         item["llm_action"] = action
         item["llm_confidence"] = conf
+        item["llm_why"] = why
         item["llm_trace"] = {"agent": "LLMAnnotatorAgent", "ok": True, "model": self.model}
 
         # Only override rule outputs when LLM is confident.
@@ -504,6 +496,7 @@ class LLMAnnotatorAgent:
     def annotate_topn(self, items: list, n: int):
         if not items or n <= 0:
             return items
+
         top = items[:n]
         rest = items[n:]
 
@@ -525,7 +518,6 @@ class LLMAnnotatorAgent:
 
         return ordered_top + rest
 
-
 # =========================================================
 # PIPELINE HELPERS
 # =========================================================
@@ -535,11 +527,9 @@ def diversify_and_select(items, k):
     for it in items:
         by_source[it.get("source", "Unknown")].append(it)
 
-    # Sort within each source
     for s in by_source:
         by_source[s].sort(key=lambda x: x.get("score", 0), reverse=True)
 
-    # Round-robin with cap
     out = []
     source_counts = Counter()
     sources = list(by_source.keys())
@@ -549,11 +539,9 @@ def diversify_and_select(items, k):
         if source_counts[src] < MAX_PER_SOURCE and by_source[src]:
             out.append(by_source[src].pop(0))
             source_counts[src] += 1
-        # drop empty sources
         sources = [s for s in sources if by_source[s]]
         idx += 1
     return out
-
 
 def build_sections(selected):
     builder_tags = {"CVE_SECURITY", "OUTAGE", "DEPRECATION", "SDK_CHANGE", "INFRA", "OSS_RELEASE", "PRICING"}
@@ -562,12 +550,9 @@ def build_sections(selected):
     builder_radar = [s for s in selected if s.get("tag") in builder_tags]
     product_watch = [s for s in selected if s.get("tag") in product_tags]
     action_queue = sorted(selected, key=lambda x: (x.get("priority") != "HIGH", -x.get("score", 0)))
-
     return builder_radar, product_watch, action_queue
 
-
 def save_history_snapshot(signals):
-    # time-stamped snapshots so trends move during the day
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H00")
     path = f"{HISTORY_DIR}/{stamp}.json"
     compact = []
@@ -583,7 +568,6 @@ def save_history_snapshot(signals):
         })
     save_json(path, {"date": stamp, "signals": compact})
 
-
 def load_history(n=HISTORY_DAYS):
     ensure_dirs()
     files = [f for f in os.listdir(HISTORY_DIR) if f.endswith(".json")]
@@ -593,13 +577,10 @@ def load_history(n=HISTORY_DAYS):
         hist.append(load_json(os.path.join(HISTORY_DIR, fname), default=None))
     return [h for h in hist if h and "signals" in h]
 
-
 def compute_topic_trends(history):
-    # expects list of snapshots with {signals:[{topics:[]}]}
     if not history:
         return []
 
-    # last snapshot = "today"
     today = history[-1]["signals"]
     yesterday = history[-2]["signals"] if len(history) >= 2 else []
 
@@ -613,7 +594,6 @@ def compute_topic_trends(history):
     c_today = topic_counts(today)
     c_yest = topic_counts(yesterday)
 
-    # 7d window across history
     c_7d = Counter()
     for snap in history:
         for s in snap.get("signals", []):
@@ -630,7 +610,6 @@ def compute_topic_trends(history):
         })
     return out
 
-
 def compute_new_since_last(history, selected):
     if not history or len(history) < 2:
         return selected[:10]
@@ -643,17 +622,17 @@ def compute_new_since_last(history, selected):
             out.append(s)
     return out[:20]
 
-
 def build_brief(selected):
     lines = ["Good morning.\n", "Here are the AI signals that actually matter today:\n"]
     for i, s in enumerate(selected[:10], 1):
         lines.append(f"{i}. {s.get('title')}")
-        lines.append(f"   Source: {s.get('source')} • Tag: {s.get('tag')} • Priority: {s.get('priority')} • Change: {s.get('change_type')}")
+        lines.append(
+            f"   Source: {s.get('source')} • Tag: {s.get('tag')} • Priority: {s.get('priority')} • Change: {s.get('change_type')}"
+        )
         if s.get("llm_summary"):
             lines.append(f"   Summary: {s.get('llm_summary')}")
         lines.append(f"   Action: {s.get('action')}\n")
     return "\n".join(lines).strip()
-
 
 # =========================================================
 # MAIN PIPELINE
@@ -718,6 +697,23 @@ def run_pipeline():
         llm_agent = LLMAnnotatorAgent(LLM_MODEL)
         selected = llm_agent.annotate_topn(selected, LLM_ANNOTATE_TOP_N)
 
+        # If LLM corrected tag/topics/action with high confidence, recompute priority + ensure action exists.
+        for i in range(min(LLM_ANNOTATE_TOP_N, len(selected))):
+            s = selected[i]
+            if s.get("llm_confidence", 0) >= 75:
+                s = priority_agent.process(s)
+
+                # If LLM didn't provide action (or it was blank), regenerate using corrected tag/topics.
+                if not (s.get("action") or "").strip():
+                    s = action_agent.process(s)
+
+                s["llm_override_applied"] = True
+            else:
+                s["llm_override_applied"] = False
+
+            # IMPORTANT: write back the updated dict
+            selected[i] = s
+
     # 5) sections + history
     builder_radar, product_watch, action_queue = build_sections(selected)
     save_history_snapshot(selected)
@@ -750,5 +746,6 @@ def run_pipeline():
             "dropped": len(dropped),
         }
     }
+
     save_latest_snapshot(payload)
     return payload

@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2025-12-30T05:39:41.044071+00:00",
+  "generated_at_utc": "2025-12-30T05:57:48.591794+00:00",
   "items": [
     {
       "title": "Meta just bought Manus, an AI startup everyone has been talking about",
@@ -727,6 +727,21 @@
       "source": "Engadget"
     },
     {
+      "title": "Moon phase today: What the moon will look like on December 30",
+      "url": "https://mashable.com/article/moon-phase-today-dec-30",
+      "source": "Mashable"
+    },
+    {
+      "title": "How to watch Tanzania vs. Tunisia online for free",
+      "url": "https://mashable.com/article/tanzania-tunisia-africa-cup-of-nations-2025-live-stream-for-free",
+      "source": "Mashable"
+    },
+    {
+      "title": "How to watch Benin vs. Senegal online for free",
+      "url": "https://mashable.com/article/benin-senegal-africa-cup-of-nations-2025-live-stream-for-free",
+      "source": "Mashable"
+    },
+    {
       "title": "NYT Connections Sports Edition today: Hints and answers for December 30, 2025",
       "url": "https://mashable.com/article/nyt-connections-sports-edition-hint-answer-today-december-30-2025",
       "source": "Mashable"
@@ -837,19 +852,29 @@
       "source": "Mashable"
     },
     {
-      "title": "Make 2026 the year your kid gets off their device",
-      "url": "https://mashable.com/article/how-to-get-kids-off-their-phones-screens",
-      "source": "Mashable"
+      "title": "ManusAI Joins Meta",
+      "url": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation",
+      "source": "HackerNews"
     },
     {
-      "title": "Netflix shares first glimpse of upcoming Take That doc",
-      "url": "https://mashable.com/video/netflix-take-that-documentary",
-      "source": "Mashable"
+      "title": "Google is dead. Where do we go now?",
+      "url": "https://www.circusscientist.com/2025/12/29/google-is-dead-where-do-we-go-now/",
+      "source": "HackerNews"
     },
     {
-      "title": "I tested the best phone cameras of 2025 — these took the best pictures",
-      "url": "https://mashable.com/article/best-phone-cameras-2025-list",
-      "source": "Mashable"
+      "title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
+      "url": "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/",
+      "source": "HackerNews"
+    },
+    {
+      "title": "GOG is getting acquired by its original co-founder",
+      "url": "https://www.gog.com/blog/gog-is-getting-acquired-by-its-original-co-founder-what-it-means-for-you/",
+      "source": "HackerNews"
+    },
+    {
+      "title": "Show HN: A Claude Code plugin that catch destructive Git and filesystem commands",
+      "url": "https://github.com/kenryu42/claude-code-safety-net",
+      "source": "HackerNews"
     },
     {
       "title": "MongoDB Server Security Update, December 2025",
@@ -862,53 +887,8 @@
       "source": "HackerNews"
     },
     {
-      "title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
-      "url": "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Google is dead. Where do we go now?",
-      "url": "https://www.circusscientist.com/2025/12/29/google-is-dead-where-do-we-go-now/",
-      "source": "HackerNews"
-    },
-    {
-      "title": "ManusAI Joins Meta",
-      "url": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Show HN: A Claude Code plugin that catch destructive Git and filesystem commands",
-      "url": "https://github.com/kenryu42/claude-code-safety-net",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Stranger Things creator says turn off \"garbage\" settings",
-      "url": "https://screenrant.com/stranger-things-creator-turn-off-settings-premiere/",
-      "source": "HackerNews"
-    },
-    {
-      "title": "GOG is getting acquired by its original co-founder",
-      "url": "https://www.gog.com/blog/gog-is-getting-acquired-by-its-original-co-founder-what-it-means-for-you/",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Show HN: Stop Claude Code from forgetting everything",
-      "url": "https://github.com/mutable-state-inc/ensue-skill",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Incremental Backups of Gmail Takeouts",
-      "url": "https://baecher.dev/stdout/incremental-backups-of-gmail-takeouts/",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Hacking Washing Machines [video]",
-      "url": "https://media.ccc.de/v/39c3-hacking-washing-machines",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Streaming compression beats framed compression",
-      "url": "https://bou.ke/blog/compressed/",
+      "title": "Show HN: Euclidle – Guess the Coordinates in N‑Dimensional Space",
+      "url": "https://euclidle.com/",
       "source": "HackerNews"
     },
     {
@@ -917,23 +897,23 @@
       "source": "HackerNews"
     },
     {
-      "title": "100x (YC S22) Is Hiring a Front End Engineer",
-      "url": "https://news.ycombinator.com/item?id=46428206",
+      "title": "Hacking Washing Machines [video]",
+      "url": "https://media.ccc.de/v/39c3-hacking-washing-machines",
       "source": "HackerNews"
     },
     {
-      "title": "Outside, Dungeon, Town: Integrating the Three Places in Videogames (2024)",
-      "url": "https://keithburgun.net/outside-dungeon-town-integrating-the-three-places-in-videogames/",
+      "title": "Show HN: Stop Claude Code from forgetting everything",
+      "url": "https://github.com/mutable-state-inc/ensue-skill",
       "source": "HackerNews"
     },
     {
-      "title": "Static Allocation with Zig",
-      "url": "https://nickmonad.blog/2025/static-allocation-with-zig-kv/",
+      "title": "Stranger Things creator says turn off \"garbage\" settings",
+      "url": "https://screenrant.com/stranger-things-creator-turn-off-settings-premiere/",
       "source": "HackerNews"
     },
     {
-      "title": "When someone says they hate your product",
-      "url": "https://www.getflack.com/p/responding-to-negative-feedback",
+      "title": "Incremental Backups of Gmail Takeouts",
+      "url": "https://baecher.dev/stdout/incremental-backups-of-gmail-takeouts/",
       "source": "HackerNews"
     },
     {
@@ -942,13 +922,33 @@
       "source": "HackerNews"
     },
     {
-      "title": "Vitest Browser Mode Guide",
-      "url": "https://howtotestfrontend.com/resources/vitest-browser-mode-guide-and-setup-info",
+      "title": "Outside, Dungeon, Town: Integrating the Three Places in Videogames (2024)",
+      "url": "https://keithburgun.net/outside-dungeon-town-integrating-the-three-places-in-videogames/",
       "source": "HackerNews"
     },
     {
-      "title": "I migrated to an almost all-EU stack and saved 500€ per year",
-      "url": "https://www.zeitgeistofbytes.com/p/bye-bye-big-tech-how-i-migrated-to",
+      "title": "Streaming compression beats framed compression",
+      "url": "https://bou.ke/blog/compressed/",
+      "source": "HackerNews"
+    },
+    {
+      "title": "When someone says they hate your product",
+      "url": "https://www.getflack.com/p/responding-to-negative-feedback",
+      "source": "HackerNews"
+    },
+    {
+      "title": "Static Allocation with Zig",
+      "url": "https://nickmonad.blog/2025/static-allocation-with-zig-kv/",
+      "source": "HackerNews"
+    },
+    {
+      "title": "100x (YC S22) Is Hiring a Front End Engineer",
+      "url": "https://news.ycombinator.com/item?id=46428206",
+      "source": "HackerNews"
+    },
+    {
+      "title": "Flame Graphs vs Tree Maps vs Sunburst (2017)",
+      "url": "https://www.brendangregg.com/blog/2017-02-06/flamegraphs-vs-treemaps-vs-sunburst.html",
       "source": "HackerNews"
     },
     {
@@ -962,13 +962,13 @@
       "source": "HackerNews"
     },
     {
-      "title": "Stanford Lecture: Dr. Don Knuth – Adventures with Knight's Tours [video]",
-      "url": "https://www.youtube.com/watch?v=MKiRte-tnMY",
+      "title": "I migrated to an almost all-EU stack and saved 500€ per year",
+      "url": "https://www.zeitgeistofbytes.com/p/bye-bye-big-tech-how-i-migrated-to",
       "source": "HackerNews"
     },
     {
-      "title": "Flame Graphs vs Tree Maps vs Sunburst (2017)",
-      "url": "https://www.brendangregg.com/blog/2017-02-06/flamegraphs-vs-treemaps-vs-sunburst.html",
+      "title": "Stanford Lecture: Dr. Don Knuth – Adventures with Knight's Tours [video]",
+      "url": "https://www.youtube.com/watch?v=MKiRte-tnMY",
       "source": "HackerNews"
     },
     {
@@ -977,18 +977,8 @@
       "source": "HackerNews"
     },
     {
-      "title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
-      "url": "https://linuxdaw.org/",
-      "source": "HackerNews"
-    },
-    {
-      "title": "A production bug that made me care about undefined behavior",
-      "url": "https://gaultier.github.io/blog/the_production_bug_that_made_me_care_about_undefined_behavior.html",
-      "source": "HackerNews"
-    },
-    {
-      "title": "List of domains censored by German ISPs",
-      "url": "https://cuiiliste.de/domains",
+      "title": "Vitest Browser Mode Guide",
+      "url": "https://howtotestfrontend.com/resources/vitest-browser-mode-guide-and-setup-info",
       "source": "HackerNews"
     },
     {
@@ -997,8 +987,8 @@
       "source": "HackerNews"
     },
     {
-      "title": "All Delisted Steam Games",
-      "url": "https://delistedgames.com/all-delisted-steam-games/",
+      "title": "A production bug that made me care about undefined behavior",
+      "url": "https://gaultier.github.io/blog/the_production_bug_that_made_me_care_about_undefined_behavior.html",
       "source": "HackerNews"
     },
     {
@@ -1012,6 +1002,16 @@
       "source": "HackerNews"
     },
     {
+      "title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
+      "url": "https://linuxdaw.org/",
+      "source": "HackerNews"
+    },
+    {
+      "title": "What an unprocessed photo looks like",
+      "url": "https://maurycyz.com/misc/raw_photo/",
+      "source": "HackerNews"
+    },
+    {
       "title": "Libgodc: Write Go Programs for Sega Dreamcast",
       "url": "https://github.com/drpaneas/libgodc",
       "source": "HackerNews"
@@ -1022,8 +1022,13 @@
       "source": "HackerNews"
     },
     {
-      "title": "What an unprocessed photo looks like",
-      "url": "https://maurycyz.com/misc/raw_photo/",
+      "title": "All Delisted Steam Games",
+      "url": "https://delistedgames.com/all-delisted-steam-games/",
+      "source": "HackerNews"
+    },
+    {
+      "title": "List of domains censored by German ISPs",
+      "url": "https://cuiiliste.de/domains",
       "source": "HackerNews"
     },
     {
@@ -1032,13 +1037,8 @@
       "source": "HackerNews"
     },
     {
-      "title": "Obelisk 0.32: Cancellation, WebAPI, Postgres",
-      "url": "https://obeli.sk/blog/announcing-obelisk-0-32/",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Nvidia takes $5B stake in Intel under September agreement",
-      "url": "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/",
+      "title": "Benchmarking Self-Hosted S3-Compatible Storage",
+      "url": "https://www.repoflow.io/blog/benchmarking-self-hosted-s3-compatible-storage-a-practical-performance-comparison",
       "source": "HackerNews"
     },
     {
@@ -1047,18 +1047,13 @@
       "source": "HackerNews"
     },
     {
-      "title": "Why is calling my asm function from Rust slower than calling it from C?",
-      "url": "https://ohadravid.github.io/posts/2025-12-rav1d-faster-asm/",
+      "title": "Huge Binaries",
+      "url": "https://fzakaria.com/2025/12/28/huge-binaries",
       "source": "HackerNews"
     },
     {
-      "title": "High-performance C++ hash table using grouped SIMD metadata scanning",
-      "url": "https://github.com/Cranot/grouped-simd-hashtable",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Static Allocation for Compilers",
-      "url": "https://matklad.github.io/2025/12/23/static-allocation-compilers.html",
+      "title": "Obelisk 0.32: Cancellation, WebAPI, Postgres",
+      "url": "https://obeli.sk/blog/announcing-obelisk-0-32/",
       "source": "HackerNews"
     },
     {
@@ -1067,13 +1062,13 @@
       "source": "HackerNews"
     },
     {
-      "title": "Huge Binaries",
-      "url": "https://fzakaria.com/2025/12/28/huge-binaries",
+      "title": "Nvidia takes $5B stake in Intel under September agreement",
+      "url": "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/",
       "source": "HackerNews"
     },
     {
-      "title": "Benchmarking Self-Hosted S3-Compatible Storage",
-      "url": "https://www.repoflow.io/blog/benchmarking-self-hosted-s3-compatible-storage-a-practical-performance-comparison",
+      "title": "Why is calling my asm function from Rust slower than calling it from C?",
+      "url": "https://ohadravid.github.io/posts/2025-12-rav1d-faster-asm/",
       "source": "HackerNews"
     },
     {
@@ -1082,8 +1077,18 @@
       "source": "HackerNews"
     },
     {
-      "title": "My First Meshtastic Network",
-      "url": "https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html",
+      "title": "High-performance C++ hash table using grouped SIMD metadata scanning",
+      "url": "https://github.com/Cranot/grouped-simd-hashtable",
+      "source": "HackerNews"
+    },
+    {
+      "title": "Reflections on a Year of Prolog and LLMs",
+      "url": "https://deepclause.substack.com/p/coming-soon",
+      "source": "HackerNews"
+    },
+    {
+      "title": "Static Allocation for Compilers",
+      "url": "https://matklad.github.io/2025/12/23/static-allocation-compilers.html",
       "source": "HackerNews"
     },
     {
@@ -1092,13 +1097,8 @@
       "source": "HackerNews"
     },
     {
-      "title": "Lead-Free Organic–Inorganic Halobismuthate for Large Piezoelectric Effect",
-      "url": "https://pubs.acs.org/doi/10.1021/jacs.5c15484",
-      "source": "HackerNews"
-    },
-    {
-      "title": "Developing a Beautiful and Performant Block Editor in Qt C++ and QML",
-      "url": "https://rubymamistvalove.com/block-editor",
+      "title": "My First Meshtastic Network",
+      "url": "https://rickcarlino.com/notes/electronics/my-first-meshtastic-network.html",
       "source": "HackerNews"
     }
   ]

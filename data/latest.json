@@ -1,5 +1,5 @@
 {
-  "brief": "Good morning.\n\nHere are the AI signals that actually matter today:\n\n1. OpenAI’s child exploitation reports increased sharply this year\n   Source: Ars Technica • Tag: CVE_SECURITY • Priority: HIGH • Change: ONGOING\n   Action: Check if your stack uses the affected component; patch/mitigate and add monitoring.\n\n2. Rainbow Six Siege servers are back online after shutting down in response to Marketplace hacks\n   Source: Engadget • Tag: OUTAGE • Priority: MED • Change: ONGOING\n   Action: Review incident details; validate your fallback strategy and status monitoring.\n\n3. Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%\n   Source: HackerNews • Tag: CVE_SECURITY • Priority: MED • Change: ONGOING\n   Summary: Tesla's battery supply chain collapse due to partner's deal write-down.\n   Action: Review incident details; validate your fallback strategy and status monitoring.\n\n4. How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others\n   Source: TechCrunch • Tag: MODEL_RELEASE • Priority: MED • Change: ONGOING\n   Action: Evaluate the model; run a small benchmark on your use-case and compare costs/latency.\n\n5. So Long, GPT-5. Hello, Qwen\n   Source: WIRED • Tag: MODEL_RELEASE • Priority: MED • Change: ONGOING\n   Summary: Tech giant updates its language model with a new name.\n   Action: Update the name of the language model to Qwen.\n\n6. Elizabeth Warren Finally Used ChatGPT\n   Source: Gizmodo • Tag: MODEL_RELEASE • Priority: MED • Change: ONGOING\n   Action: Evaluate the model; run a small benchmark on your use-case and compare costs/latency.\n\n7. Memory shortage: Framework raises DDR5 RAM prices again with a per GB price hike\n   Source: Mashable • Tag: PRICING • Priority: MED • Change: ONGOING\n   Action: Recalculate spend impact; evaluate alternatives or adjust usage limits.\n\n8. These Google Maps AI Tools Can Make Your Holiday and NYE Travel Plans Seamless\n   Source: CNET • Tag: OTHER • Priority: LOW • Change: ONGOING\n   Action: Skim the article and decide if it affects your stack.\n\n9. US can’t deport hate speech researcher for protected speech, lawsuit says\n   Source: Ars Technica • Tag: RESEARCH • Priority: LOW • Change: ONGOING\n   Action: Skim the article and decide if it affects your stack.\n\n10. Samsung plans to integrate Google Photos into its TVs\n   Source: Engadget • Tag: OTHER • Priority: LOW • Change: ONGOING\n   Action: Skim the article and decide if it affects your stack.",
+  "brief": "Good morning.\n\nHere are the AI signals that actually matter today:\n\n1. OpenAI’s child exploitation reports increased sharply this year\n   Source: Ars Technica • Tag: CVE_SECURITY • Priority: HIGH • Change: ONGOING\n   Summary: OpenAI's child exploitation reports significantly increased this year\n   Action: Review and possibly improve their reporting process for potential child abuse issues.\n\n2. Rainbow Six Siege servers are back online after shutting down in response to Marketplace hacks\n   Source: Engadget • Tag: OUTAGE • Priority: MED • Change: ONGOING\n   Action: Review incident details; validate your fallback strategy and status monitoring.\n\n3. Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%\n   Source: HackerNews • Tag: OUTAGE • Priority: MED • Change: ONGOING\n   Summary: Tesla's battery supply chain faces significant issues with a partner reversing its deal due to financial strain.\n   Action: Review incident details; validate your fallback strategy and status monitoring.\n\n4. How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others\n   Source: TechCrunch • Tag: PRODUCT_FEATURE • Priority: MED • Change: ONGOING\n   Summary: Learn how to integrate new ChatGPT app integrations including DoorDash, Spotify, Uber, and others.\n   Action: Evaluate the model; run a small benchmark on your use-case and compare costs/latency.\n\n5. So Long, GPT-5. Hello, Qwen\n   Source: WIRED • Tag: MODEL_RELEASE • Priority: MED • Change: ONGOING\n   Action: Evaluate the model; run a small benchmark on your use-case and compare costs/latency.\n\n6. Elizabeth Warren Finally Used ChatGPT\n   Source: Gizmodo • Tag: MODEL_RELEASE • Priority: MED • Change: ONGOING\n   Action: Evaluate the model; run a small benchmark on your use-case and compare costs/latency.\n\n7. Memory shortage: Framework raises DDR5 RAM prices again with a per GB price hike\n   Source: Mashable • Tag: PRICING • Priority: MED • Change: ONGOING\n   Action: Recalculate spend impact; evaluate alternatives or adjust usage limits.\n\n8. These Google Maps AI Tools Can Make Your Holiday and NYE Travel Plans Seamless\n   Source: CNET • Tag: OTHER • Priority: LOW • Change: ONGOING\n   Action: Skim the article and decide if it affects your stack.\n\n9. US can’t deport hate speech researcher for protected speech, lawsuit says\n   Source: Ars Technica • Tag: RESEARCH • Priority: LOW • Change: ONGOING\n   Action: Skim the article and decide if it affects your stack.\n\n10. Samsung plans to integrate Google Photos into its TVs\n   Source: Engadget • Tag: OTHER • Priority: LOW • Change: ONGOING\n   Action: Skim the article and decide if it affects your stack.",
   "signals": [
     {
       "title": "OpenAI’s child exploitation reports increased sharply this year",
@@ -24,7 +24,7 @@
         "tag": "CVE_SECURITY"
       },
       "topics": [
-        "security"
+        "models"
       ],
       "score": 85,
       "priority": "HIGH",
@@ -34,17 +34,30 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "CVE_SECURITY"
         }
       },
-      "action": "Check if your stack uses the affected component; patch/mitigate and add monitoring.",
+      "action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_summary": "OpenAI's child exploitation reports significantly increased this year",
+      "llm_tag": "CVE_SECURITY",
+      "llm_topics": [
+        "models"
+      ],
+      "llm_action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_confidence": 85,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
-        "ok": false,
+        "ok": true,
         "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "CVE_SECURITY",
+        "rule_topics": [
+          "security"
+        ]
       }
     },
     {
@@ -74,8 +87,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OUTAGE"
         }
@@ -100,7 +113,7 @@
         "matched_companies": []
       },
       "entities": [],
-      "tag": "CVE_SECURITY",
+      "tag": "OUTAGE",
       "tag_trace": {
         "agent": "TaggingAgent",
         "tag": "OUTAGE"
@@ -114,18 +127,18 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
-          "tag": "CVE_SECURITY"
+          "tag": "OUTAGE"
         }
       },
       "action": "Review incident details; validate your fallback strategy and status monitoring.",
-      "llm_summary": "Tesla's battery supply chain collapse due to partner's deal write-down.",
-      "llm_tag": "CVE_SECURITY",
+      "llm_summary": "Tesla's battery supply chain faces significant issues with a partner reversing its deal due to financial strain.",
+      "llm_tag": "DEPRECATION",
       "llm_topics": [],
       "llm_action": null,
-      "llm_confidence": 85,
+      "llm_confidence": 0,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
         "ok": true,
@@ -140,6 +153,57 @@
       "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
       "url": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
       "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": true,
+        "matched_ai_keywords": [
+          "gpt"
+        ],
+        "matched_companies": []
+      },
+      "entities": [],
+      "tag": "PRODUCT_FEATURE",
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "topics": [],
+      "score": 50,
+      "priority": "MED",
+      "change_type": "ONGOING",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:36:48.207386+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "TechCrunch",
+          "tag": "PRODUCT_FEATURE"
+        }
+      },
+      "action": "Evaluate the model; run a small benchmark on your use-case and compare costs/latency.",
+      "llm_summary": "Learn how to integrate new ChatGPT app integrations including DoorDash, Spotify, Uber, and others.",
+      "llm_tag": "PRODUCT_FEATURE",
+      "llm_topics": [],
+      "llm_action": null,
+      "llm_confidence": 80,
+      "llm_trace": {
+        "agent": "LLMAnnotatorAgent",
+        "ok": true,
+        "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "MODEL_RELEASE",
+        "rule_topics": [
+          "models"
+        ]
+      }
+    },
+    {
+      "title": "So Long, GPT-5. Hello, Qwen",
+      "url": "https://www.wired.com/story/expired-tired-wired-gpt-5/",
+      "source": "WIRED",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "decision": true,
@@ -165,9 +229,9 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
-          "source": "TechCrunch",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "WIRED",
           "tag": "MODEL_RELEASE"
         }
       },
@@ -176,57 +240,6 @@
         "agent": "LLMAnnotatorAgent",
         "ok": false,
         "model": "qwen2.5:1.5b"
-      }
-    },
-    {
-      "title": "So Long, GPT-5. Hello, Qwen",
-      "url": "https://www.wired.com/story/expired-tired-wired-gpt-5/",
-      "source": "WIRED",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": true,
-        "matched_ai_keywords": [
-          "gpt"
-        ],
-        "matched_companies": []
-      },
-      "entities": [],
-      "tag": "MODEL_RELEASE",
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "topics": [],
-      "score": 50,
-      "priority": "MED",
-      "change_type": "ONGOING",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "decision": "ONGOING",
-        "previous": {
-          "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
-          "source": "WIRED",
-          "tag": "MODEL_RELEASE"
-        }
-      },
-      "action": "Update the name of the language model to Qwen.",
-      "llm_summary": "Tech giant updates its language model with a new name.",
-      "llm_tag": "MODEL_RELEASE",
-      "llm_topics": [],
-      "llm_action": "Update the name of the language model to Qwen.",
-      "llm_confidence": 75,
-      "llm_trace": {
-        "agent": "LLMAnnotatorAgent",
-        "ok": true,
-        "model": "qwen2.5:1.5b"
-      },
-      "llm_delta": {
-        "rule_tag": "MODEL_RELEASE",
-        "rule_topics": [
-          "models"
-        ]
       }
     },
     {
@@ -258,8 +271,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "MODEL_RELEASE"
         }
@@ -293,8 +306,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "PRICING"
         }
@@ -332,8 +345,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "CNET",
           "tag": "OTHER"
         }
@@ -369,8 +382,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "RESEARCH"
         }
@@ -406,8 +419,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OTHER"
         }
@@ -445,8 +458,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -478,11 +491,17 @@
       "topics": [],
       "score": 15,
       "priority": "LOW",
-      "change_type": "NEW",
+      "change_type": "ONGOING",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "decision": "NEW",
-        "previous": null
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:40:18.166117+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 2,
+          "source": "TechCrunch",
+          "tag": "OTHER"
+        }
       },
       "action": "Skim the article and decide if it affects your stack."
     },
@@ -515,8 +534,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "WIRED",
           "tag": "OTHER"
         }
@@ -552,8 +571,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "SDK_CHANGE"
         }
@@ -591,8 +610,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "OTHER"
         }
@@ -630,8 +649,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "CNET",
           "tag": "OTHER"
         }
@@ -666,8 +685,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "OTHER"
         }
@@ -707,8 +726,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "HIRING"
         }
@@ -744,8 +763,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -781,8 +800,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "TechCrunch",
           "tag": "OTHER"
         }
@@ -816,8 +835,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "WIRED",
           "tag": "OTHER"
         }
@@ -853,8 +872,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "OTHER"
         }
@@ -888,8 +907,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OTHER"
         }
@@ -927,8 +946,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -966,8 +985,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "TechCrunch",
           "tag": "OTHER"
         }
@@ -1001,8 +1020,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "WIRED",
           "tag": "OTHER"
         }
@@ -1038,8 +1057,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -1077,8 +1096,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "TechCrunch",
           "tag": "OTHER"
         }
@@ -1116,8 +1135,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "OTHER"
         }
@@ -1153,8 +1172,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "CNET",
           "tag": "OTHER"
         }
@@ -1186,7 +1205,7 @@
         "tag": "CVE_SECURITY"
       },
       "topics": [
-        "security"
+        "models"
       ],
       "score": 85,
       "priority": "HIGH",
@@ -1196,17 +1215,30 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "CVE_SECURITY"
         }
       },
-      "action": "Check if your stack uses the affected component; patch/mitigate and add monitoring.",
+      "action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_summary": "OpenAI's child exploitation reports significantly increased this year",
+      "llm_tag": "CVE_SECURITY",
+      "llm_topics": [
+        "models"
+      ],
+      "llm_action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_confidence": 85,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
-        "ok": false,
+        "ok": true,
         "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "CVE_SECURITY",
+        "rule_topics": [
+          "security"
+        ]
       }
     },
     {
@@ -1236,8 +1268,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OUTAGE"
         }
@@ -1262,7 +1294,7 @@
         "matched_companies": []
       },
       "entities": [],
-      "tag": "CVE_SECURITY",
+      "tag": "OUTAGE",
       "tag_trace": {
         "agent": "TaggingAgent",
         "tag": "OUTAGE"
@@ -1276,18 +1308,18 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
-          "tag": "CVE_SECURITY"
+          "tag": "OUTAGE"
         }
       },
       "action": "Review incident details; validate your fallback strategy and status monitoring.",
-      "llm_summary": "Tesla's battery supply chain collapse due to partner's deal write-down.",
-      "llm_tag": "CVE_SECURITY",
+      "llm_summary": "Tesla's battery supply chain faces significant issues with a partner reversing its deal due to financial strain.",
+      "llm_tag": "DEPRECATION",
       "llm_topics": [],
       "llm_action": null,
-      "llm_confidence": 85,
+      "llm_confidence": 0,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
         "ok": true,
@@ -1325,8 +1357,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "PRICING"
         }
@@ -1362,8 +1394,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "SDK_CHANGE"
         }
@@ -1399,8 +1431,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OUTAGE"
         }
@@ -1410,6 +1442,106 @@
         "agent": "LLMAnnotatorAgent",
         "ok": false,
         "model": "qwen2.5:1.5b"
+      }
+    },
+    {
+      "title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
+      "url": "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": true,
+        "matched_ai_keywords": [
+          "ai"
+        ],
+        "matched_companies": []
+      },
+      "entities": [],
+      "tag": "OUTAGE",
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OUTAGE"
+      },
+      "topics": [],
+      "score": 60,
+      "priority": "MED",
+      "change_type": "ONGOING",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:36:48.207386+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "HackerNews",
+          "tag": "OUTAGE"
+        }
+      },
+      "action": "Review incident details; validate your fallback strategy and status monitoring.",
+      "llm_summary": "Tesla's battery supply chain faces significant issues with a partner reversing its deal due to financial strain.",
+      "llm_tag": "DEPRECATION",
+      "llm_topics": [],
+      "llm_action": null,
+      "llm_confidence": 0,
+      "llm_trace": {
+        "agent": "LLMAnnotatorAgent",
+        "ok": true,
+        "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "OUTAGE",
+        "rule_topics": []
+      }
+    },
+    {
+      "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
+      "url": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
+      "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": true,
+        "matched_ai_keywords": [
+          "gpt"
+        ],
+        "matched_companies": []
+      },
+      "entities": [],
+      "tag": "PRODUCT_FEATURE",
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "topics": [],
+      "score": 50,
+      "priority": "MED",
+      "change_type": "ONGOING",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:36:48.207386+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "TechCrunch",
+          "tag": "PRODUCT_FEATURE"
+        }
+      },
+      "action": "Evaluate the model; run a small benchmark on your use-case and compare costs/latency.",
+      "llm_summary": "Learn how to integrate new ChatGPT app integrations including DoorDash, Spotify, Uber, and others.",
+      "llm_tag": "PRODUCT_FEATURE",
+      "llm_topics": [],
+      "llm_action": null,
+      "llm_confidence": 80,
+      "llm_trace": {
+        "agent": "LLMAnnotatorAgent",
+        "ok": true,
+        "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "MODEL_RELEASE",
+        "rule_topics": [
+          "models"
+        ]
       }
     },
     {
@@ -1439,8 +1571,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "PRICING"
         }
@@ -1472,7 +1604,7 @@
         "tag": "CVE_SECURITY"
       },
       "topics": [
-        "security"
+        "models"
       ],
       "score": 85,
       "priority": "HIGH",
@@ -1482,17 +1614,30 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "CVE_SECURITY"
         }
       },
-      "action": "Check if your stack uses the affected component; patch/mitigate and add monitoring.",
+      "action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_summary": "OpenAI's child exploitation reports significantly increased this year",
+      "llm_tag": "CVE_SECURITY",
+      "llm_topics": [
+        "models"
+      ],
+      "llm_action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_confidence": 85,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
-        "ok": false,
+        "ok": true,
         "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "CVE_SECURITY",
+        "rule_topics": [
+          "security"
+        ]
       }
     },
     {
@@ -1522,8 +1667,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OUTAGE"
         }
@@ -1548,7 +1693,7 @@
         "matched_companies": []
       },
       "entities": [],
-      "tag": "CVE_SECURITY",
+      "tag": "OUTAGE",
       "tag_trace": {
         "agent": "TaggingAgent",
         "tag": "OUTAGE"
@@ -1562,18 +1707,18 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
-          "tag": "CVE_SECURITY"
+          "tag": "OUTAGE"
         }
       },
       "action": "Review incident details; validate your fallback strategy and status monitoring.",
-      "llm_summary": "Tesla's battery supply chain collapse due to partner's deal write-down.",
-      "llm_tag": "CVE_SECURITY",
+      "llm_summary": "Tesla's battery supply chain faces significant issues with a partner reversing its deal due to financial strain.",
+      "llm_tag": "DEPRECATION",
       "llm_topics": [],
       "llm_action": null,
-      "llm_confidence": 85,
+      "llm_confidence": 0,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
         "ok": true,
@@ -1588,6 +1733,57 @@
       "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
       "url": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
       "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": true,
+        "matched_ai_keywords": [
+          "gpt"
+        ],
+        "matched_companies": []
+      },
+      "entities": [],
+      "tag": "PRODUCT_FEATURE",
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "topics": [],
+      "score": 50,
+      "priority": "MED",
+      "change_type": "ONGOING",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:36:48.207386+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "TechCrunch",
+          "tag": "PRODUCT_FEATURE"
+        }
+      },
+      "action": "Evaluate the model; run a small benchmark on your use-case and compare costs/latency.",
+      "llm_summary": "Learn how to integrate new ChatGPT app integrations including DoorDash, Spotify, Uber, and others.",
+      "llm_tag": "PRODUCT_FEATURE",
+      "llm_topics": [],
+      "llm_action": null,
+      "llm_confidence": 80,
+      "llm_trace": {
+        "agent": "LLMAnnotatorAgent",
+        "ok": true,
+        "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "MODEL_RELEASE",
+        "rule_topics": [
+          "models"
+        ]
+      }
+    },
+    {
+      "title": "So Long, GPT-5. Hello, Qwen",
+      "url": "https://www.wired.com/story/expired-tired-wired-gpt-5/",
+      "source": "WIRED",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "decision": true,
@@ -1613,9 +1809,9 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
-          "source": "TechCrunch",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "WIRED",
           "tag": "MODEL_RELEASE"
         }
       },
@@ -1624,57 +1820,6 @@
         "agent": "LLMAnnotatorAgent",
         "ok": false,
         "model": "qwen2.5:1.5b"
-      }
-    },
-    {
-      "title": "So Long, GPT-5. Hello, Qwen",
-      "url": "https://www.wired.com/story/expired-tired-wired-gpt-5/",
-      "source": "WIRED",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": true,
-        "matched_ai_keywords": [
-          "gpt"
-        ],
-        "matched_companies": []
-      },
-      "entities": [],
-      "tag": "MODEL_RELEASE",
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "topics": [],
-      "score": 50,
-      "priority": "MED",
-      "change_type": "ONGOING",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "decision": "ONGOING",
-        "previous": {
-          "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
-          "source": "WIRED",
-          "tag": "MODEL_RELEASE"
-        }
-      },
-      "action": "Update the name of the language model to Qwen.",
-      "llm_summary": "Tech giant updates its language model with a new name.",
-      "llm_tag": "MODEL_RELEASE",
-      "llm_topics": [],
-      "llm_action": "Update the name of the language model to Qwen.",
-      "llm_confidence": 75,
-      "llm_trace": {
-        "agent": "LLMAnnotatorAgent",
-        "ok": true,
-        "model": "qwen2.5:1.5b"
-      },
-      "llm_delta": {
-        "rule_tag": "MODEL_RELEASE",
-        "rule_topics": [
-          "models"
-        ]
       }
     },
     {
@@ -1706,8 +1851,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "MODEL_RELEASE"
         }
@@ -1741,8 +1886,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "PRICING"
         }
@@ -1778,8 +1923,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "SDK_CHANGE"
         }
@@ -1817,8 +1962,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -1856,8 +2001,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "CNET",
           "tag": "OTHER"
         }
@@ -1893,8 +2038,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OTHER"
         }
@@ -1926,11 +2071,17 @@
       "topics": [],
       "score": 15,
       "priority": "LOW",
-      "change_type": "NEW",
+      "change_type": "ONGOING",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "decision": "NEW",
-        "previous": null
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:40:18.166117+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 2,
+          "source": "TechCrunch",
+          "tag": "OTHER"
+        }
       },
       "action": "Skim the article and decide if it affects your stack."
     },
@@ -1963,8 +2114,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "WIRED",
           "tag": "OTHER"
         }
@@ -2002,8 +2153,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "OTHER"
         }
@@ -2041,8 +2192,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "CNET",
           "tag": "OTHER"
         }
@@ -2082,8 +2233,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "HIRING"
         }
@@ -2119,8 +2270,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -2156,8 +2307,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "TechCrunch",
           "tag": "OTHER"
         }
@@ -2195,8 +2346,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -2234,8 +2385,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "TechCrunch",
           "tag": "OTHER"
         }
@@ -2271,8 +2422,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -2310,8 +2461,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "TechCrunch",
           "tag": "OTHER"
         }
@@ -2349,8 +2500,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "OTHER"
         }
@@ -2386,8 +2537,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "RESEARCH"
         }
@@ -2422,8 +2573,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "OTHER"
         }
@@ -2434,9 +2585,9 @@
   "topic_trends": [
     {
       "topic": "models",
-      "count_7d": 29,
-      "count_today": 2,
-      "delta_vs_yesterday": 0
+      "count_7d": 30,
+      "count_today": 3,
+      "delta_vs_yesterday": 1
     },
     {
       "topic": "policy",
@@ -2446,9 +2597,9 @@
     },
     {
       "topic": "security",
-      "count_7d": 7,
-      "count_today": 1,
-      "delta_vs_yesterday": -1
+      "count_7d": 6,
+      "count_today": 0,
+      "delta_vs_yesterday": -2
     },
     {
       "topic": "products",
@@ -2511,7 +2662,7 @@
         "tag": "CVE_SECURITY"
       },
       "topics": [
-        "security"
+        "models"
       ],
       "score": 85,
       "priority": "HIGH",
@@ -2521,17 +2672,30 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "CVE_SECURITY"
         }
       },
-      "action": "Check if your stack uses the affected component; patch/mitigate and add monitoring.",
+      "action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_summary": "OpenAI's child exploitation reports significantly increased this year",
+      "llm_tag": "CVE_SECURITY",
+      "llm_topics": [
+        "models"
+      ],
+      "llm_action": "Review and possibly improve their reporting process for potential child abuse issues.",
+      "llm_confidence": 85,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
-        "ok": false,
+        "ok": true,
         "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "CVE_SECURITY",
+        "rule_topics": [
+          "security"
+        ]
       }
     },
     {
@@ -2561,8 +2725,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OUTAGE"
         }
@@ -2587,7 +2751,7 @@
         "matched_companies": []
       },
       "entities": [],
-      "tag": "CVE_SECURITY",
+      "tag": "OUTAGE",
       "tag_trace": {
         "agent": "TaggingAgent",
         "tag": "OUTAGE"
@@ -2601,18 +2765,18 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
-          "tag": "CVE_SECURITY"
+          "tag": "OUTAGE"
         }
       },
       "action": "Review incident details; validate your fallback strategy and status monitoring.",
-      "llm_summary": "Tesla's battery supply chain collapse due to partner's deal write-down.",
-      "llm_tag": "CVE_SECURITY",
+      "llm_summary": "Tesla's battery supply chain faces significant issues with a partner reversing its deal due to financial strain.",
+      "llm_tag": "DEPRECATION",
       "llm_topics": [],
       "llm_action": null,
-      "llm_confidence": 85,
+      "llm_confidence": 0,
       "llm_trace": {
         "agent": "LLMAnnotatorAgent",
         "ok": true,
@@ -2627,6 +2791,57 @@
       "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
       "url": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
       "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": true,
+        "matched_ai_keywords": [
+          "gpt"
+        ],
+        "matched_companies": []
+      },
+      "entities": [],
+      "tag": "PRODUCT_FEATURE",
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "topics": [],
+      "score": 50,
+      "priority": "MED",
+      "change_type": "ONGOING",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:36:48.207386+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "TechCrunch",
+          "tag": "PRODUCT_FEATURE"
+        }
+      },
+      "action": "Evaluate the model; run a small benchmark on your use-case and compare costs/latency.",
+      "llm_summary": "Learn how to integrate new ChatGPT app integrations including DoorDash, Spotify, Uber, and others.",
+      "llm_tag": "PRODUCT_FEATURE",
+      "llm_topics": [],
+      "llm_action": null,
+      "llm_confidence": 80,
+      "llm_trace": {
+        "agent": "LLMAnnotatorAgent",
+        "ok": true,
+        "model": "qwen2.5:1.5b"
+      },
+      "llm_delta": {
+        "rule_tag": "MODEL_RELEASE",
+        "rule_topics": [
+          "models"
+        ]
+      }
+    },
+    {
+      "title": "So Long, GPT-5. Hello, Qwen",
+      "url": "https://www.wired.com/story/expired-tired-wired-gpt-5/",
+      "source": "WIRED",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "decision": true,
@@ -2652,9 +2867,9 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
-          "source": "TechCrunch",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
+          "source": "WIRED",
           "tag": "MODEL_RELEASE"
         }
       },
@@ -2663,57 +2878,6 @@
         "agent": "LLMAnnotatorAgent",
         "ok": false,
         "model": "qwen2.5:1.5b"
-      }
-    },
-    {
-      "title": "So Long, GPT-5. Hello, Qwen",
-      "url": "https://www.wired.com/story/expired-tired-wired-gpt-5/",
-      "source": "WIRED",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": true,
-        "matched_ai_keywords": [
-          "gpt"
-        ],
-        "matched_companies": []
-      },
-      "entities": [],
-      "tag": "MODEL_RELEASE",
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "topics": [],
-      "score": 50,
-      "priority": "MED",
-      "change_type": "ONGOING",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "decision": "ONGOING",
-        "previous": {
-          "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
-          "source": "WIRED",
-          "tag": "MODEL_RELEASE"
-        }
-      },
-      "action": "Update the name of the language model to Qwen.",
-      "llm_summary": "Tech giant updates its language model with a new name.",
-      "llm_tag": "MODEL_RELEASE",
-      "llm_topics": [],
-      "llm_action": "Update the name of the language model to Qwen.",
-      "llm_confidence": 75,
-      "llm_trace": {
-        "agent": "LLMAnnotatorAgent",
-        "ok": true,
-        "model": "qwen2.5:1.5b"
-      },
-      "llm_delta": {
-        "rule_tag": "MODEL_RELEASE",
-        "rule_topics": [
-          "models"
-        ]
       }
     },
     {
@@ -2745,8 +2909,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "MODEL_RELEASE"
         }
@@ -2780,8 +2944,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "PRICING"
         }
@@ -2819,8 +2983,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "CNET",
           "tag": "OTHER"
         }
@@ -2856,8 +3020,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "RESEARCH"
         }
@@ -2893,8 +3057,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "OTHER"
         }
@@ -2932,8 +3096,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -2965,11 +3129,17 @@
       "topics": [],
       "score": 15,
       "priority": "LOW",
-      "change_type": "NEW",
+      "change_type": "ONGOING",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "decision": "NEW",
-        "previous": null
+        "decision": "ONGOING",
+        "previous": {
+          "first_seen": "2025-12-30T05:40:18.166117+00:00",
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 2,
+          "source": "TechCrunch",
+          "tag": "OTHER"
+        }
       },
       "action": "Skim the article and decide if it affects your stack."
     },
@@ -3002,8 +3172,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "WIRED",
           "tag": "OTHER"
         }
@@ -3039,8 +3209,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Gizmodo",
           "tag": "SDK_CHANGE"
         }
@@ -3078,8 +3248,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Mashable",
           "tag": "OTHER"
         }
@@ -3117,8 +3287,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "CNET",
           "tag": "OTHER"
         }
@@ -3153,8 +3323,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Ars Technica",
           "tag": "OTHER"
         }
@@ -3194,8 +3364,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "Engadget",
           "tag": "HIRING"
         }
@@ -3231,8 +3401,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "HackerNews",
           "tag": "OTHER"
         }
@@ -3268,8 +3438,8 @@
         "decision": "ONGOING",
         "previous": {
           "first_seen": "2025-12-30T05:36:48.207386+00:00",
-          "last_seen": "2025-12-30T05:40:18.166117+00:00",
-          "count": 2,
+          "last_seen": "2025-12-30T05:47:37.307638+00:00",
+          "count": 3,
           "source": "TechCrunch",
           "tag": "OTHER"
         }
@@ -4989,6 +5159,51 @@
       }
     },
     {
+      "title": "Moon phase today: What the moon will look like on December 30",
+      "url": "https://mashable.com/article/moon-phase-today-dec-30",
+      "source": "Mashable",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "How to watch Tanzania vs. Tunisia online for free",
+      "url": "https://mashable.com/article/tanzania-tunisia-africa-cup-of-nations-2025-live-stream-for-free",
+      "source": "Mashable",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "How to watch Benin vs. Senegal online for free",
+      "url": "https://mashable.com/article/benin-senegal-africa-cup-of-nations-2025-live-stream-for-free",
+      "source": "Mashable",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
       "title": "NYT Connections Sports Edition today: Hints and answers for December 30, 2025",
       "url": "https://mashable.com/article/nyt-connections-sports-edition-hint-answer-today-december-30-2025",
       "source": "Mashable",
@@ -5199,68 +5414,8 @@
       }
     },
     {
-      "title": "Make 2026 the year your kid gets off their device",
-      "url": "https://mashable.com/article/how-to-get-kids-off-their-phones-screens",
-      "source": "Mashable",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "Netflix shares first glimpse of upcoming Take That doc",
-      "url": "https://mashable.com/video/netflix-take-that-documentary",
-      "source": "Mashable",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "I tested the best phone cameras of 2025 — these took the best pictures",
-      "url": "https://mashable.com/article/best-phone-cameras-2025-list",
-      "source": "Mashable",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "MongoDB Server Security Update, December 2025",
-      "url": "https://www.mongodb.com/company/blog/news/mongodb-server-security-update-december-2025",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "The future of software development is software developers",
-      "url": "https://codemanship.wordpress.com/2025/11/25/the-future-of-software-development-is-software-developers/",
+      "title": "Stranger Things creator says turn off \"garbage\" settings",
+      "url": "https://screenrant.com/stranger-things-creator-turn-off-settings-premiere/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5289,68 +5444,8 @@
       }
     },
     {
-      "title": "Stranger Things creator says turn off \"garbage\" settings",
-      "url": "https://screenrant.com/stranger-things-creator-turn-off-settings-premiere/",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "GOG is getting acquired by its original co-founder",
-      "url": "https://www.gog.com/blog/gog-is-getting-acquired-by-its-original-co-founder-what-it-means-for-you/",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "Show HN: Stop Claude Code from forgetting everything",
-      "url": "https://github.com/mutable-state-inc/ensue-skill",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
       "title": "Hacking Washing Machines [video]",
       "url": "https://media.ccc.de/v/39c3-hacking-washing-machines",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "Streaming compression beats framed compression",
-      "url": "https://bou.ke/blog/compressed/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5379,8 +5474,8 @@
       }
     },
     {
-      "title": "100x (YC S22) Is Hiring a Front End Engineer",
-      "url": "https://news.ycombinator.com/item?id=46428206",
+      "title": "Show HN: Stop Claude Code from forgetting everything",
+      "url": "https://github.com/mutable-state-inc/ensue-skill",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5394,8 +5489,8 @@
       }
     },
     {
-      "title": "Outside, Dungeon, Town: Integrating the Three Places in Videogames (2024)",
-      "url": "https://keithburgun.net/outside-dungeon-town-integrating-the-three-places-in-videogames/",
+      "title": "MongoDB Server Security Update, December 2025",
+      "url": "https://www.mongodb.com/company/blog/news/mongodb-server-security-update-december-2025",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5409,8 +5504,8 @@
       }
     },
     {
-      "title": "Static Allocation with Zig",
-      "url": "https://nickmonad.blog/2025/static-allocation-with-zig-kv/",
+      "title": "GOG is getting acquired by its original co-founder",
+      "url": "https://www.gog.com/blog/gog-is-getting-acquired-by-its-original-co-founder-what-it-means-for-you/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5424,8 +5519,8 @@
       }
     },
     {
-      "title": "When someone says they hate your product",
-      "url": "https://www.getflack.com/p/responding-to-negative-feedback",
+      "title": "The future of software development is software developers",
+      "url": "https://codemanship.wordpress.com/2025/11/25/the-future-of-software-development-is-software-developers/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5439,8 +5534,8 @@
       }
     },
     {
-      "title": "Vitest Browser Mode Guide",
-      "url": "https://howtotestfrontend.com/resources/vitest-browser-mode-guide-and-setup-info",
+      "title": "Streaming compression beats framed compression",
+      "url": "https://bou.ke/blog/compressed/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5469,8 +5564,8 @@
       }
     },
     {
-      "title": "Geology of the Gulf of the Farallones National Marine Sanctuary",
-      "url": "https://pubs.usgs.gov/fs/farallones/",
+      "title": "Outside, Dungeon, Town: Integrating the Three Places in Videogames (2024)",
+      "url": "https://keithburgun.net/outside-dungeon-town-integrating-the-three-places-in-videogames/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5484,8 +5579,8 @@
       }
     },
     {
-      "title": "Kidnapped by Deutsche Bahn",
-      "url": "https://www.theocharis.dev/blog/kidnapped-by-deutsche-bahn/",
+      "title": "100x (YC S22) Is Hiring a Front End Engineer",
+      "url": "https://news.ycombinator.com/item?id=46428206",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5514,8 +5609,83 @@
       }
     },
     {
+      "title": "Vitest Browser Mode Guide",
+      "url": "https://howtotestfrontend.com/resources/vitest-browser-mode-guide-and-setup-info",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "Kidnapped by Deutsche Bahn",
+      "url": "https://www.theocharis.dev/blog/kidnapped-by-deutsche-bahn/",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
       "title": "Flame Graphs vs Tree Maps vs Sunburst (2017)",
       "url": "https://www.brendangregg.com/blog/2017-02-06/flamegraphs-vs-treemaps-vs-sunburst.html",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "Geology of the Gulf of the Farallones National Marine Sanctuary",
+      "url": "https://pubs.usgs.gov/fs/farallones/",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "When someone says they hate your product",
+      "url": "https://www.getflack.com/p/responding-to-negative-feedback",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "Static Allocation with Zig",
+      "url": "https://nickmonad.blog/2025/static-allocation-with-zig-kv/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5544,8 +5714,8 @@
       }
     },
     {
-      "title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
-      "url": "https://linuxdaw.org/",
+      "title": "A production bug that made me care about undefined behavior",
+      "url": "https://gaultier.github.io/blog/the_production_bug_that_made_me_care_about_undefined_behavior.html",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5559,8 +5729,8 @@
       }
     },
     {
-      "title": "A production bug that made me care about undefined behavior",
-      "url": "https://gaultier.github.io/blog/the_production_bug_that_made_me_care_about_undefined_behavior.html",
+      "title": "Linux DAW: Help Linux musicians to quickly and easily find the tools they need",
+      "url": "https://linuxdaw.org/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5604,38 +5774,8 @@
       }
     },
     {
-      "title": "Show HN: Aroma: Every TCP Proxy Is Detectable with RTT Fingerprinting",
-      "url": "https://github.com/Sakura-sx/Aroma",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
       "title": "Libgodc: Write Go Programs for Sega Dreamcast",
       "url": "https://github.com/drpaneas/libgodc",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "Intelligence – A Mystery Investigation Game",
-      "url": "https://intelligencegame.tech/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5664,8 +5804,38 @@
       }
     },
     {
+      "title": "Show HN: Aroma: Every TCP Proxy Is Detectable with RTT Fingerprinting",
+      "url": "https://github.com/Sakura-sx/Aroma",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
       "title": "Which Humans? (2023)",
       "url": "https://osf.io/preprints/psyarxiv/5b26t_v1",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "Intelligence – A Mystery Investigation Game",
+      "url": "https://intelligencegame.tech/",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5694,21 +5864,6 @@
       }
     },
     {
-      "title": "Feynman's Hughes Lectures: 950 pages of notes",
-      "url": "https://thehugheslectures.info/the-lectures/",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
       "title": "Why is calling my asm function from Rust slower than calling it from C?",
       "url": "https://ohadravid.github.io/posts/2025-12-rav1d-faster-asm/",
       "source": "HackerNews",
@@ -5724,23 +5879,8 @@
       }
     },
     {
-      "title": "Static Allocation for Compilers",
-      "url": "https://matklad.github.io/2025/12/23/static-allocation-compilers.html",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "decision": false,
-        "matched_ai_keywords": [],
-        "matched_companies": []
-      },
-      "drop_trace": {
-        "agent": "AIRelevanceAgent",
-        "reason": "Not AI-related"
-      }
-    },
-    {
-      "title": "CIA Star Gate Project: An Overview (1993) [pdf]",
-      "url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002800180001-2.pdf",
+      "title": "Show HN: See what readers who loved your favorite book/author also loved to read",
+      "url": "https://shepherd.com/bboy/2025",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5769,8 +5909,38 @@
       }
     },
     {
-      "title": "Show HN: See what readers who loved your favorite book/author also loved to read",
-      "url": "https://shepherd.com/bboy/2025",
+      "title": "Feynman's Hughes Lectures: 950 pages of notes",
+      "url": "https://thehugheslectures.info/the-lectures/",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "CIA Star Gate Project: An Overview (1993) [pdf]",
+      "url": "https://www.cia.gov/readingroom/docs/CIA-RDP96-00789R002800180001-2.pdf",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "decision": false,
+        "matched_ai_keywords": [],
+        "matched_companies": []
+      },
+      "drop_trace": {
+        "agent": "AIRelevanceAgent",
+        "reason": "Not AI-related"
+      }
+    },
+    {
+      "title": "Static Allocation for Compilers",
+      "url": "https://matklad.github.io/2025/12/23/static-allocation-compilers.html",
       "source": "HackerNews",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -5834,8 +6004,8 @@
     "kept_after_relevance": 50,
     "selected": 30,
     "builder_radar": 5,
-    "product_watch": 2,
+    "product_watch": 4,
     "dropped": 170
   },
-  "generated_at_utc": "2025-12-30T05:40:18.169600+00:00"
+  "generated_at_utc": "2025-12-30T05:47:37.315263+00:00"
 }
