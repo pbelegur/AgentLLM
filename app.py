@@ -88,7 +88,7 @@ def run():
         latest = _read_latest()
         if latest is not None:
             data = latest
-            cached = True  # means served from latest.json
+            cached = True  # served from latest.json
         else:
             data, cached = _run_cached(force=False)
     else:
@@ -205,7 +205,8 @@ let SHOW_DROPPED = false;
 function esc(s){
   return (s ?? "").toString()
     .replaceAll("&","&amp;").replaceAll("<","&lt;")
-    .replaceAll(">","&gt;").replaceAll('"',"&quot;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
     .replaceAll("'","&#039;");
 }
 
@@ -218,6 +219,7 @@ function fmtItem(s, showAction=true){
   const ch  = esc(s.change_type || "");
   const topics = (s.topics || []).slice(0,6).map(t => `<span class="badge">${esc(t)}</span>`).join(" ");
   const action = esc(s.action || "");
+  const summary = esc(s.llm_summary || "");
 
   return `
     <div class="item">
@@ -231,6 +233,7 @@ function fmtItem(s, showAction=true){
         <span class="badge">${ch}</span>
       </div>
       ${topics ? `<div class="row">${topics}</div>` : ""}
+      ${summary ? `<div class="small"><b>Summary:</b> ${summary}</div>` : ""}
       ${showAction && action ? `<div class="small"><b>Action:</b> ${action}</div>` : ""}
     </div>
   `;
@@ -271,7 +274,7 @@ async function load(force){
 
   document.getElementById("brief").textContent = data.brief || "";
 
-  const newItems = (data.new_since_yesterday || data.new_since_last || data.new || data.signals || []).slice(0,10);
+  const newItems = (data.new_since_yesterday || data.signals || []).slice(0,10);
   document.getElementById("new").innerHTML =
     newItems.length ? newItems.map(s => fmtItem(s, true)).join("") : `<div class="item">No new items yet.</div>`;
 

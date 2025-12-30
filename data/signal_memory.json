@@ -667,5 +667,222 @@
     "last_seen": "2025-12-24T03:02:52.674989",
     "count": 4,
     "tag": "OTHER"
+  },
+  "https://arstechnica.com/tech-policy/2025/12/openais-child-exploitation-reports-increased-sharply-this-year/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Ars Technica",
+    "tag": "CVE_SECURITY"
+  },
+  "https://www.engadget.com/gaming/rainbow-six-siege-servers-are-back-online-after-shutting-down-in-response-to-marketplace-hacks-191049079.html?src=rss": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Engadget",
+    "tag": "OUTAGE"
+  },
+  "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "HackerNews",
+    "tag": "CVE_SECURITY"
+  },
+  "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "TechCrunch",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.wired.com/story/expired-tired-wired-gpt-5/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "WIRED",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://gizmodo.com/elizabeth-warren-finally-used-chatgpt-2000704050": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Gizmodo",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://mashable.com/article/framework-price-hike-ddr5-ram-memory-shortage": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Mashable",
+    "tag": "PRICING"
+  },
+  "https://www.cnet.com/tech/services-and-software/these-google-maps-ai-tools-can-help-keep-your-holiday-travel-plans-on-track/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/tech-policy/2025/12/us-cant-deport-hate-speech-researcher-for-protected-speech-lawsuit-says/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Ars Technica",
+    "tag": "RESEARCH"
+  },
+  "https://www.engadget.com/home/samsung-plans-to-integrate-google-photos-into-its-tvs-132739713.html?src=rss": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/29/samsung-plans-to-bring-google-photos-to-its-tvs-in-2026/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/3-tricks-google-gemini-live-latest-major-upgrade/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/trumps-crusade-against-woke-climate-research-threatens-solar-science-2000704041": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Gizmodo",
+    "tag": "SDK_CHANGE"
+  },
+  "https://mashable.com/article/google-photos-nano-banana-coming-to-samsung-tvs": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/services-and-software/google-gmail-address-change-without-losing-your-data/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/tech-policy/2025/12/china-drafts-worlds-strictest-rules-to-end-ai-encouraged-suicide-violence/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Ars Technica",
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/ai/openai-is-hiring-a-new-head-of-preparedness-to-try-to-predict-and-mitigate-ais-harms-220330486.html?src=rss": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Engadget",
+    "tag": "HIRING"
+  },
+  "https://www.circusscientist.com/2025/12/29/google-is-dead-where-do-we-go-now/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/28/the-google-pixel-watch-4-made-me-like-smartwatches-again/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/gallery/best-pet-hair-vacuums/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/legendary-dev-loses-his-mind-over-ai-agents-unsolicited-act-of-kindness-2000704001": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/deals/apple-airtag-four-packs-are-on-sale-for-65-right-now-202333053.html?src=rss": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/28/openai-is-looking-for-a-new-head-of-preparedness/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/people-who-drink-bottled-water-on-a-daily-basis-ingest-90000-more-microplastics-per-year/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://github.com/cranot/grouped-simd-hashtable": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/29/2025-was-the-year-ai-got-a-vibe-check/": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:36:48.207386+00:00",
+    "count": 1,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/google-gmail-users-change-email-address": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/the-trick-to-scoring-amazon-prime-deals-for-free/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T05:36:48.207386+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 2,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/": {
+    "first_seen": "2025-12-30T05:40:18.166117+00:00",
+    "last_seen": "2025-12-30T05:40:18.166117+00:00",
+    "count": 1,
+    "source": "TechCrunch",
+    "tag": "OTHER"
   }
 }

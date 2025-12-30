@@ -18,55 +18,88 @@ HN_LIMIT = 50               # more supply
 MAX_PER_SOURCE = 6          # diversity cap
 HISTORY_DAYS = 7            # trends window
 
-ENABLE_LLM = False          # placeholder; still rule-based for speed
+CACHE_TTL_SECONDS = 120     # UI cache
+
+ENABLE_DROPPED = True       # keep drop reasons
+ENABLE_LLM = False          # legacy placeholder; pipeline is rule-based by default
+
+# --- Optional local LLM annotator (runs only on selected Top-N) ---
+ENABLE_LLM_ANNOTATOR = True   # set True after you install/run Ollama locally
+LLM_MODEL = os.getenv("LLM_MODEL", "qwen2.5:1.5b")
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
+LLM_ANNOTATE_TOP_N = 5       # only annotate the first N of the ranked list
+LLM_TIMEOUT_SECONDS = 35
+
+
+# =========================================================
+# SOURCES
+# =========================================================
 
 RSS_FEEDS = {
     "TechCrunch": "https://techcrunch.com/feed/",
     "The Verge": "https://www.theverge.com/rss/index.xml",
-    "WIRED (AI)": "https://www.wired.com/feed/tag/ai/latest/rss",
-    "Ars Technica": "http://feeds.arstechnica.com/arstechnica/gadgets",
+    "WIRED": "https://www.wired.com/feed/rss",
+    "Ars Technica": "http://feeds.arstechnica.com/arstechnica/index",
     "Gizmodo": "https://gizmodo.com/rss",
-    "CNET": "https://www.cnet.com/rss/news/",
+    "CNET": "https://www.cnet.com/rss/all/",
     "Engadget": "https://www.engadget.com/rss.xml",
-    "Mashable (Tech)": "https://mashable.com/feeds/rss/tech",
+    "Mashable": "https://mashable.com/feeds/rss/all",
 }
 
-# What counts as "Builder Radar"
-BUILDER_TAGS = {
-    "MODEL_RELEASE",
-    "SDK_CHANGE",
-    "OSS_RELEASE",
-    "DEPRECATION",
-    "CVE_SECURITY",
-    "INFRA",
-    "PRICING",
-    "OUTAGE",
-    "RESEARCH",
-}
+HN_TOPSTORIES_URL = "https://hacker-news.firebaseio.com/v0/topstories.json"
+HN_ITEM_URL = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 
-# What counts as "Product Watch"
-PRODUCT_TAGS = {
-    "PRODUCT_FEATURE",
-    "PRICING",
-    "OUTAGE",
-}
 
 # =========================================================
-# FILESYSTEM
+# STORAGE
+# =========================================================
+
+RAW_NEWS_PATH = "data/raw_news.json"
+SIGNAL_MEMORY_PATH = "data/signal_memory.json"
+LATEST_PATH = "data/latest.json"
+HISTORY_DIR = "data/history"
+
+
+# =========================================================
+# SIGNAL ONTOLOGY (rule layer)
+# =========================================================
+
+AI_KEYWORDS = [
+    "ai", "artificial intelligence", "llm", "gpt", "model", "inference", "training",
+    "transformer", "agents", "agentic", "rag", "embedding", "multimodal",
+    "cuda", "gpu", "npu", "accelerator", "quantization", "fine-tuning", "finetuning",
+    "prompt", "alignment", "eval", "evaluation", "benchmark", "safety",
+]
+
+AI_COMPANIES = [
+    "openai", "anthropic", "google", "deepmind", "meta", "microsoft", "nvidia",
+    "amazon", "aws", "hugging face", "huggingface", "cohere", "stability", "mistral",
+    "ollama", "groq", "perplexity", "xai"
+]
+
+# Rule tags used in your current pipeline
+RULE_TAGS = [
+    "MODEL_RELEASE", "SDK_CHANGE", "OSS_RELEASE", "DEPRECATION",
+    "CVE_SECURITY", "OUTAGE", "PRICING", "PRODUCT_FEATURE",
+    "HIRING", "INFRA", "RESEARCH", "OTHER"
+]
+
+TOPIC_SET = [
+    "models", "agents", "inference", "training", "gpu", "security", "policy",
+    "open_source", "devtools", "products", "hiring"
+]
+
+
+# =========================================================
+# FILE UTILS
 # =========================================================
 
 def ensure_dirs():
     os.makedirs("data", exist_ok=True)
-    os.makedirs("data/history", exist_ok=True)
+    os.makedirs(HISTORY_DIR, exist_ok=True)
 
 
-def save_json(path: str, obj):
-    ensure_dirs()
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, indent=2, ensure_ascii=False)
-
-
-def load_json(path: str, default):
+def load_json(path, default):
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -74,72 +107,62 @@ def load_json(path: str, default):
         return default
 
 
-def today_utc_str() -> str:
-    return datetime.now(timezone.utc).strftime("%Y-%m-%d")
+def save_json(path, obj):
+    ensure_dirs()
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=2, ensure_ascii=False)
+
+
+def atomic_save_json(path: str, obj):
+    ensure_dirs()
+    tmp_path = path + ".tmp"
+    with open(tmp_path, "w", encoding="utf-8") as f:
+        json.dump(obj, f, indent=2, ensure_ascii=False)
+    os.replace(tmp_path, path)
+
+
+def save_latest_snapshot(payload: dict):
+    payload = dict(payload)
+    payload["generated_at_utc"] = datetime.now(timezone.utc).isoformat()
+    atomic_save_json(LATEST_PATH, payload)
 
 
 # =========================================================
 # INGESTION
 # =========================================================
 
-def _fetch_rss_one(source_name: str, url: str, limit=PER_FEED_LIMIT, timeout=8):
-    try:
-        resp = requests.get(url, timeout=timeout, headers={"User-Agent": "Mozilla/5.0"})
-        resp.raise_for_status()
-        feed = feedparser.parse(resp.content)
-
-        out = []
-        for e in feed.entries[:limit]:
-            title = getattr(e, "title", "") or ""
-            title = title.strip()
-            link = getattr(e, "link", "") or getattr(e, "id", "") or ""
-            link = link.strip()
-            if not title:
-                continue
-            out.append({"title": title, "url": link, "source": source_name})
-        return out
-    except Exception:
-        return []
-
-
-def fetch_all_rss():
+def fetch_rss(feed_name: str, url: str, limit: int):
+    parsed = feedparser.parse(url)
     items = []
-    with ThreadPoolExecutor(max_workers=min(12, len(RSS_FEEDS))) as ex:
-        futs = [ex.submit(_fetch_rss_one, name, url) for name, url in RSS_FEEDS.items()]
-        for fut in as_completed(futs):
-            items.extend(fut.result())
+    for e in parsed.entries[:limit]:
+        items.append({
+            "title": getattr(e, "title", "").strip(),
+            "url": getattr(e, "link", "").strip(),
+            "source": feed_name
+        })
     return items
 
 
-def fetch_hackernews(limit=HN_LIMIT, timeout=8):
-    try:
-        ids = requests.get(
-            "https://hacker-news.firebaseio.com/v0/topstories.json",
-            timeout=timeout
-        ).json()[:limit]
-    except Exception:
-        return []
+def fetch_hn_top(limit: int):
+    ids = requests.get(HN_TOPSTORIES_URL, timeout=20).json()[:limit]
 
-    def fetch_one(sid):
-        try:
-            item = requests.get(
-                f"https://hacker-news.firebaseio.com/v0/item/{sid}.json",
-                timeout=timeout
-            ).json()
-            if item and "title" in item:
-                url = item.get("url") or f"https://news.ycombinator.com/item?id={sid}"
-                return {"title": item["title"], "url": url, "source": "HackerNews"}
-        except Exception:
+    def fetch_item(i):
+        j = requests.get(HN_ITEM_URL.format(i), timeout=20).json()
+        if not j:
             return None
-        return None
+        title = (j.get("title") or "").strip()
+        url = (j.get("url") or "").strip()
+        if not url:
+            url = f"https://news.ycombinator.com/item?id={i}"
+        return {"title": title, "url": url, "source": "HackerNews"}
 
     out = []
-    with ThreadPoolExecutor(max_workers=16) as ex:
-        futs = [ex.submit(fetch_one, sid) for sid in ids]
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        futs = [ex.submit(fetch_item, i) for i in ids]
         for fut in as_completed(futs):
-            res = fut.result()
-            if res:
-                out.append(res)
+            it = fut.result()
+            if it and it.get("title"):
+                out.append(it)
     return out
 
 
@@ -156,42 +179,397 @@ def dedupe_items(items):
 
 
 # =========================================================
-# MEMORY + HISTORY
+# AGENTS (rule layer)
 # =========================================================
 
-def load_signal_memory(path="data/signal_memory.json"):
-    return load_json(path, default={})
+class AIRelevanceAgent:
+    def process(self, item: dict):
+        t = (item.get("title") or "").lower()
+        matched_kw = [k for k in AI_KEYWORDS if k in t]
+        matched_co = [c for c in AI_COMPANIES if c in t]
 
-
-def save_signal_memory(memory, path="data/signal_memory.json"):
-    save_json(path, memory)
-
-
-def update_signal_memory(item, memory):
-    key = (item.get("url") or item.get("title") or "").strip()
-    if not key:
-        return memory
-    now = datetime.utcnow().isoformat()
-    prev = memory.get(key)
-    if not prev:
-        memory[key] = {
-            "first_seen": now,
-            "last_seen": now,
-            "count": 1,
-            "tag": item.get("tag", "OTHER"),
+        decision = bool(matched_kw or matched_co)
+        item["decision_trace"] = {
+            "agent": "AIRelevanceAgent",
+            "decision": decision,
+            "matched_ai_keywords": matched_kw[:10],
+            "matched_companies": matched_co[:10],
         }
-    else:
-        prev["last_seen"] = now
-        prev["count"] = int(prev.get("count", 0)) + 1
-        prev["tag"] = item.get("tag", prev.get("tag", "OTHER"))
-    return memory
+        return decision, item
 
 
-def save_daily_history(signals):
-    # Save timestamped snapshots so trends move during the day
+class EntityAgent:
+    def process(self, item: dict):
+        t = (item.get("title") or "").lower()
+        entities = []
+        for c in AI_COMPANIES:
+            if c in t:
+                entities.append(c)
+        item["entities"] = sorted(set(entities))
+        return item
+
+
+class TaggingAgent:
+    def process(self, item: dict):
+        t = (item.get("title") or "").lower()
+
+        tag = "OTHER"
+        if any(x in t for x in ["cve", "vulnerability", "security flaw", "zero-day", "exploit"]):
+            tag = "CVE_SECURITY"
+        elif any(x in t for x in ["outage", "down", "incident", "service disruption"]):
+            tag = "OUTAGE"
+        elif any(x in t for x in ["deprecated", "deprecates", "deprecation", "sunset", "end of life", "eol"]):
+            tag = "DEPRECATION"
+        elif any(x in t for x in ["price", "pricing", "subscription", "cost", "charges", "raises prices"]):
+            tag = "PRICING"
+        elif any(x in t for x in ["sdk", "api", "release notes", "cli", "library", "python package", "npm"]):
+            tag = "SDK_CHANGE"
+        elif any(x in t for x in ["open source", "github", "released", "launches", "introduces", "announces"]):
+            tag = "OSS_RELEASE"
+        elif any(x in t for x in ["model", "llm", "gpt", "weights", "checkpoint", "fine-tune", "finetune"]):
+            tag = "MODEL_RELEASE"
+        elif any(x in t for x in ["hiring", "jobs", "layoffs", "recruiting"]):
+            tag = "HIRING"
+        elif any(x in t for x in ["gpu", "cuda", "inference", "datacenter", "cloud", "kubernetes", "server"]):
+            tag = "INFRA"
+        elif any(x in t for x in ["paper", "arxiv", "research", "benchmark"]):
+            tag = "RESEARCH"
+        elif any(x in t for x in ["feature", "rollout", "adds", "update", "improves"]):
+            tag = "PRODUCT_FEATURE"
+
+        item["tag"] = tag
+        item["tag_trace"] = {"agent": "TaggingAgent", "tag": tag}
+        return item
+
+
+class TopicAgent:
+    def process(self, item: dict):
+        t = (item.get("title") or "").lower()
+        topics = set()
+
+        if any(x in t for x in ["model", "llm", "gpt", "weights", "checkpoint"]):
+            topics.add("models")
+        if any(x in t for x in ["agent", "agentic", "tool use", "function calling"]):
+            topics.add("agents")
+        if any(x in t for x in ["inference", "latency", "throughput", "quantization", "serving"]):
+            topics.add("inference")
+        if any(x in t for x in ["training", "fine-tune", "finetune", "rlhf"]):
+            topics.add("training")
+        if any(x in t for x in ["gpu", "cuda", "nvidia", "accelerator"]):
+            topics.add("gpu")
+        if any(x in t for x in ["cve", "vulnerability", "security", "exploit"]):
+            topics.add("security")
+        if any(x in t for x in ["policy", "regulation", "lawmakers", "ban", "standards"]):
+            topics.add("policy")
+        if any(x in t for x in ["open source", "github", "apache", "mit license"]):
+            topics.add("open_source")
+        if any(x in t for x in ["sdk", "api", "cli", "library"]):
+            topics.add("devtools")
+        if any(x in t for x in ["feature", "rollout", "product", "subscription"]):
+            topics.add("products")
+        if any(x in t for x in ["hiring", "jobs", "recruiting"]):
+            topics.add("hiring")
+
+        item["topics"] = sorted(topics)
+        return item
+
+
+class PriorityAgent:
+    def process(self, item: dict):
+        score = 0
+        tag = item.get("tag", "OTHER")
+        topics = item.get("topics", [])
+        ents = item.get("entities", [])
+
+        # Tag weights
+        if tag in ("CVE_SECURITY", "OUTAGE", "DEPRECATION"):
+            score += 60
+        elif tag in ("MODEL_RELEASE", "SDK_CHANGE", "PRICING"):
+            score += 40
+        elif tag in ("OSS_RELEASE", "INFRA"):
+            score += 25
+        else:
+            score += 10
+
+        # Topic weights
+        if "security" in topics:
+            score += 20
+        if "inference" in topics or "gpu" in topics:
+            score += 15
+        if "models" in topics:
+            score += 10
+
+        # Entity boosts
+        boost_entities = {"openai", "anthropic", "nvidia", "microsoft", "google", "deepmind", "meta"}
+        score += 5 * len([e for e in ents if e in boost_entities])
+
+        priority = "LOW"
+        if score >= 70:
+            priority = "HIGH"
+        elif score >= 40:
+            priority = "MED"
+
+        item["score"] = score
+        item["priority"] = priority
+        return item
+
+
+class TemporalChangeAgent:
+    def __init__(self, memory: dict):
+        self.memory = memory
+
+    def _key(self, item: dict):
+        return (item.get("url") or item.get("title") or "").strip().lower()
+
+    def process(self, item: dict):
+        k = self._key(item)
+        rec = self.memory.get(k)
+
+        change = "NEW"
+        if rec:
+            prev_count = rec.get("count", 0)
+            change = "ONGOING" if prev_count < 3 else "ESCALATING"
+
+        item["change_type"] = change
+        item["temporal_trace"] = {"agent": "TemporalChangeAgent", "decision": change, "previous": rec}
+        return item
+
+    def update(self, items: list):
+        now = datetime.now(timezone.utc).isoformat()
+        for it in items:
+            k = self._key(it)
+            if not k:
+                continue
+            if k not in self.memory:
+                self.memory[k] = {
+                    "first_seen": now,
+                    "last_seen": now,
+                    "count": 1,
+                    "source": it.get("source"),
+                    "tag": it.get("tag"),
+                }
+            else:
+                self.memory[k]["last_seen"] = now
+                self.memory[k]["count"] = int(self.memory[k].get("count", 0)) + 1
+                self.memory[k]["tag"] = it.get("tag")
+
+
+class ActionAgent:
+    def process(self, item: dict):
+        tag = item.get("tag", "OTHER")
+        topics = item.get("topics", [])
+
+        action = "Skim the article and decide if it affects your stack."
+        if tag == "CVE_SECURITY":
+            action = "Check if your stack uses the affected component; patch/mitigate and add monitoring."
+        elif tag == "OUTAGE":
+            action = "Review incident details; validate your fallback strategy and status monitoring."
+        elif tag == "DEPRECATION":
+            action = "Identify impacted dependencies and plan migration before end-of-life."
+        elif tag == "SDK_CHANGE":
+            action = "Scan release notes; update SDK and run integration tests."
+        elif tag == "MODEL_RELEASE":
+            action = "Evaluate the model; run a small benchmark on your use-case and compare costs/latency."
+        elif tag == "PRICING":
+            action = "Recalculate spend impact; evaluate alternatives or adjust usage limits."
+
+        if "inference" in topics:
+            action = action + " Focus on latency/throughput implications."
+
+        item["action"] = action
+        return item
+
+
+# =========================================================
+# OPTIONAL LLM AGENT (Top-N semantic enrichment)
+# =========================================================
+
+class LLMAnnotatorAgent:
+    """
+    Optional semantic annotator powered by a LOCAL Ollama model.
+    Runs ONLY on a small Top-N subset after ranking.
+
+    Adds:
+      - llm_summary (1-2 lines)
+      - llm_tag (optional refined tag)
+      - llm_topics (optional refined topics)
+      - llm_action (optional refined action)
+      - llm_confidence (0-100)
+
+    It does NOT override your rule outputs unless confidence is high.
+    """
+
+    ALLOWED_TAGS = {
+        "MODEL_RELEASE", "SDK_CHANGE", "OSS_RELEASE", "DEPRECATION",
+        "CVE_SECURITY", "OUTAGE", "PRICING", "PRODUCT_FEATURE",
+        "HIRING", "INFRA", "RESEARCH", "OTHER"
+    }
+
+    ALLOWED_TOPICS = {
+        "models", "agents", "inference", "training", "gpu", "security", "policy",
+        "open_source", "devtools", "products", "hiring"
+    }
+
+    def __init__(self, model: str):
+        self.model = model or "llama3.1"
+
+    def _extract_json(self, s: str):
+        if not s:
+            return None
+        try:
+            return json.loads(s)
+        except Exception:
+            pass
+        m = re.search(r"\{[\s\S]*\}", s)
+        if not m:
+            return None
+        try:
+            return json.loads(m.group(0))
+        except Exception:
+            return None
+
+    def _ollama_generate(self, prompt: str):
+        url = OLLAMA_URL.rstrip("/") + "/api/generate"
+        payload = {"model": self.model, "prompt": prompt, "stream": False}
+        try:
+            r = requests.post(url, json=payload, timeout=LLM_TIMEOUT_SECONDS)
+            r.raise_for_status()
+            data = r.json()
+            return data.get("response", "") or ""
+        except Exception:
+            return ""
+
+    def annotate_item(self, item: dict):
+        title = (item.get("title") or "").strip()
+        source = (item.get("source") or "").strip()
+
+        rule_tag = item.get("tag", "OTHER")
+        rule_topics = item.get("topics", [])
+
+        prompt = (
+            "Given a tech headline, produce a compact annotation as JSON ONLY.\n"
+            "Headline: " + title + "\n"
+            "Source: " + source + "\n\n"
+            "Return JSON with keys:\n"
+            "summary: string (1-2 sentences, no hype)\n"
+            "tag: one of " + ", ".join(sorted(self.ALLOWED_TAGS)) + "\n"
+            "topics: array of 0-4 from " + ", ".join(sorted(self.ALLOWED_TOPICS)) + "\n"
+            "action: string (one concrete engineering next step)\n"
+            "confidence: integer 0-100\n\n"
+            "If the headline is not actually AI-related, set tag=OTHER, topics=[], confidence<=40.\n"
+            "Be conservative. Output ONLY JSON."
+        )
+
+        raw = self._ollama_generate(prompt)
+        obj = self._extract_json(raw)
+        if not isinstance(obj, dict):
+            item["llm_trace"] = {"agent": "LLMAnnotatorAgent", "ok": False, "model": self.model}
+            return item
+
+        tag = obj.get("tag", "OTHER")
+        if tag not in self.ALLOWED_TAGS:
+            tag = "OTHER"
+
+        topics = obj.get("topics", [])
+        if not isinstance(topics, list):
+            topics = []
+        topics = [t for t in topics if t in self.ALLOWED_TOPICS][:4]
+
+        summary = obj.get("summary", "")
+        action = obj.get("action", "")
+        conf = obj.get("confidence", 0)
+        try:
+            conf = int(conf)
+        except Exception:
+            conf = 0
+        conf = max(0, min(conf, 100))
+
+        item["llm_summary"] = summary
+        item["llm_tag"] = tag
+        item["llm_topics"] = topics
+        item["llm_action"] = action
+        item["llm_confidence"] = conf
+        item["llm_trace"] = {"agent": "LLMAnnotatorAgent", "ok": True, "model": self.model}
+
+        # Only override rule outputs when LLM is confident.
+        if conf >= 75:
+            item["tag"] = tag
+            item["topics"] = topics
+            if action:
+                item["action"] = action
+
+        item["llm_delta"] = {"rule_tag": rule_tag, "rule_topics": rule_topics}
+        return item
+
+    def annotate_topn(self, items: list, n: int):
+        if not items or n <= 0:
+            return items
+        top = items[:n]
+        rest = items[n:]
+
+        def worker(x):
+            return self.annotate_item(x)
+
+        annotated = []
+        with ThreadPoolExecutor(max_workers=min(6, n)) as ex:
+            futs = [ex.submit(worker, x) for x in top]
+            for fut in as_completed(futs):
+                annotated.append(fut.result())
+
+        # Preserve original order
+        by_key = {(it.get("url") or it.get("title")): it for it in annotated}
+        ordered_top = []
+        for it in top:
+            k = it.get("url") or it.get("title")
+            ordered_top.append(by_key.get(k, it))
+
+        return ordered_top + rest
+
+
+# =========================================================
+# PIPELINE HELPERS
+# =========================================================
+
+def diversify_and_select(items, k):
+    by_source = defaultdict(list)
+    for it in items:
+        by_source[it.get("source", "Unknown")].append(it)
+
+    # Sort within each source
+    for s in by_source:
+        by_source[s].sort(key=lambda x: x.get("score", 0), reverse=True)
+
+    # Round-robin with cap
+    out = []
+    source_counts = Counter()
+    sources = list(by_source.keys())
+    idx = 0
+    while len(out) < k and sources:
+        src = sources[idx % len(sources)]
+        if source_counts[src] < MAX_PER_SOURCE and by_source[src]:
+            out.append(by_source[src].pop(0))
+            source_counts[src] += 1
+        # drop empty sources
+        sources = [s for s in sources if by_source[s]]
+        idx += 1
+    return out
+
+
+def build_sections(selected):
+    builder_tags = {"CVE_SECURITY", "OUTAGE", "DEPRECATION", "SDK_CHANGE", "INFRA", "OSS_RELEASE", "PRICING"}
+    product_tags = {"PRODUCT_FEATURE", "PRICING", "OUTAGE"}
+
+    builder_radar = [s for s in selected if s.get("tag") in builder_tags]
+    product_watch = [s for s in selected if s.get("tag") in product_tags]
+    action_queue = sorted(selected, key=lambda x: (x.get("priority") != "HIGH", -x.get("score", 0)))
+
+    return builder_radar, product_watch, action_queue
+
+
+def save_history_snapshot(signals):
+    # time-stamped snapshots so trends move during the day
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d_%H00")
-    path = f"data/history/{stamp}.json"
-
+    path = f"{HISTORY_DIR}/{stamp}.json"
     compact = []
     for s in signals:
         compact.append({
@@ -203,517 +581,160 @@ def save_daily_history(signals):
             "priority": s.get("priority"),
             "score": s.get("score", 0),
         })
-
     save_json(path, {"date": stamp, "signals": compact})
 
 
-
-def load_history(days=HISTORY_DAYS):
+def load_history(n=HISTORY_DAYS):
     ensure_dirs()
-    files = [f for f in os.listdir("data/history") if f.endswith(".json")]
-    files.sort()  # timestamped names will sort correctly
+    files = [f for f in os.listdir(HISTORY_DIR) if f.endswith(".json")]
+    files.sort()
     hist = []
-    for fname in files[-days:]:
-        hist.append(load_json(os.path.join("data/history", fname), default=None))
+    for fname in files[-n:]:
+        hist.append(load_json(os.path.join(HISTORY_DIR, fname), default=None))
     return [h for h in hist if h and "signals" in h]
 
 
-
-# =========================================================
-# AGENTS (RULE-BASED)
-# =========================================================
-
-class AIRelevanceAgent:
-    """
-    Tight relevance: avoids false positives like 'Steam Deck model'.
-    """
-    AI_WORD_RE = re.compile(r"\bai\b", re.IGNORECASE)
-
-    STRONG_ENTITIES = [
-        "openai", "anthropic", "deepmind", "google", "gemini", "microsoft",
-        "nvidia", "cuda", "chatgpt", "gpt", "claude", "llama", "ollama",
-        "hugging face", "transformers", "pytorch", "tensorflow", "vllm", "triton",
-        "langchain", "llamaindex", "milvus", "pinecone", "weaviate"
-    ]
-
-    AI_PHRASES = [
-        "artificial intelligence",
-        "machine learning",
-        "deep learning",
-        "large language model",
-        "language model",
-        "foundation model",
-        "generative ai",
-        "diffusion",
-        "computer vision",
-        "inference",
-        "fine-tune",
-        "fine tuning",
-        "rlhf",
-        "rag",
-        "vector database",
-        "embedding",
-        "prompt injection",
-        "hallucination",
-    ]
-
-    NOISE = [
-        "deal", "sale", "discount", "coupon", "gift", "review", "best ", "hands-on",
-        "iphone case", "headphones", "tv deal"
-    ]
-
-    def is_relevant(self, item):
-        title = (item.get("title") or "").strip()
-        t = title.lower()
-
-        has_noise = any(n in t for n in self.NOISE)
-        strong = any(e in t for e in self.STRONG_ENTITIES)
-
-        matched = []
-        if self.AI_WORD_RE.search(title):
-            matched.append("ai")
-        for p in self.AI_PHRASES:
-            if p in t:
-                matched.append(p)
-
-        decision = (strong or bool(matched)) and (strong or not has_noise)
-
-        item["decision_trace"] = {
-            "agent": "AIRelevanceAgent",
-            "strong_entity": strong,
-            "matched_phrases": matched[:8],
-            "has_noise": has_noise,
-            "decision": decision
-        }
-        return decision
-
-
-class EntityAgent:
-    """
-    Extract rough entities/tools from titles.
-    """
-    ENTITIES = [
-        "OpenAI", "ChatGPT", "Anthropic", "Claude", "Google", "Gemini",
-        "DeepMind", "Microsoft", "Azure", "AWS", "NVIDIA", "CUDA",
-        "PyTorch", "TensorFlow", "Hugging Face", "Transformers",
-        "vLLM", "Triton", "ONNX", "Kubernetes", "Docker",
-        "LangChain", "LlamaIndex", "Ollama", "Llama",
-        "Redis", "Postgres", "MongoDB"
-    ]
-
-    def extract(self, item):
-        t = (item.get("title") or "")
-        tl = t.lower()
-        found = []
-        for e in self.ENTITIES:
-            if e.lower() in tl:
-                found.append(e)
-        item["entities"] = found
-        return found
-
-
-class TaggingAgent:
-    """
-    Turn headlines into "what kind of change" tags.
-    """
-    def tag(self, item):
-        t = (item.get("title") or "").lower()
-
-        # Security
-        if any(k in t for k in ["cve-", "vulnerability", "security flaw", "exploit", "patched", "zero-day"]):
-            tag = "CVE_SECURITY"
-
-        # Outages / incidents
-        elif any(k in t for k in ["outage", "down", "incident", "service disruption", "degraded", "postmortem"]):
-            tag = "OUTAGE"
-
-        # Deprecation / breaking changes
-        elif any(k in t for k in ["deprecated", "deprecation", "sunset", "end of life", "eol", "breaking change"]):
-            tag = "DEPRECATION"
-
-        # Pricing / limits
-        elif any(k in t for k in ["pricing", "price", "cost", "subscription", "rate limit", "quota"]):
-            tag = "PRICING"
-
-        # Hiring signal
-        elif any(k in t for k in ["hiring", "job", "jobs", "recruit", "headcount", "layoff", "layoffs"]):
-            tag = "HIRING"
-
-        # Infra
-        elif any(k in t for k in ["gpu", "cuda", "chip", "h100", "b200", "inference server", "datacenter", "cluster", "kubernetes"]):
-            tag = "INFRA"
-
-        # OSS releases
-        elif any(k in t for k in ["open source", "open-source", "github", "released", "release", "v1.", "v2.", "v3.", "rc"]):
-            tag = "OSS_RELEASE"
-
-        # SDK/API changes
-        elif any(k in t for k in ["api", "sdk", "endpoint", "developer", "docs", "tooling", "client library"]):
-            tag = "SDK_CHANGE"
-
-        # Model releases / capabilities
-        elif any(k in t for k in ["llm", "language model", "foundation model", "gpt", "claude", "gemini", "llama", "chatgpt", "new model"]):
-            tag = "MODEL_RELEASE"
-
-        # Product features
-        elif any(k in t for k in ["feature", "rollout", "launch", "adds", "new", "update", "introduces", "lets users", "now allows"]):
-            tag = "PRODUCT_FEATURE"
-
-        else:
-            tag = "OTHER"
-
-        item["tag_trace"] = {"agent": "TaggingAgent", "tag": tag}
-        item["tag"] = tag
-        return tag
-
-
-class TopicAgent:
-    """
-    Assign one or more topics for trends + clustering.
-    """
-    TOPIC_RULES = {
-        "models": ["gpt", "claude", "gemini", "llama", "chatgpt", "model", "llm", "foundation model", "language model"],
-        "agents": ["agent", "multi-agent", "tool use", "function calling", "autonomous"],
-        "inference": ["inference", "serving", "latency", "throughput", "vllm", "triton", "onnx"],
-        "training": ["training", "fine-tune", "finetune", "rlhf", "dataset"],
-        "gpu": ["gpu", "cuda", "nvidia", "h100", "b200", "chip"],
-        "security": ["cve", "vulnerability", "exploit", "prompt injection", "jailbreak"],
-        "policy": ["law", "lawmakers", "regulation", "ban", "safety", "rules", "standards", "privacy"],
-        "open_source": ["open-source", "open source", "github", "released", "release"],
-        "devtools": ["sdk", "api", "endpoint", "developer", "docs", "library"],
-        "products": ["feature", "rollout", "launch", "update", "introduces", "lets users"],
-        "hiring": ["hiring", "jobs", "recruit", "layoffs"],
-    }
-
-    def topics(self, item):
-        t = (item.get("title") or "").lower()
-        out = []
-        for topic, kws in self.TOPIC_RULES.items():
-            if any(k in t for k in kws):
-                out.append(topic)
-        # keep stable order
-        item["topics"] = sorted(set(out))
-        return item["topics"]
-
-
-class PriorityAgent:
-    """
-    Convert tag+entities into a priority + numeric score.
-    """
-    TAG_WEIGHT = {
-        "CVE_SECURITY": 10,
-        "OUTAGE": 9,
-        "DEPRECATION": 8,
-        "PRICING": 7,
-        "SDK_CHANGE": 7,
-        "MODEL_RELEASE": 7,
-        "INFRA": 7,
-        "OSS_RELEASE": 6,
-        "HIRING": 4,
-        "PRODUCT_FEATURE": 4,
-        "RESEARCH": 5,
-        "OTHER": 1,
-    }
-
-    ENTITY_BOOST = {
-        "OpenAI": 3, "ChatGPT": 2, "Anthropic": 3, "Claude": 2, "Google": 2, "Gemini": 2,
-        "NVIDIA": 3, "CUDA": 3, "Hugging Face": 2, "Transformers": 2, "vLLM": 3, "Triton": 3,
-    }
-
-    def score(self, item):
-        tag = item.get("tag", "OTHER")
-        score = self.TAG_WEIGHT.get(tag, 1)
-
-        for e in item.get("entities", []):
-            score += self.ENTITY_BOOST.get(e, 0)
-
-        # small boost for multiple topics (usually richer)
-        score += min(len(item.get("topics", [])), 3)
-
-        item["score"] = score
-
-        if score >= 12:
-            pr = "HIGH"
-        elif score >= 7:
-            pr = "MED"
-        else:
-            pr = "LOW"
-
-        item["priority"] = pr
-        return pr, score
-
-
-class TemporalChangeAgent:
-    def analyze(self, item, memory):
-        key = (item.get("url") or item.get("title") or "").strip()
-        prev = memory.get(key)
-        if not prev:
-            decision = "NEW"
-            prev_count = 0
-        else:
-            prev_count = int(prev.get("count", 0))
-            decision = "ESCALATING" if prev_count >= 2 else "ONGOING"
-
-        item["temporal_trace"] = {
-            "agent": "TemporalChangeAgent",
-            "previous_count": prev_count,
-            "decision": decision
-        }
-        item["change_type"] = decision
-        return decision
-
-
-class ActionAgent:
-    """
-    Make the output *do something*.
-    """
-    def action(self, item):
-        tag = item.get("tag", "OTHER")
-        topics = item.get("topics", [])
-        entities = item.get("entities", [])
-
-        # actions are short + concrete
-        if tag == "CVE_SECURITY":
-            act = "Check if you use the affected library/service; patch/upgrade and scan dependencies."
-        elif tag == "OUTAGE":
-            act = "If you rely on this service, add a fallback plan; note incident learnings for resilience."
-        elif tag == "DEPRECATION":
-            act = "Find the replacement and pin/upgrade before the sunset date; update docs/tests."
-        elif tag == "PRICING":
-            act = "Recalculate cost impact; consider cheaper tiers/alternatives; update budgets/limits."
-        elif tag == "SDK_CHANGE":
-            act = "Skim changelog/docs; verify your calls still work; update client version if needed."
-        elif tag == "OSS_RELEASE":
-            act = "Skim release notes; if it matches your stack, backlog a quick benchmark or POC."
-        elif tag == "MODEL_RELEASE":
-            act = "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-        elif tag == "INFRA":
-            act = "If this impacts inference/training cost, note it; consider benchmarking/architecture tweaks."
-        elif tag == "PRODUCT_FEATURE":
-            act = "If you use this product, test the feature; note if it changes your workflow or requirements."
-        elif tag == "HIRING":
-            act = "Optional: just track it as a market signal (no action needed)."
-        else:
-            act = "Track if it becomes relevant; no immediate action."
-
-        # tiny personalization by topic
-        if "security" in topics and tag != "CVE_SECURITY":
-            act = "Security-relevant: verify configs, permissions, and safe prompt/tooling patterns."
-
-        item["action"] = act
-        return act
-
-
-# =========================================================
-# PIPELINE HELPERS
-# =========================================================
-
-def add_drop_trace(item, agent, reason, details=None):
-    item["drop_trace"] = {
-        "agent": agent,
-        "reason": reason,
-        "details": details or {}
-    }
-    return item
-
-
-def diversify_and_select(items, k=TOP_K_OVERALL):
-    # sort by score desc, then diverse by source cap
-    ranked = sorted(items, key=lambda x: x.get("score", 0), reverse=True)
-
-    chosen = []
-    per_source = Counter()
-    for it in ranked:
-        src = it.get("source", "Unknown")
-        if per_source[src] >= MAX_PER_SOURCE:
-            continue
-        chosen.append(it)
-        per_source[src] += 1
-        if len(chosen) >= k:
-            break
-    return chosen
-
-
 def compute_topic_trends(history):
-    """
-    history: list of {"date": ..., "signals":[...]}
-    returns: topics list with counts + delta vs yesterday
-    """
+    # expects list of snapshots with {signals:[{topics:[]}]}
     if not history:
         return []
 
-    # last day and previous day
-    last = history[-1]["signals"]
-    prev = history[-2]["signals"] if len(history) >= 2 else []
+    # last snapshot = "today"
+    today = history[-1]["signals"]
+    yesterday = history[-2]["signals"] if len(history) >= 2 else []
 
     def topic_counts(signals):
         c = Counter()
         for s in signals:
-            for t in s.get("topics", []) or []:
+            for t in s.get("topics", []):
                 c[t] += 1
         return c
 
-    last_c = topic_counts(last)
-    prev_c = topic_counts(prev)
+    c_today = topic_counts(today)
+    c_yest = topic_counts(yesterday)
 
-    # 7-day counts
-    week_c = Counter()
-    for day in history:
-        for s in day["signals"]:
-            for t in s.get("topics", []) or []:
-                week_c[t] += 1
+    # 7d window across history
+    c_7d = Counter()
+    for snap in history:
+        for s in snap.get("signals", []):
+            for t in s.get("topics", []):
+                c_7d[t] += 1
 
-    topics = []
-    for t, total in week_c.most_common():
-        topics.append({
-            "topic": t,
-            "count_7d": total,
-            "count_today": last_c.get(t, 0),
-            "delta_vs_yesterday": last_c.get(t, 0) - prev_c.get(t, 0),
-        })
-    return topics
-
-
-def new_since_yesterday(history, today_signals):
-    if len(history) < 2:
-        return today_signals[:]
-
-    yesterday = history[-2]["signals"]
-    y_keys = set((s.get("url") or s.get("title") or "").strip().lower() for s in yesterday)
     out = []
-    for s in today_signals:
-        key = (s.get("url") or s.get("title") or "").strip().lower()
-        if key and key not in y_keys:
-            out.append(s)
+    for topic, count7 in c_7d.most_common():
+        out.append({
+            "topic": topic,
+            "count_7d": count7,
+            "count_today": c_today.get(topic, 0),
+            "delta_vs_yesterday": (c_today.get(topic, 0) - c_yest.get(topic, 0)) if len(history) >= 2 else None
+        })
     return out
 
 
-def generate_brief(signals):
-    if not signals:
-        return "Good morning.\n\nNo meaningful AI signals detected."
-
-    lines = ["Good morning.\n", "Here are the AI signals that matter today:\n"]
-    for i, s in enumerate(signals[:10], 1):
-        lines.append(
-            f"{i}. {s['title']}\n"
-            f"   Tag: {s.get('tag')} • Priority: {s.get('priority')} • Change: {s.get('change_type')} • Source: {s.get('source')}\n"
-            f"   Action: {s.get('action')}\n"
-        )
-    return "\n".join(lines)
-
-
-def atomic_save_json(path: str, obj):
-    """
-    Write JSON atomically so the UI never reads a half-written file.
-    """
-    ensure_dirs()
-    tmp_path = path + ".tmp"
-    with open(tmp_path, "w", encoding="utf-8") as f:
-        json.dump(obj, f, indent=2, ensure_ascii=False)
-    os.replace(tmp_path, path)
+def compute_new_since_last(history, selected):
+    if not history or len(history) < 2:
+        return selected[:10]
+    prev = history[-2]["signals"]
+    prev_keys = set((x.get("url") or x.get("title") or "").lower() for x in prev)
+    out = []
+    for s in selected:
+        k = (s.get("url") or s.get("title") or "").lower()
+        if k and k not in prev_keys:
+            out.append(s)
+    return out[:20]
 
 
-def save_latest_snapshot(payload: dict):
-    payload = dict(payload)
-    payload["generated_at_utc"] = datetime.now(timezone.utc).isoformat()
-    atomic_save_json("data/latest.json", payload)
-
+def build_brief(selected):
+    lines = ["Good morning.\n", "Here are the AI signals that actually matter today:\n"]
+    for i, s in enumerate(selected[:10], 1):
+        lines.append(f"{i}. {s.get('title')}")
+        lines.append(f"   Source: {s.get('source')} • Tag: {s.get('tag')} • Priority: {s.get('priority')} • Change: {s.get('change_type')}")
+        if s.get("llm_summary"):
+            lines.append(f"   Summary: {s.get('llm_summary')}")
+        lines.append(f"   Action: {s.get('action')}\n")
+    return "\n".join(lines).strip()
 
 
 # =========================================================
-# MAIN ORCHESTRATOR
+# MAIN PIPELINE
 # =========================================================
 
 def run_pipeline():
     ensure_dirs()
 
-    # ingest
-    rss_items = fetch_all_rss()
-    hn_items = fetch_hackernews()
-    all_news = dedupe_items(rss_items + hn_items)
-    save_json("data/raw_news.json", all_news)
+    # 1) ingest
+    all_news = []
+    for name, url in RSS_FEEDS.items():
+        try:
+            all_news.extend(fetch_rss(name, url, PER_FEED_LIMIT))
+        except Exception:
+            pass
 
-    memory = load_signal_memory()
+    try:
+        all_news.extend(fetch_hn_top(HN_LIMIT))
+    except Exception:
+        pass
 
-    relevance = AIRelevanceAgent()
+    all_news = dedupe_items(all_news)
+    save_json(RAW_NEWS_PATH, {"generated_at_utc": datetime.now(timezone.utc).isoformat(), "items": all_news})
+
+    # 2) load memory
+    memory = load_json(SIGNAL_MEMORY_PATH, default={})
+
+    relevance_agent = AIRelevanceAgent()
     entity_agent = EntityAgent()
-    tagger = TaggingAgent()
+    tag_agent = TaggingAgent()
     topic_agent = TopicAgent()
     priority_agent = PriorityAgent()
-    temporal = TemporalChangeAgent()
+    temporal_agent = TemporalChangeAgent(memory)
     action_agent = ActionAgent()
 
-    dropped = []
     kept = []
+    dropped = []
 
-    # 1) relevance filter
+    # 3) rule agents
     for it in all_news:
-        if relevance.is_relevant(it):
-            kept.append(it)
-        else:
-            dropped.append(add_drop_trace(it, "AIRelevanceAgent", "Not AI-relevant", it.get("decision_trace")))
+        ok, it = relevance_agent.process(it)
+        if not ok:
+            if ENABLE_DROPPED:
+                it["drop_trace"] = {"agent": "AIRelevanceAgent", "reason": "Not AI-related"}
+                dropped.append(it)
+            continue
 
-    # 2) annotate
-    for it in kept:
-        entity_agent.extract(it)
-        tagger.tag(it)
-        topic_agent.topics(it)
-        priority_agent.score(it)
-        temporal.analyze(it, memory)
-        action_agent.action(it)
+        it = entity_agent.process(it)
+        it = tag_agent.process(it)
+        it = topic_agent.process(it)
+        it = priority_agent.process(it)
+        it = temporal_agent.process(it)
+        it = action_agent.process(it)
+        kept.append(it)
 
-    # 3) select overall + diversity
+    # 4) rank + select
+    kept.sort(key=lambda x: x.get("score", 0), reverse=True)
     selected = diversify_and_select(kept, k=TOP_K_OVERALL)
 
-    # 4) update memory based on selected only (keeps “novelty” meaningful)
-    for it in selected:
-        update_signal_memory(it, memory)
-    save_signal_memory(memory)
+    # Optional: semantic enrichment via local LLM (only Top-N)
+    if ENABLE_LLM_ANNOTATOR:
+        llm_agent = LLMAnnotatorAgent(LLM_MODEL)
+        selected = llm_agent.annotate_topn(selected, LLM_ANNOTATE_TOP_N)
 
-    # 5) history + trends
-    save_daily_history(selected)
-    hist = load_history(HISTORY_DAYS)
-    topics = compute_topic_trends(hist)
-    new_items = new_since_yesterday(hist, selected)
+    # 5) sections + history
+    builder_radar, product_watch, action_queue = build_sections(selected)
+    save_history_snapshot(selected)
+    history = load_history(HISTORY_DAYS)
+    topics = compute_topic_trends(history)
+    new_items = compute_new_since_last(history, selected)
 
-    # 6) views
-    builder_radar = [s for s in selected if s.get("tag") in BUILDER_TAGS]
-    product_watch = [s for s in selected if s.get("tag") in PRODUCT_TAGS]
+    # 6) brief
+    brief = build_brief(selected)
 
-    # Action queue = sorted by priority then score
-    pr_order = {"HIGH": 0, "MED": 1, "LOW": 2}
-    action_queue = sorted(
-        selected,
-        key=lambda x: (pr_order.get(x.get("priority", "LOW"), 9), -x.get("score", 0))
-    )
+    # 7) update memory
+    temporal_agent.update(selected)
+    save_json(SIGNAL_MEMORY_PATH, memory)
 
-    # brief
-    brief = generate_brief(selected)
-
-        # Save a "latest" snapshot for the UI to read quickly
-    save_latest_snapshot({
+    payload = {
         "brief": brief,
         "signals": selected,
-        "builder_radar": builder_radar,
-        "product_watch": product_watch,
-        "action_queue": action_queue[:25],
-        "topic_trends": topics[:25],
-        "new_since_yesterday": new_items[:25],
-        "stats": {
-            "raw_total": len(all_news),
-            "kept_after_relevance": len(kept),
-            "selected": len(selected),
-            "builder_radar": len(builder_radar),
-            "product_watch": len(product_watch),
-            "dropped": len(dropped),
-        }
-    })
-
-
-
-    return {
-        "brief": brief,
-        "signals": selected,                 # overall
         "builder_radar": builder_radar,
         "product_watch": product_watch,
         "action_queue": action_queue[:25],
@@ -729,8 +750,5 @@ def run_pipeline():
             "dropped": len(dropped),
         }
     }
-
-
-if __name__ == "__main__":
-    out = run_pipeline()
-    print(out["brief"])
+    save_latest_snapshot(payload)
+    return payload
