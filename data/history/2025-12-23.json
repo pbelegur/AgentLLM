@@ -1,0 +1,294 @@
+{
+  "date": "2025-12-23",
+  "signals": [
+    {
+      "title": "Google’s and OpenAI’s Chatbots Can Strip Women in Photos Down to Bikinis",
+      "url": "https://www.wired.com/story/google-and-openais-chatbots-can-strip-women-in-photos-down-to-bikinis/",
+      "source": "WIRED (AI)",
+      "tag": "OUTAGE",
+      "topics": [],
+      "priority": "HIGH",
+      "score": 14
+    },
+    {
+      "title": "OpenAI’s Child Exploitation Reports Increased Sharply This Year",
+      "url": "https://www.wired.com/story/openai-child-safety-reports-ncmec/",
+      "source": "WIRED (AI)",
+      "tag": "CVE_SECURITY",
+      "topics": [
+        "security"
+      ],
+      "priority": "HIGH",
+      "score": 14
+    },
+    {
+      "title": "ChatGPT launches a year-end review like Spotify Wrapped",
+      "url": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/",
+      "source": "TechCrunch",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models",
+        "products"
+      ],
+      "priority": "MED",
+      "score": 11
+    },
+    {
+      "title": "The post-GeForce era: What if Nvidia abandons PC gaming?",
+      "url": "https://www.pcworld.com/article/3013044/the-post-geforce-era-what-if-nvidia-abandons-pc-gaming.html",
+      "source": "HackerNews",
+      "tag": "OSS_RELEASE",
+      "topics": [
+        "gpu",
+        "policy"
+      ],
+      "priority": "MED",
+      "score": 11
+    },
+    {
+      "title": "ChatGPT recapped your personal AI habits in 2025. Heres how to see yours.",
+      "url": "https://mashable.com/article/chatgpt-year-review-wrap-up-2025-how-to-view",
+      "source": "Mashable (Tech)",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "Codex is a Slytherin, Claude is a Hufflepuff",
+      "url": "https://bits.logic.inc/p/codex-is-a-slytherin-claude-is-a",
+      "source": "HackerNews",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "Show HN: Claude Wrapped in the terminal, with a WASM raymarcher",
+      "url": "https://spader.zone/wrapped/",
+      "source": "HackerNews",
+      "tag": "OSS_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 9
+    },
+    {
+      "title": "Executorch: On-device AI across mobile, embedded and edge for PyTorch",
+      "url": "https://github.com/pytorch/executorch",
+      "source": "HackerNews",
+      "tag": "OSS_RELEASE",
+      "topics": [],
+      "priority": "LOW",
+      "score": 6
+    },
+    {
+      "title": "New York’s landmark AI safety bill was defanged — and universities were part of the push against it",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/849293/ai-alliance-universities-colleges-funding-ad-campaign-against-raise-act",
+      "source": "The Verge",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "AI Gets the Blame for 55,000 Layoffs in 2025",
+      "url": "https://gizmodo.com/ai-gets-the-blame-for-55000-layoffs-in-2025-2000703011",
+      "source": "Gizmodo",
+      "tag": "HIRING",
+      "topics": [
+        "hiring"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "John Carreyrou and other authors bring new lawsuit against six major AI companies",
+      "url": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/",
+      "source": "TechCrunch",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "OpenAI says AI browsers may always be vulnerable to prompt injection attacks",
+      "url": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [
+        "security"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "New York Times reporter files lawsuit against AI companies",
+      "url": "https://www.engadget.com/ai/new-york-times-reporter-files-lawsuit-against-ai-companies-161624268.html?src=rss",
+      "source": "Engadget",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "Google Messages made some aesthetic changes to Nano Banana",
+      "url": "https://mashable.com/article/google-nano-banana-remix-icon-change",
+      "source": "Mashable (Tech)",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 4
+    },
+    {
+      "title": "Google will end dark web reports that alerted users to leaked data",
+      "url": "https://arstechnica.com/gadgets/2025/12/google-is-shutting-down-dark-web-reports-in-january-because-they-werent-helpful/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Google is reviving wearable gesture controls, but only for the Pixel Watch 4",
+      "url": "https://arstechnica.com/gadgets/2025/12/google-is-reviving-wearable-gesture-controls-but-only-for-the-pixel-watch-4/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "YouTube bans two popular channels that created fake AI movie trailers",
+      "url": "https://arstechnica.com/google/2025/12/youtube-bans-two-popular-channels-that-created-fake-ai-movie-trailers/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 2
+    },
+    {
+      "title": "LG TVs’ unremovable Copilot shortcut is the least of smart TVs’ AI problems",
+      "url": "https://arstechnica.com/gadgets/2025/12/lg-tvs-unremovable-copilot-shortcut-is-the-least-of-smart-tvs-ai-problems/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "People Are Using Sora 2 to Make Disturbing Videos With AI-Generated Kids",
+      "url": "https://www.wired.com/story/people-are-using-sora-2-to-make-child-fetish-content/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Scammers in China Are Using AI-Generated Images to Get Refunds",
+      "url": "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "6 Scary Predictions for AI in 2026",
+      "url": "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "This Chrome Extension Turns LinkedIn Posts About AI Into Facts About Allen Iverson",
+      "url": "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Trump’s War on Offshore Wind Is a Gut Punch to the AI Boom",
+      "url": "https://gizmodo.com/trumps-war-on-offshore-wind-is-a-gut-punch-to-the-ai-boom-2000702936",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Amazon’s AI assistant Alexa+ now works with Angi, Expedia, Square, and Yelp",
+      "url": "https://techcrunch.com/2025/12/23/amazons-ai-assistant-alexa-now-works-with-angi-expedia-square-and-yelp/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "iPhone storage full? Check your System Data.",
+      "url": "https://mashable.com/article/apple-iphone-ios-system-data-storage-space",
+      "source": "Mashable (Tech)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Engadget Podcast: Why is the Nex Playground 'AI console' such a hit?",
+      "url": "https://www.engadget.com/social-media/engadget-podcast-why-is-the-nex-playground-ai-console-such-a-hit-181151201.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "The Indie Game Awards snatches back two trophies from Clair Obscur over its use of generative AI",
+      "url": "https://www.engadget.com/gaming/the-indie-game-awards-snatches-back-two-trophies-from-clair-obscur-over-its-use-of-generative-ai-164730842.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Local AI is driving the biggest change in laptops in decades",
+      "url": "https://spectrum.ieee.org/ai-models-locally",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Toad is a unified experience for AI in the terminal",
+      "url": "https://willmcgugan.github.io/toad-released/",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    }
+  ]
+}

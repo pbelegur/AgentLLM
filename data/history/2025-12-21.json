@@ -2,32 +2,9 @@
   "date": "2025-12-21",
   "signals": [
     {
-      "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
-      "url": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/",
-      "source": "TechCrunch",
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models",
-        "policy"
-      ],
-      "priority": "HIGH",
-      "score": 14
-    },
-    {
       "title": "OpenAI allows users to directly adjust ChatGPT’s enthusiasm level",
       "url": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/",
       "source": "TechCrunch",
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "priority": "HIGH",
-      "score": 13
-    },
-    {
-      "title": "Anthropic: You can't change your Claude account email address",
-      "url": "https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account",
-      "source": "HackerNews",
       "tag": "MODEL_RELEASE",
       "topics": [
         "models"
@@ -46,6 +23,17 @@
       ],
       "priority": "MED",
       "score": 11
+    },
+    {
+      "title": "You can now tweak how warm and enthusiastic ChatGPT's responses are",
+      "url": "https://www.engadget.com/ai/you-can-now-tweak-how-warm-and-enthusiastic-chatgpts-responses-are-204003009.html?src=rss",
+      "source": "Engadget",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
     },
     {
       "title": "Claude's Chrome plugin is now available to all paid users",
@@ -70,51 +58,6 @@
       "score": 10
     },
     {
-      "title": "Gemini 3 Pro vs. 2.5 Pro in Pokemon Crystal",
-      "url": "https://blog.jcz.dev/gemini-3-pro-vs-25-pro-in-pokemon-crystal",
-      "source": "HackerNews",
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "priority": "MED",
-      "score": 10
-    },
-    {
-      "title": "Show HN: Claude Code Plugin to play music when waiting on user input",
-      "url": "https://github.com/Sevii/agent-marketplace/blob/main/plugins/elevator-music/README.md",
-      "source": "HackerNews",
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "priority": "MED",
-      "score": 10
-    },
-    {
-      "title": "Detailed balance in large language model-driven agents",
-      "url": "https://arxiv.org/abs/2512.10047",
-      "source": "HackerNews",
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "priority": "MED",
-      "score": 9
-    },
-    {
-      "title": "MIRA – An open-source persistent AI entity with memory",
-      "url": "https://github.com/taylorsatula/mira-OSS",
-      "source": "HackerNews",
-      "tag": "OSS_RELEASE",
-      "topics": [
-        "open_source"
-      ],
-      "priority": "MED",
-      "score": 7
-    },
-    {
       "title": "New York Governor Kathy Hochul signs RAISE Act to regulate AI safety",
       "url": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/",
       "source": "TechCrunch",
@@ -137,10 +80,19 @@
       "score": 5
     },
     {
-      "title": "OpenAI’s Stargate Data Center Approved in Michigan as American Anger Starts to Boil",
-      "url": "https://gizmodo.com/openais-stargate-data-center-approved-in-michigan-as-american-anger-starts-to-boil-2000701890",
+      "title": "New York State Just Put Itself on a Legal Collision Course with Trump’s AI Policy",
+      "url": "https://gizmodo.com/new-york-state-just-put-itself-on-a-legal-collision-course-with-trumps-ai-policy-2000702258",
       "source": "Gizmodo",
-      "tag": "OTHER",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [],
+      "priority": "LOW",
+      "score": 4
+    },
+    {
+      "title": "Make an old laptop feel new again with this $35 Microsoft Office deal",
+      "url": "https://mashable.com/article/dec-21-microsoft-office-professional-2021-for-windows",
+      "source": "Mashable (Tech)",
+      "tag": "PRODUCT_FEATURE",
       "topics": [],
       "priority": "LOW",
       "score": 4
@@ -164,15 +116,6 @@
       "score": 3
     },
     {
-      "title": "Want to link from Google’s app store to your app? That’ll be $2–4 per install",
-      "url": "https://www.theverge.com/news/848540/google-app-fees-external-link-downloads-alternative-payments",
-      "source": "The Verge",
-      "tag": "OTHER",
-      "topics": [],
-      "priority": "LOW",
-      "score": 3
-    },
-    {
       "title": "Google and Apple reportedly warn employees on visas to avoid international travel",
       "url": "https://techcrunch.com/2025/12/20/google-and-apple-reportedly-warn-employees-on-visas-to-avoid-international-travel/",
       "source": "TechCrunch",
@@ -185,6 +128,15 @@
       "title": "Google Assistant will stick around a bit longer than expected for some Android users",
       "url": "https://www.engadget.com/ai/google-assistant-will-stick-around-a-bit-longer-than-expected-for-some-android-users-130000178.html?src=rss",
       "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Show HN: Jmail – Google Suite for Epstein files",
+      "url": "https://www.jmail.world",
+      "source": "HackerNews",
       "tag": "OTHER",
       "topics": [],
       "priority": "LOW",
@@ -216,15 +168,6 @@
       "title": "LG TVs’ unremovable Copilot shortcut is the least of smart TVs’ AI problems",
       "url": "https://arstechnica.com/gadgets/2025/12/lg-tvs-unremovable-copilot-shortcut-is-the-least-of-smart-tvs-ai-problems/",
       "source": "Ars Technica",
-      "tag": "OTHER",
-      "topics": [],
-      "priority": "LOW",
-      "score": 1
-    },
-    {
-      "title": "Rivian’s AI pivot is about more than chasing Tesla",
-      "url": "https://www.theverge.com/transportation/846783/rivian-ai-autonomy-day-self-driving-lidar-chip-tesla",
-      "source": "The Verge",
       "tag": "OTHER",
       "topics": [],
       "priority": "LOW",
@@ -267,9 +210,9 @@
       "score": 1
     },
     {
-      "title": "Engadget Podcast: 2025 was the year of AI, smartglasses and spineless Big Tech",
-      "url": "https://www.engadget.com/social-media/engadget-podcast-2025-was-the-year-of-ai-smartglasses-and-spineless-big-tech-143000338.html?src=rss",
-      "source": "Engadget",
+      "title": "We May Not Know How Strong AI Humanoid Robots Really Are",
+      "url": "https://www.cnet.com/tech/computing/we-may-not-know-how-strong-ai-humanoid-robots-really-are/#ftag=CAD590a51e",
+      "source": "CNET",
       "tag": "OTHER",
       "topics": [],
       "priority": "LOW",
@@ -297,6 +240,42 @@
       "title": "This Chrome Extension Turns LinkedIn Posts About AI Into Facts About Allen Iverson",
       "url": "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/",
       "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "The Ultra-Realistic AI Face Swapping Platform Driving Romance Scams",
+      "url": "https://www.wired.com/story/the-ultra-realistic-ai-face-swapping-platform-driving-romance-scams/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "‘Wicked’ Director Jon M. Chu on ‘What Makes Art Beautiful’ in the AI Era",
+      "url": "https://www.wired.com/story/uncanny-valley-podcast-wicked-director-jon-m-chu/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Measuring AI Ability to Complete Long Tasks",
+      "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Show HN: AI-Augmented Memory for Groups",
+      "url": "https://www.largemem.com/",
+      "source": "HackerNews",
       "tag": "OTHER",
       "topics": [],
       "priority": "LOW",

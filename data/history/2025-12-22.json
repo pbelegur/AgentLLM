@@ -1,0 +1,303 @@
+{
+  "date": "2025-12-22",
+  "signals": [
+    {
+      "title": "OpenAI’s ChatGPT ‘Wrapped’ Is a Good Reminder to Check Your Privacy Settings",
+      "url": "https://gizmodo.com/openais-chatgpt-wrapped-is-a-good-reminder-to-check-your-settings-2000702643",
+      "source": "Gizmodo",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models",
+        "policy"
+      ],
+      "priority": "HIGH",
+      "score": 14
+    },
+    {
+      "title": "OpenAI’s Child Exploitation Reports Increased Sharply This Year",
+      "url": "https://www.wired.com/story/openai-child-safety-reports-ncmec/",
+      "source": "WIRED (AI)",
+      "tag": "CVE_SECURITY",
+      "topics": [
+        "security"
+      ],
+      "priority": "HIGH",
+      "score": 14
+    },
+    {
+      "title": "OpenAI allows users to directly adjust ChatGPT’s enthusiasm level",
+      "url": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/",
+      "source": "TechCrunch",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "HIGH",
+      "score": 13
+    },
+    {
+      "title": "ChatGPT launches a year-end review like Spotify Wrapped",
+      "url": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/",
+      "source": "TechCrunch",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models",
+        "products"
+      ],
+      "priority": "MED",
+      "score": 11
+    },
+    {
+      "title": "ChatGPT’s yearly recap sums up your conversations with the chatbot",
+      "url": "https://www.theverge.com/news/849348/openai-chatgpt-2025-year-in-review-wrapped",
+      "source": "The Verge",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "ChatGPT: Everything you need to know about the AI-powered chatbot",
+      "url": "https://techcrunch.com/2025/12/22/chatgpt-everything-to-know-about-the-ai-chatbot/",
+      "source": "TechCrunch",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "You can now tweak how warm and enthusiastic ChatGPT's responses are",
+      "url": "https://www.engadget.com/ai/you-can-now-tweak-how-warm-and-enthusiastic-chatgpts-responses-are-204003009.html?src=rss",
+      "source": "Engadget",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "Claude Code gets native LSP support",
+      "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
+      "source": "HackerNews",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 10
+    },
+    {
+      "title": "Instacart scraps AI pricing tests that made some products more expensive",
+      "url": "https://www.theverge.com/news/849061/instacart-ends-ai-pricing-tests-eversight",
+      "source": "The Verge",
+      "tag": "PRICING",
+      "topics": [],
+      "priority": "MED",
+      "score": 7
+    },
+    {
+      "title": "Instacart Says It Is Pulling the Plug on Its AI-Powered Price Tests",
+      "url": "https://gizmodo.com/instacart-says-it-is-pulling-the-plug-on-its-ai-powered-price-tests-2000702649",
+      "source": "Gizmodo",
+      "tag": "PRICING",
+      "topics": [],
+      "priority": "MED",
+      "score": 7
+    },
+    {
+      "title": "OpenAI says AI browsers may always be vulnerable to prompt injection attacks",
+      "url": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [
+        "security"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "Governor Hochul signs New York's AI safety act",
+      "url": "https://www.engadget.com/ai/governor-hochul-signs-new-yorks-ai-safety-act-220503930.html?src=rss",
+      "source": "Engadget",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "Uplane (YC F25) Is Hiring Founding Engineers (Full-Stack and AI)",
+      "url": "https://www.useparallel.com/uplane1/careers",
+      "source": "HackerNews",
+      "tag": "HIRING",
+      "topics": [
+        "hiring"
+      ],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "Transformers Are Dead. Google Killed Them – Then Went Silent",
+      "url": "https://medium.com/@aedelon/transformers-are-dead-google-killed-them-then-went-silent-a379ed35409b",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 5
+    },
+    {
+      "title": "Google Messages made some aesthetic changes to Nano Banana",
+      "url": "https://mashable.com/article/google-nano-banana-remix-icon-change",
+      "source": "Mashable (Tech)",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 4
+    },
+    {
+      "title": "AI was linked to 50,000 job cuts in 2025, report reveals",
+      "url": "https://mashable.com/article/ai-linked-50000-job-cuts-2025",
+      "source": "Mashable (Tech)",
+      "tag": "HIRING",
+      "topics": [],
+      "priority": "LOW",
+      "score": 4
+    },
+    {
+      "title": "Make an old laptop feel new again with this $35 Microsoft Office deal",
+      "url": "https://mashable.com/article/dec-21-microsoft-office-professional-2021-for-windows",
+      "source": "Mashable (Tech)",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [],
+      "priority": "LOW",
+      "score": 4
+    },
+    {
+      "title": "Google will end dark web reports that alerted users to leaked data",
+      "url": "https://arstechnica.com/gadgets/2025/12/google-is-shutting-down-dark-web-reports-in-january-because-they-werent-helpful/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Google is reviving wearable gesture controls, but only for the Pixel Watch 4",
+      "url": "https://arstechnica.com/gadgets/2025/12/google-is-reviving-wearable-gesture-controls-but-only-for-the-pixel-watch-4/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Google and Apple reportedly warn employees on visas to avoid international travel",
+      "url": "https://techcrunch.com/2025/12/20/google-and-apple-reportedly-warn-employees-on-visas-to-avoid-international-travel/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Google Is Spending Over $4 Billion on a Data Center Company",
+      "url": "https://gizmodo.com/google-is-spending-over-4-billion-on-a-data-center-company-2000702751",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "Google's healthcare AI made up a body part – what if doctors don't notice?",
+      "url": "https://www.theverge.com/health/718049/google-med-gemini-basilar-ganglia-paper-typo-hallucination",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 3
+    },
+    {
+      "title": "YouTube bans two popular channels that created fake AI movie trailers",
+      "url": "https://arstechnica.com/google/2025/12/youtube-bans-two-popular-channels-that-created-fake-ai-movie-trailers/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 2
+    },
+    {
+      "title": "LG TVs’ unremovable Copilot shortcut is the least of smart TVs’ AI problems",
+      "url": "https://arstechnica.com/gadgets/2025/12/lg-tvs-unremovable-copilot-shortcut-is-the-least-of-smart-tvs-ai-problems/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Indie Game Awards retracts Expedition 33 prizes due to generative AI",
+      "url": "https://www.theverge.com/news/849144/indie-game-awards-game-of-the-year-expedition-33-generative-ai-chantey-modretro",
+      "source": "The Verge",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "How This Dating App Uses AI to Match People Based on Something Truly Human: Music",
+      "url": "https://www.cnet.com/tech/services-and-software/vinylly-dating-app-uses-ai-to-match-people-based-on-music/#ftag=CAD590a51e",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Splat’s app uses AI to turn your photos into coloring pages for kids",
+      "url": "https://techcrunch.com/2025/12/22/splats-app-uses-ai-to-turn-your-photos-into-coloring-pages-for-kids/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "People Are Using Sora 2 to Make Disturbing Videos With AI-Generated Kids",
+      "url": "https://www.wired.com/story/people-are-using-sora-2-to-make-child-fetish-content/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "Scammers in China Are Using AI-Generated Images to Get Refunds",
+      "url": "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    },
+    {
+      "title": "6 Scary Predictions for AI in 2026",
+      "url": "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/",
+      "source": "WIRED (AI)",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 1
+    }
+  ]
+}

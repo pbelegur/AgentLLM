@@ -1,117 +1,78 @@
 {
-  "brief": "Good morning.\n\nHere are the AI signals that matter today:\n\n1. OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors\n   Tag: MODEL_RELEASE • Priority: HIGH • Change: ESCALATING • Source: TechCrunch\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n2. OpenAI allows users to directly adjust ChatGPT’s enthusiasm level\n   Tag: MODEL_RELEASE • Priority: HIGH • Change: ESCALATING • Source: TechCrunch\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n3. Anthropic: You can't change your Claude account email address\n   Tag: MODEL_RELEASE • Priority: HIGH • Change: ESCALATING • Source: HackerNews\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n4. ChatGPT update lets users customize a warmer and more enthusiastic bot\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: Mashable (Tech)\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n5. Claude's Chrome plugin is now available to all paid users\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: Engadget\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n6. Claude in Chrome\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: HackerNews\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n7. Gemini 3 Pro vs. 2.5 Pro in Pokemon Crystal\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: HackerNews\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n8. Show HN: Claude Code Plugin to play music when waiting on user input\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: HackerNews\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n9. Detailed balance in large language model-driven agents\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: HackerNews\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n10. MIRA – An open-source persistent AI entity with memory\n   Tag: OSS_RELEASE • Priority: MED • Change: ESCALATING • Source: HackerNews\n   Action: Skim release notes; if it matches your stack, backlog a quick benchmark or POC.\n",
+  "brief": "Good morning.\n\nHere are the AI signals that matter today:\n\n1. Google’s and OpenAI’s Chatbots Can Strip Women in Photos Down to Bikinis\n   Tag: OUTAGE • Priority: HIGH • Change: ESCALATING • Source: WIRED (AI)\n   Action: If you rely on this service, add a fallback plan; note incident learnings for resilience.\n\n2. OpenAI’s Child Exploitation Reports Increased Sharply This Year\n   Tag: CVE_SECURITY • Priority: HIGH • Change: ESCALATING • Source: WIRED (AI)\n   Action: Check if you use the affected library/service; patch/upgrade and scan dependencies.\n\n3. ChatGPT launches a year-end review like Spotify Wrapped\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: TechCrunch\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n4. ChatGPT recapped your personal AI habits in 2025. Heres how to see yours.\n   Tag: MODEL_RELEASE • Priority: MED • Change: ESCALATING • Source: Mashable (Tech)\n   Action: Check capabilities/limits; decide if it improves your use-case; run a small eval.\n\n5. Executorch: On-device AI across mobile, embedded and edge for PyTorch\n   Tag: OSS_RELEASE • Priority: LOW • Change: ESCALATING • Source: HackerNews\n   Action: Skim release notes; if it matches your stack, backlog a quick benchmark or POC.\n\n6. John Carreyrou and other authors bring new lawsuit against six major AI companies\n   Tag: PRODUCT_FEATURE • Priority: LOW • Change: ESCALATING • Source: TechCrunch\n   Action: If you use this product, test the feature; note if it changes your workflow or requirements.\n\n7. OpenAI says AI browsers may always be vulnerable to prompt injection attacks\n   Tag: OTHER • Priority: LOW • Change: ESCALATING • Source: TechCrunch\n   Action: Security-relevant: verify configs, permissions, and safe prompt/tooling patterns.\n\n8. AI Gets the Blame for 55,000 Layoffs in 2025\n   Tag: HIRING • Priority: LOW • Change: ESCALATING • Source: Gizmodo\n   Action: Optional: just track it as a market signal (no action needed).\n\n9. New York Times reporter files lawsuit against AI companies\n   Tag: PRODUCT_FEATURE • Priority: LOW • Change: ESCALATING • Source: Engadget\n   Action: If you use this product, test the feature; note if it changes your workflow or requirements.\n\n10. Google Messages made some aesthetic changes to Nano Banana\n   Tag: OTHER • Priority: LOW • Change: ESCALATING • Source: Mashable (Tech)\n   Action: Track if it becomes relevant; no immediate action.\n",
   "signals": [
     {
-      "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
-      "url": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/",
-      "source": "TechCrunch",
+      "title": "Google’s and OpenAI’s Chatbots Can Strip Women in Photos Down to Bikinis",
+      "url": "https://www.wired.com/story/google-and-openais-chatbots-can-strip-women-in-photos-down-to-bikinis/",
+      "source": "WIRED (AI)",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": true,
-        "matched_phrases": [
-          "ai"
-        ],
+        "matched_phrases": [],
         "has_noise": false,
         "decision": true
       },
       "entities": [
         "OpenAI",
-        "ChatGPT"
+        "Google"
       ],
       "tag_trace": {
         "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
+        "tag": "OUTAGE"
       },
-      "tag": "MODEL_RELEASE",
+      "tag": "OUTAGE",
+      "topics": [],
+      "score": 14,
+      "priority": "HIGH",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you rely on this service, add a fallback plan; note incident learnings for resilience."
+    },
+    {
+      "title": "OpenAI’s Child Exploitation Reports Increased Sharply This Year",
+      "url": "https://www.wired.com/story/openai-child-safety-reports-ncmec/",
+      "source": "WIRED (AI)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "OpenAI"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "CVE_SECURITY"
+      },
+      "tag": "CVE_SECURITY",
       "topics": [
-        "models",
-        "policy"
+        "security"
       ],
       "score": 14,
       "priority": "HIGH",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 29,
+        "previous_count": 93,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
+      "action": "Check if you use the affected library/service; patch/upgrade and scan dependencies."
     },
     {
-      "title": "OpenAI allows users to directly adjust ChatGPT’s enthusiasm level",
-      "url": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/",
+      "title": "ChatGPT launches a year-end review like Spotify Wrapped",
+      "url": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/",
       "source": "TechCrunch",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": true,
         "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "OpenAI",
-        "ChatGPT"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 13,
-      "priority": "HIGH",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Anthropic: You can't change your Claude account email address",
-      "url": "https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Anthropic",
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 13,
-      "priority": "HIGH",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "ChatGPT update lets users customize a warmer and more enthusiastic bot",
-      "url": "https://mashable.com/article/chatgpt-personality-settings-lets-users-choose-warmer-bot",
-      "source": "Mashable (Tech)",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
+        "has_noise": true,
         "decision": true
       },
       "entities": [
@@ -130,209 +91,81 @@
       "priority": "MED",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 30,
+        "previous_count": 86,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
     },
     {
-      "title": "Claude's Chrome plugin is now available to all paid users",
-      "url": "https://www.engadget.com/ai/claudes-chrome-plugin-is-now-available-to-all-paid-users-221024295.html?src=rss",
-      "source": "Engadget",
+      "title": "ChatGPT recapped your personal AI habits in 2025. Heres how to see yours.",
+      "url": "https://mashable.com/article/chatgpt-year-review-wrap-up-2025-how-to-view",
+      "source": "Mashable (Tech)",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Claude in Chrome",
-      "url": "https://claude.com/chrome",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 7,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Gemini 3 Pro vs. 2.5 Pro in Pokemon Crystal",
-      "url": "https://blog.jcz.dev/gemini-3-pro-vs-25-pro-in-pokemon-crystal",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Gemini"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Show HN: Claude Code Plugin to play music when waiting on user input",
-      "url": "https://github.com/Sevii/agent-marketplace/blob/main/plugins/elevator-music/README.md",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Detailed balance in large language model-driven agents",
-      "url": "https://arxiv.org/abs/2512.10047",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "large language model",
-          "language model"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "score": 9,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "MIRA – An open-source persistent AI entity with memory",
-      "url": "https://github.com/taylorsatula/mira-OSS",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
         "matched_phrases": [
           "ai"
         ],
         "has_noise": false,
         "decision": true
       },
-      "entities": [],
+      "entities": [
+        "ChatGPT"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "score": 10,
+      "priority": "MED",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
+    },
+    {
+      "title": "Executorch: On-device AI across mobile, embedded and edge for PyTorch",
+      "url": "https://github.com/pytorch/executorch",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "PyTorch"
+      ],
       "tag_trace": {
         "agent": "TaggingAgent",
         "tag": "OSS_RELEASE"
       },
       "tag": "OSS_RELEASE",
-      "topics": [
-        "open_source"
-      ],
-      "score": 7,
-      "priority": "MED",
+      "topics": [],
+      "score": 6,
+      "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 53,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Skim release notes; if it matches your stack, backlog a quick benchmark or POC."
     },
     {
-      "title": "New York Governor Kathy Hochul signs RAISE Act to regulate AI safety",
-      "url": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/",
+      "title": "John Carreyrou and other authors bring new lawsuit against six major AI companies",
+      "url": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/",
       "source": "TechCrunch",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -343,7 +176,9 @@
         "has_noise": false,
         "decision": true
       },
-      "entities": [],
+      "entities": [
+        "AWS"
+      ],
       "tag_trace": {
         "agent": "TaggingAgent",
         "tag": "PRODUCT_FEATURE"
@@ -356,52 +191,23 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 29,
+        "previous_count": 45,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
     },
     {
-      "title": "Governor Hochul signs New York's AI safety act",
-      "url": "https://www.engadget.com/ai/governor-hochul-signs-new-yorks-ai-safety-act-220503930.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "PRODUCT_FEATURE"
-      },
-      "tag": "PRODUCT_FEATURE",
-      "topics": [
-        "policy"
-      ],
-      "score": 5,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
-    },
-    {
-      "title": "OpenAI’s Stargate Data Center Approved in Michigan as American Anger Starts to Boil",
-      "url": "https://gizmodo.com/openais-stargate-data-center-approved-in-michigan-as-american-anger-starts-to-boil-2000701890",
-      "source": "Gizmodo",
+      "title": "OpenAI says AI browsers may always be vulnerable to prompt injection attacks",
+      "url": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/",
+      "source": "TechCrunch",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": true,
-        "matched_phrases": [],
+        "matched_phrases": [
+          "ai",
+          "prompt injection"
+        ],
         "has_noise": false,
         "decision": true
       },
@@ -413,12 +219,112 @@
         "tag": "OTHER"
       },
       "tag": "OTHER",
-      "topics": [],
+      "topics": [
+        "security"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 76,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Security-relevant: verify configs, permissions, and safe prompt/tooling patterns."
+    },
+    {
+      "title": "AI Gets the Blame for 55,000 Layoffs in 2025",
+      "url": "https://gizmodo.com/ai-gets-the-blame-for-55000-layoffs-in-2025-2000703011",
+      "source": "Gizmodo",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "HIRING"
+      },
+      "tag": "HIRING",
+      "topics": [
+        "hiring"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 45,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Optional: just track it as a market signal (no action needed)."
+    },
+    {
+      "title": "New York Times reporter files lawsuit against AI companies",
+      "url": "https://www.engadget.com/ai/new-york-times-reporter-files-lawsuit-against-ai-companies-161624268.html?src=rss",
+      "source": "Engadget",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "AWS"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "PRODUCT_FEATURE"
+      },
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
+    },
+    {
+      "title": "Google Messages made some aesthetic changes to Nano Banana",
+      "url": "https://mashable.com/article/google-nano-banana-remix-icon-change",
+      "source": "Mashable (Tech)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "Google"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
       "score": 4,
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 30,
+        "previous_count": 92,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -448,7 +354,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 171,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -478,97 +384,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Want to link from Google’s app store to your app? That’ll be $2–4 per install",
-      "url": "https://www.theverge.com/news/848540/google-app-fees-external-link-downloads-alternative-payments",
-      "source": "The Verge",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Google"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 3,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Google and Apple reportedly warn employees on visas to avoid international travel",
-      "url": "https://techcrunch.com/2025/12/20/google-and-apple-reportedly-warn-employees-on-visas-to-avoid-international-travel/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Google"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 3,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Google Assistant will stick around a bit longer than expected for some Android users",
-      "url": "https://www.engadget.com/ai/google-assistant-will-stick-around-a-bit-longer-than-expected-for-some-android-users-130000178.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Google"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 3,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 171,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -600,39 +416,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Nebula Awards Yelled at Until They Completely Ban Use of AI by Nominees",
-      "url": "https://gizmodo.com/nebula-awards-yelled-at-until-they-completely-ban-use-of-ai-by-nominees-2000702137",
-      "source": "Gizmodo",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [
-        "policy"
-      ],
-      "score": 2,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
+        "previous_count": 188,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -662,16 +446,16 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 171,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Track if it becomes relevant; no immediate action."
     },
     {
-      "title": "Rivian’s AI pivot is about more than chasing Tesla",
-      "url": "https://www.theverge.com/transportation/846783/rivian-ai-autonomy-day-self-driving-lidar-chip-tesla",
-      "source": "The Verge",
+      "title": "People Are Using Sora 2 to Make Disturbing Videos With AI-Generated Kids",
+      "url": "https://www.wired.com/story/people-are-using-sora-2-to-make-child-fetish-content/",
+      "source": "WIRED (AI)",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": false,
@@ -692,157 +476,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 12,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Ex-Splunk execs’ startup Resolve AI hits $1 billion valuation with Series A",
-      "url": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 1,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Where are investors placing their bets next year? AI, AI, AI.",
-      "url": "https://techcrunch.com/2025/12/19/where-are-investors-placing-their-bets-next-year-ai-ai-ai/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 1,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Rest in Hell, Fake AI-Made YouTube Trailers",
-      "url": "https://gizmodo.com/rest-in-hell-fake-ai-made-youtube-trailers-2000701825",
-      "source": "Gizmodo",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 1,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 10,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "AI Image Generators Default to the Same 12 Photo Styles, Study Finds",
-      "url": "https://gizmodo.com/ai-image-generators-default-to-the-same-12-photo-styles-study-finds-2000702012",
-      "source": "Gizmodo",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 1,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 3,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Engadget Podcast: 2025 was the year of AI, smartglasses and spineless Big Tech",
-      "url": "https://www.engadget.com/social-media/engadget-podcast-2025-was-the-year-of-ai-smartglasses-and-spineless-big-tech-143000338.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 1,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 2,
+        "previous_count": 96,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -872,7 +506,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 167,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -902,7 +536,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 12,
+        "previous_count": 165,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -932,7 +566,218 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 11,
+        "previous_count": 161,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Amazon’s AI assistant Alexa+ now works with Angi, Expedia, Square, and Yelp",
+      "url": "https://techcrunch.com/2025/12/23/amazons-ai-assistant-alexa-now-works-with-angi-expedia-square-and-yelp/",
+      "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Trump’s War on Offshore Wind Is a Gut Punch to the AI Boom",
+      "url": "https://gizmodo.com/trumps-war-on-offshore-wind-is-a-gut-punch-to-the-ai-boom-2000702936",
+      "source": "Gizmodo",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 50,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "iPhone storage full? Check your System Data.",
+      "url": "https://mashable.com/article/apple-iphone-ios-system-data-storage-space",
+      "source": "Mashable (Tech)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "rag"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 45,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Engadget Podcast: Why is the Nex Playground 'AI console' such a hit?",
+      "url": "https://www.engadget.com/social-media/engadget-podcast-why-is-the-nex-playground-ai-console-such-a-hit-181151201.html?src=rss",
+      "source": "Engadget",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 47,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "The Indie Game Awards snatches back two trophies from Clair Obscur over its use of generative AI",
+      "url": "https://www.engadget.com/gaming/the-indie-game-awards-snatches-back-two-trophies-from-clair-obscur-over-its-use-of-generative-ai-164730842.html?src=rss",
+      "source": "Engadget",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai",
+          "generative ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 51,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Local AI is driving the biggest change in laptops in decades",
+      "url": "https://spectrum.ieee.org/ai-models-locally",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 42,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Toad is a unified experience for AI in the terminal",
+      "url": "https://willmcgugan.github.io/toad-released/",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 44,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -941,799 +786,40 @@
   ],
   "builder_radar": [
     {
-      "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
-      "url": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/",
-      "source": "TechCrunch",
+      "title": "Google’s and OpenAI’s Chatbots Can Strip Women in Photos Down to Bikinis",
+      "url": "https://www.wired.com/story/google-and-openais-chatbots-can-strip-women-in-photos-down-to-bikinis/",
+      "source": "WIRED (AI)",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": true,
-        "matched_phrases": [
-          "ai"
-        ],
+        "matched_phrases": [],
         "has_noise": false,
         "decision": true
       },
       "entities": [
         "OpenAI",
-        "ChatGPT"
+        "Google"
       ],
       "tag_trace": {
         "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
+        "tag": "OUTAGE"
       },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models",
-        "policy"
-      ],
+      "tag": "OUTAGE",
+      "topics": [],
       "score": 14,
       "priority": "HIGH",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 29,
+        "previous_count": 54,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
+      "action": "If you rely on this service, add a fallback plan; note incident learnings for resilience."
     },
     {
-      "title": "OpenAI allows users to directly adjust ChatGPT’s enthusiasm level",
-      "url": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "OpenAI",
-        "ChatGPT"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 13,
-      "priority": "HIGH",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Anthropic: You can't change your Claude account email address",
-      "url": "https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Anthropic",
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 13,
-      "priority": "HIGH",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "ChatGPT update lets users customize a warmer and more enthusiastic bot",
-      "url": "https://mashable.com/article/chatgpt-personality-settings-lets-users-choose-warmer-bot",
-      "source": "Mashable (Tech)",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "ChatGPT"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models",
-        "products"
-      ],
-      "score": 11,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Claude's Chrome plugin is now available to all paid users",
-      "url": "https://www.engadget.com/ai/claudes-chrome-plugin-is-now-available-to-all-paid-users-221024295.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Claude in Chrome",
-      "url": "https://claude.com/chrome",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 7,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Gemini 3 Pro vs. 2.5 Pro in Pokemon Crystal",
-      "url": "https://blog.jcz.dev/gemini-3-pro-vs-25-pro-in-pokemon-crystal",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Gemini"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Show HN: Claude Code Plugin to play music when waiting on user input",
-      "url": "https://github.com/Sevii/agent-marketplace/blob/main/plugins/elevator-music/README.md",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Detailed balance in large language model-driven agents",
-      "url": "https://arxiv.org/abs/2512.10047",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "large language model",
-          "language model"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "score": 9,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "MIRA – An open-source persistent AI entity with memory",
-      "url": "https://github.com/taylorsatula/mira-OSS",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OSS_RELEASE"
-      },
-      "tag": "OSS_RELEASE",
-      "topics": [
-        "open_source"
-      ],
-      "score": 7,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Skim release notes; if it matches your stack, backlog a quick benchmark or POC."
-    }
-  ],
-  "product_watch": [
-    {
-      "title": "New York Governor Kathy Hochul signs RAISE Act to regulate AI safety",
-      "url": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "PRODUCT_FEATURE"
-      },
-      "tag": "PRODUCT_FEATURE",
-      "topics": [
-        "policy"
-      ],
-      "score": 5,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 29,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
-    },
-    {
-      "title": "Governor Hochul signs New York's AI safety act",
-      "url": "https://www.engadget.com/ai/governor-hochul-signs-new-yorks-ai-safety-act-220503930.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "PRODUCT_FEATURE"
-      },
-      "tag": "PRODUCT_FEATURE",
-      "topics": [
-        "policy"
-      ],
-      "score": 5,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
-    }
-  ],
-  "action_queue": [
-    {
-      "title": "OpenAI adds new teen safety rules to ChatGPT as lawmakers weigh AI standards for minors",
-      "url": "https://techcrunch.com/2025/12/19/openai-adds-new-teen-safety-rules-to-models-as-lawmakers-weigh-ai-standards-for-minors/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "OpenAI",
-        "ChatGPT"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models",
-        "policy"
-      ],
-      "score": 14,
-      "priority": "HIGH",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 29,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "OpenAI allows users to directly adjust ChatGPT’s enthusiasm level",
-      "url": "https://techcrunch.com/2025/12/20/openai-allows-users-to-directly-adjust-chatgpts-warmth-and-enthusiasm/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "OpenAI",
-        "ChatGPT"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 13,
-      "priority": "HIGH",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Anthropic: You can't change your Claude account email address",
-      "url": "https://support.claude.com/en/articles/8452276-how-do-i-change-the-email-address-associated-with-my-account",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Anthropic",
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 13,
-      "priority": "HIGH",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "ChatGPT update lets users customize a warmer and more enthusiastic bot",
-      "url": "https://mashable.com/article/chatgpt-personality-settings-lets-users-choose-warmer-bot",
-      "source": "Mashable (Tech)",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "ChatGPT"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models",
-        "products"
-      ],
-      "score": 11,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Claude's Chrome plugin is now available to all paid users",
-      "url": "https://www.engadget.com/ai/claudes-chrome-plugin-is-now-available-to-all-paid-users-221024295.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Claude in Chrome",
-      "url": "https://claude.com/chrome",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 7,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Gemini 3 Pro vs. 2.5 Pro in Pokemon Crystal",
-      "url": "https://blog.jcz.dev/gemini-3-pro-vs-25-pro-in-pokemon-crystal",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Gemini"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Show HN: Claude Code Plugin to play music when waiting on user input",
-      "url": "https://github.com/Sevii/agent-marketplace/blob/main/plugins/elevator-music/README.md",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Claude"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "models"
-      ],
-      "score": 10,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "Detailed balance in large language model-driven agents",
-      "url": "https://arxiv.org/abs/2512.10047",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "large language model",
-          "language model"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "MODEL_RELEASE"
-      },
-      "tag": "MODEL_RELEASE",
-      "topics": [
-        "agents",
-        "models"
-      ],
-      "score": 9,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
-    },
-    {
-      "title": "MIRA – An open-source persistent AI entity with memory",
-      "url": "https://github.com/taylorsatula/mira-OSS",
-      "source": "HackerNews",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OSS_RELEASE"
-      },
-      "tag": "OSS_RELEASE",
-      "topics": [
-        "open_source"
-      ],
-      "score": 7,
-      "priority": "MED",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Skim release notes; if it matches your stack, backlog a quick benchmark or POC."
-    },
-    {
-      "title": "New York Governor Kathy Hochul signs RAISE Act to regulate AI safety",
-      "url": "https://techcrunch.com/2025/12/20/new-york-governor-kathy-hochul-signs-raise-act-to-regulate-ai-safety/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "PRODUCT_FEATURE"
-      },
-      "tag": "PRODUCT_FEATURE",
-      "topics": [
-        "policy"
-      ],
-      "score": 5,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 29,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
-    },
-    {
-      "title": "Governor Hochul signs New York's AI safety act",
-      "url": "https://www.engadget.com/ai/governor-hochul-signs-new-yorks-ai-safety-act-220503930.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "PRODUCT_FEATURE"
-      },
-      "tag": "PRODUCT_FEATURE",
-      "topics": [
-        "policy"
-      ],
-      "score": 5,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
-    },
-    {
-      "title": "OpenAI’s Stargate Data Center Approved in Michigan as American Anger Starts to Boil",
-      "url": "https://gizmodo.com/openais-stargate-data-center-approved-in-michigan-as-american-anger-starts-to-boil-2000701890",
-      "source": "Gizmodo",
+      "title": "OpenAI’s Child Exploitation Reports Increased Sharply This Year",
+      "url": "https://www.wired.com/story/openai-child-safety-reports-ncmec/",
+      "source": "WIRED (AI)",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": true,
@@ -1746,15 +832,548 @@
       ],
       "tag_trace": {
         "agent": "TaggingAgent",
+        "tag": "CVE_SECURITY"
+      },
+      "tag": "CVE_SECURITY",
+      "topics": [
+        "security"
+      ],
+      "score": 14,
+      "priority": "HIGH",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 93,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Check if you use the affected library/service; patch/upgrade and scan dependencies."
+    },
+    {
+      "title": "ChatGPT launches a year-end review like Spotify Wrapped",
+      "url": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/",
+      "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": true,
+        "decision": true
+      },
+      "entities": [
+        "ChatGPT"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models",
+        "products"
+      ],
+      "score": 11,
+      "priority": "MED",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 86,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
+    },
+    {
+      "title": "ChatGPT recapped your personal AI habits in 2025. Heres how to see yours.",
+      "url": "https://mashable.com/article/chatgpt-year-review-wrap-up-2025-how-to-view",
+      "source": "Mashable (Tech)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "ChatGPT"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "score": 10,
+      "priority": "MED",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
+    },
+    {
+      "title": "Executorch: On-device AI across mobile, embedded and edge for PyTorch",
+      "url": "https://github.com/pytorch/executorch",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "PyTorch"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OSS_RELEASE"
+      },
+      "tag": "OSS_RELEASE",
+      "topics": [],
+      "score": 6,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 53,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Skim release notes; if it matches your stack, backlog a quick benchmark or POC."
+    }
+  ],
+  "product_watch": [
+    {
+      "title": "Google’s and OpenAI’s Chatbots Can Strip Women in Photos Down to Bikinis",
+      "url": "https://www.wired.com/story/google-and-openais-chatbots-can-strip-women-in-photos-down-to-bikinis/",
+      "source": "WIRED (AI)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "OpenAI",
+        "Google"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OUTAGE"
+      },
+      "tag": "OUTAGE",
+      "topics": [],
+      "score": 14,
+      "priority": "HIGH",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you rely on this service, add a fallback plan; note incident learnings for resilience."
+    },
+    {
+      "title": "John Carreyrou and other authors bring new lawsuit against six major AI companies",
+      "url": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/",
+      "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "AWS"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "PRODUCT_FEATURE"
+      },
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 45,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
+    },
+    {
+      "title": "New York Times reporter files lawsuit against AI companies",
+      "url": "https://www.engadget.com/ai/new-york-times-reporter-files-lawsuit-against-ai-companies-161624268.html?src=rss",
+      "source": "Engadget",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "AWS"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "PRODUCT_FEATURE"
+      },
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
+    }
+  ],
+  "action_queue": [
+    {
+      "title": "Google’s and OpenAI’s Chatbots Can Strip Women in Photos Down to Bikinis",
+      "url": "https://www.wired.com/story/google-and-openais-chatbots-can-strip-women-in-photos-down-to-bikinis/",
+      "source": "WIRED (AI)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "OpenAI",
+        "Google"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OUTAGE"
+      },
+      "tag": "OUTAGE",
+      "topics": [],
+      "score": 14,
+      "priority": "HIGH",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you rely on this service, add a fallback plan; note incident learnings for resilience."
+    },
+    {
+      "title": "OpenAI’s Child Exploitation Reports Increased Sharply This Year",
+      "url": "https://www.wired.com/story/openai-child-safety-reports-ncmec/",
+      "source": "WIRED (AI)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "OpenAI"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "CVE_SECURITY"
+      },
+      "tag": "CVE_SECURITY",
+      "topics": [
+        "security"
+      ],
+      "score": 14,
+      "priority": "HIGH",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 93,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Check if you use the affected library/service; patch/upgrade and scan dependencies."
+    },
+    {
+      "title": "ChatGPT launches a year-end review like Spotify Wrapped",
+      "url": "https://techcrunch.com/2025/12/22/chatgpt-launches-a-year-end-review-like-spotify-wrapped/",
+      "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": true,
+        "decision": true
+      },
+      "entities": [
+        "ChatGPT"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models",
+        "products"
+      ],
+      "score": 11,
+      "priority": "MED",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 86,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
+    },
+    {
+      "title": "ChatGPT recapped your personal AI habits in 2025. Heres how to see yours.",
+      "url": "https://mashable.com/article/chatgpt-year-review-wrap-up-2025-how-to-view",
+      "source": "Mashable (Tech)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "ChatGPT"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "MODEL_RELEASE"
+      },
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "score": 10,
+      "priority": "MED",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Check capabilities/limits; decide if it improves your use-case; run a small eval."
+    },
+    {
+      "title": "Executorch: On-device AI across mobile, embedded and edge for PyTorch",
+      "url": "https://github.com/pytorch/executorch",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "PyTorch"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OSS_RELEASE"
+      },
+      "tag": "OSS_RELEASE",
+      "topics": [],
+      "score": 6,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 53,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Skim release notes; if it matches your stack, backlog a quick benchmark or POC."
+    },
+    {
+      "title": "John Carreyrou and other authors bring new lawsuit against six major AI companies",
+      "url": "https://techcrunch.com/2025/12/23/john-carreyrou-and-other-authors-bring-new-lawsuit-against-six-major-ai-companies/",
+      "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "AWS"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "PRODUCT_FEATURE"
+      },
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 45,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
+    },
+    {
+      "title": "OpenAI says AI browsers may always be vulnerable to prompt injection attacks",
+      "url": "https://techcrunch.com/2025/12/22/openai-says-ai-browsers-may-always-be-vulnerable-to-prompt-injection-attacks/",
+      "source": "TechCrunch",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [
+          "ai",
+          "prompt injection"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "OpenAI"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
         "tag": "OTHER"
       },
       "tag": "OTHER",
-      "topics": [],
+      "topics": [
+        "security"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 76,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Security-relevant: verify configs, permissions, and safe prompt/tooling patterns."
+    },
+    {
+      "title": "AI Gets the Blame for 55,000 Layoffs in 2025",
+      "url": "https://gizmodo.com/ai-gets-the-blame-for-55000-layoffs-in-2025-2000703011",
+      "source": "Gizmodo",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "HIRING"
+      },
+      "tag": "HIRING",
+      "topics": [
+        "hiring"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 45,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Optional: just track it as a market signal (no action needed)."
+    },
+    {
+      "title": "New York Times reporter files lawsuit against AI companies",
+      "url": "https://www.engadget.com/ai/new-york-times-reporter-files-lawsuit-against-ai-companies-161624268.html?src=rss",
+      "source": "Engadget",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "AWS"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "PRODUCT_FEATURE"
+      },
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "policy"
+      ],
+      "score": 5,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 54,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "If you use this product, test the feature; note if it changes your workflow or requirements."
+    },
+    {
+      "title": "Google Messages made some aesthetic changes to Nano Banana",
+      "url": "https://mashable.com/article/google-nano-banana-remix-icon-change",
+      "source": "Mashable (Tech)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": true,
+        "matched_phrases": [],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [
+        "Google"
+      ],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
       "score": 4,
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 30,
+        "previous_count": 92,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -1784,7 +1403,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 171,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -1814,97 +1433,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Want to link from Google’s app store to your app? That’ll be $2–4 per install",
-      "url": "https://www.theverge.com/news/848540/google-app-fees-external-link-downloads-alternative-payments",
-      "source": "The Verge",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Google"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 3,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Google and Apple reportedly warn employees on visas to avoid international travel",
-      "url": "https://techcrunch.com/2025/12/20/google-and-apple-reportedly-warn-employees-on-visas-to-avoid-international-travel/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Google"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 3,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 9,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Google Assistant will stick around a bit longer than expected for some Android users",
-      "url": "https://www.engadget.com/ai/google-assistant-will-stick-around-a-bit-longer-than-expected-for-some-android-users-130000178.html?src=rss",
-      "source": "Engadget",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": true,
-        "matched_phrases": [],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [
-        "Google"
-      ],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 3,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 171,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -1936,39 +1465,7 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 30,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Nebula Awards Yelled at Until They Completely Ban Use of AI by Nominees",
-      "url": "https://gizmodo.com/nebula-awards-yelled-at-until-they-completely-ban-use-of-ai-by-nominees-2000702137",
-      "source": "Gizmodo",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [
-        "policy"
-      ],
-      "score": 2,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 30,
+        "previous_count": 188,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
@@ -1998,16 +1495,16 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 171,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Track if it becomes relevant; no immediate action."
     },
     {
-      "title": "Rivian’s AI pivot is about more than chasing Tesla",
-      "url": "https://www.theverge.com/transportation/846783/rivian-ai-autonomy-day-self-driving-lidar-chip-tesla",
-      "source": "The Verge",
+      "title": "People Are Using Sora 2 to Make Disturbing Videos With AI-Generated Kids",
+      "url": "https://www.wired.com/story/people-are-using-sora-2-to-make-child-fetish-content/",
+      "source": "WIRED (AI)",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": false,
@@ -2028,15 +1525,105 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 12,
+        "previous_count": 96,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Track if it becomes relevant; no immediate action."
     },
     {
-      "title": "Ex-Splunk execs’ startup Resolve AI hits $1 billion valuation with Series A",
-      "url": "https://techcrunch.com/2025/12/19/ex-splunk-execs-startup-resolve-ai-hits-1-billion-valuation-with-series-a/",
+      "title": "Scammers in China Are Using AI-Generated Images to Get Refunds",
+      "url": "https://www.wired.com/story/scammers-in-china-are-using-ai-generated-images-to-get-refunds/",
+      "source": "WIRED (AI)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 167,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "6 Scary Predictions for AI in 2026",
+      "url": "https://www.wired.com/story/backchannel-2026-predictions-tech-robots-ai/",
+      "source": "WIRED (AI)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 165,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "This Chrome Extension Turns LinkedIn Posts About AI Into Facts About Allen Iverson",
+      "url": "https://www.wired.com/story/chrome-extension-linkedin-allen-iverson/",
+      "source": "WIRED (AI)",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 161,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Amazon’s AI assistant Alexa+ now works with Angi, Expedia, Square, and Yelp",
+      "url": "https://techcrunch.com/2025/12/23/amazons-ai-assistant-alexa-now-works-with-angi-expedia-square-and-yelp/",
       "source": "TechCrunch",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -2058,45 +1645,15 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 13,
+        "previous_count": 54,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Track if it becomes relevant; no immediate action."
     },
     {
-      "title": "Where are investors placing their bets next year? AI, AI, AI.",
-      "url": "https://techcrunch.com/2025/12/19/where-are-investors-placing-their-bets-next-year-ai-ai-ai/",
-      "source": "TechCrunch",
-      "decision_trace": {
-        "agent": "AIRelevanceAgent",
-        "strong_entity": false,
-        "matched_phrases": [
-          "ai"
-        ],
-        "has_noise": false,
-        "decision": true
-      },
-      "entities": [],
-      "tag_trace": {
-        "agent": "TaggingAgent",
-        "tag": "OTHER"
-      },
-      "tag": "OTHER",
-      "topics": [],
-      "score": 1,
-      "priority": "LOW",
-      "temporal_trace": {
-        "agent": "TemporalChangeAgent",
-        "previous_count": 13,
-        "decision": "ESCALATING"
-      },
-      "change_type": "ESCALATING",
-      "action": "Track if it becomes relevant; no immediate action."
-    },
-    {
-      "title": "Rest in Hell, Fake AI-Made YouTube Trailers",
-      "url": "https://gizmodo.com/rest-in-hell-fake-ai-made-youtube-trailers-2000701825",
+      "title": "Trump’s War on Offshore Wind Is a Gut Punch to the AI Boom",
+      "url": "https://gizmodo.com/trumps-war-on-offshore-wind-is-a-gut-punch-to-the-ai-boom-2000702936",
       "source": "Gizmodo",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -2118,55 +1675,21 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 10,
+        "previous_count": 50,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Track if it becomes relevant; no immediate action."
-    }
-  ],
-  "topic_trends": [
-    {
-      "topic": "models",
-      "count_7d": 18,
-      "count_today": 9,
-      "delta_vs_yesterday": 0
     },
     {
-      "topic": "policy",
-      "count_7d": 10,
-      "count_today": 5,
-      "delta_vs_yesterday": 0
-    },
-    {
-      "topic": "products",
-      "count_7d": 2,
-      "count_today": 1,
-      "delta_vs_yesterday": 0
-    },
-    {
-      "topic": "agents",
-      "count_7d": 2,
-      "count_today": 1,
-      "delta_vs_yesterday": 0
-    },
-    {
-      "topic": "open_source",
-      "count_7d": 2,
-      "count_today": 1,
-      "delta_vs_yesterday": 0
-    }
-  ],
-  "new_since_yesterday": [
-    {
-      "title": "AI Image Generators Default to the Same 12 Photo Styles, Study Finds",
-      "url": "https://gizmodo.com/ai-image-generators-default-to-the-same-12-photo-styles-study-finds-2000702012",
-      "source": "Gizmodo",
+      "title": "iPhone storage full? Check your System Data.",
+      "url": "https://mashable.com/article/apple-iphone-ios-system-data-storage-space",
+      "source": "Mashable (Tech)",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
         "strong_entity": false,
         "matched_phrases": [
-          "ai"
+          "rag"
         ],
         "has_noise": false,
         "decision": true
@@ -2182,15 +1705,15 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 3,
+        "previous_count": 45,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Track if it becomes relevant; no immediate action."
     },
     {
-      "title": "Engadget Podcast: 2025 was the year of AI, smartglasses and spineless Big Tech",
-      "url": "https://www.engadget.com/social-media/engadget-podcast-2025-was-the-year-of-ai-smartglasses-and-spineless-big-tech-143000338.html?src=rss",
+      "title": "Engadget Podcast: Why is the Nex Playground 'AI console' such a hit?",
+      "url": "https://www.engadget.com/social-media/engadget-podcast-why-is-the-nex-playground-ai-console-such-a-hit-181151201.html?src=rss",
       "source": "Engadget",
       "decision_trace": {
         "agent": "AIRelevanceAgent",
@@ -2212,20 +1735,162 @@
       "priority": "LOW",
       "temporal_trace": {
         "agent": "TemporalChangeAgent",
-        "previous_count": 2,
+        "previous_count": 47,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "The Indie Game Awards snatches back two trophies from Clair Obscur over its use of generative AI",
+      "url": "https://www.engadget.com/gaming/the-indie-game-awards-snatches-back-two-trophies-from-clair-obscur-over-its-use-of-generative-ai-164730842.html?src=rss",
+      "source": "Engadget",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai",
+          "generative ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 51,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Local AI is driving the biggest change in laptops in decades",
+      "url": "https://spectrum.ieee.org/ai-models-locally",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 42,
+        "decision": "ESCALATING"
+      },
+      "change_type": "ESCALATING",
+      "action": "Track if it becomes relevant; no immediate action."
+    },
+    {
+      "title": "Toad is a unified experience for AI in the terminal",
+      "url": "https://willmcgugan.github.io/toad-released/",
+      "source": "HackerNews",
+      "decision_trace": {
+        "agent": "AIRelevanceAgent",
+        "strong_entity": false,
+        "matched_phrases": [
+          "ai"
+        ],
+        "has_noise": false,
+        "decision": true
+      },
+      "entities": [],
+      "tag_trace": {
+        "agent": "TaggingAgent",
+        "tag": "OTHER"
+      },
+      "tag": "OTHER",
+      "topics": [],
+      "score": 1,
+      "priority": "LOW",
+      "temporal_trace": {
+        "agent": "TemporalChangeAgent",
+        "previous_count": 44,
         "decision": "ESCALATING"
       },
       "change_type": "ESCALATING",
       "action": "Track if it becomes relevant; no immediate action."
     }
   ],
+  "topic_trends": [
+    {
+      "topic": "models",
+      "count_7d": 27,
+      "count_today": 2,
+      "delta_vs_yesterday": -2
+    },
+    {
+      "topic": "policy",
+      "count_7d": 23,
+      "count_today": 4,
+      "delta_vs_yesterday": -2
+    },
+    {
+      "topic": "security",
+      "count_7d": 6,
+      "count_today": 2,
+      "delta_vs_yesterday": 0
+    },
+    {
+      "topic": "products",
+      "count_7d": 5,
+      "count_today": 1,
+      "delta_vs_yesterday": 0
+    },
+    {
+      "topic": "hiring",
+      "count_7d": 3,
+      "count_today": 1,
+      "delta_vs_yesterday": 0
+    },
+    {
+      "topic": "agents",
+      "count_7d": 1,
+      "count_today": 0,
+      "delta_vs_yesterday": 0
+    },
+    {
+      "topic": "open_source",
+      "count_7d": 1,
+      "count_today": 0,
+      "delta_vs_yesterday": 0
+    },
+    {
+      "topic": "gpu",
+      "count_7d": 1,
+      "count_today": 0,
+      "delta_vs_yesterday": -1
+    }
+  ],
+  "new_since_yesterday": [],
   "stats": {
-    "raw_total": 204,
-    "kept_after_relevance": 38,
-    "selected": 30,
-    "builder_radar": 10,
-    "product_watch": 2,
-    "dropped": 166
+    "raw_total": 205,
+    "kept_after_relevance": 26,
+    "selected": 25,
+    "builder_radar": 5,
+    "product_watch": 3,
+    "dropped": 179
   },
-  "generated_at_utc": "2025-12-21T00:09:02.426848+00:00"
+  "generated_at_utc": "2025-12-24T08:16:18.127321+00:00"
 }
