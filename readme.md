@@ -1,4 +1,4 @@
-# AI Radar (Daily AI Brief) — Local-first Hybrid Agent Pipeline
+# AI Radar (Daily AI Brief) Local-first Hybrid Agent Pipeline
 
 A **local-first “engineering radar”** that ingests tech news (RSS + Hacker News), applies **fast deterministic rule-agents** (filter/tag/topic/priority/temporal/action), then optionally uses a **FREE local LLM (Ollama)** to enrich only the **Top-N** signals with a better **summary + action + corrected tag/topics** (with guardrails).
 
