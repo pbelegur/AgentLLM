@@ -1,0 +1,295 @@
+{
+  "date": "2026-01-03_0200",
+  "signals": [
+    {
+      "title": "From prophet to product: How AI came back down to earth in 2025",
+      "url": "https://arstechnica.com/ai/2025/12/from-prophet-to-product-how-ai-came-back-down-to-earth-in-2025/",
+      "source": "Ars Technica",
+      "tag": "OUTAGE",
+      "topics": [
+        "products"
+      ],
+      "priority": "MED",
+      "score": 60
+    },
+    {
+      "title": "Tesla Sales Skid Even With Cheaper Models and Deep Discounts",
+      "url": "https://gizmodo.com/tesla-sales-skid-even-with-cheaper-models-and-deep-discounts-2000704887",
+      "source": "Gizmodo",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 50
+    },
+    {
+      "title": "Minimal phone pioneer Punkt is back with a new privacy-focused model at CES",
+      "url": "https://www.engadget.com/mobile/smartphones/minimal-phone-pioneer-punkt-is-back-with-a-new-privacy-focused-model-at-ces-110000705.html?src=rss",
+      "source": "Engadget",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 50
+    },
+    {
+      "title": "C –> Java != Java –> LLM",
+      "url": "http://www.observationalhazard.com/2025/12/c-java-java-llm.html",
+      "source": "HackerNews",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 50
+    },
+    {
+      "title": "Save some money on your heating bills with the Google Nest Learning Thermostat at its lowest price yet",
+      "url": "https://mashable.com/article/jan-2-google-nest-learning-thermostat-deal",
+      "source": "Mashable",
+      "tag": "PRICING",
+      "topics": [
+        "products"
+      ],
+      "priority": "MED",
+      "score": 45
+    },
+    {
+      "title": "Nvidia’s AI empire: A look at its top startup investments",
+      "url": "https://techcrunch.com/2026/01/02/nvidias-ai-empire-a-look-at-its-top-startup-investments/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [
+        "gpu"
+      ],
+      "priority": "LOW",
+      "score": 30
+    },
+    {
+      "title": "Microsoft CEO Satya Nadella is now blogging about AI slop",
+      "url": "https://www.theverge.com/news/852630/microsoft-ceo-satya-nadella-scratchpad-blog-ai-slop-comments",
+      "source": "The Verge",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Starlink Will Be Moving Thousands of Its Satellites for 'Space Safety' Reasons",
+      "url": "https://www.cnet.com/tech/services-and-software/spacex-starlink-satellite-internet-orbit-altitude-collision-risk/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Supply chains, AI, and the cloud: The biggest failures (and one success) of 2025",
+      "url": "https://arstechnica.com/security/2025/12/supply-chains-ai-and-the-cloud-the-biggest-failures-and-one-success-of-2025/",
+      "source": "Ars Technica",
+      "tag": "INFRA",
+      "topics": [],
+      "priority": "LOW",
+      "score": 25
+    },
+    {
+      "title": "Alleged PS5 Jailbreak Method Spikes Prices for Old Star Wars Game on eBay",
+      "url": "https://gizmodo.com/alleged-ps5-jailbreak-method-spikes-prices-for-old-star-wars-game-on-ebay-2000704980",
+      "source": "Gizmodo",
+      "tag": "PRICING",
+      "topics": [],
+      "priority": "MED",
+      "score": 40
+    },
+    {
+      "title": "Prices for an old Star Wars game have ballooned because of its role in a PS5 jailbreak",
+      "url": "https://www.engadget.com/gaming/playstation/prices-for-an-old-star-wars-game-have-ballooned-because-of-its-role-in-a-ps5-jailbreak-230604276.html?src=rss",
+      "source": "Engadget",
+      "tag": "PRICING",
+      "topics": [],
+      "priority": "MED",
+      "score": 40
+    },
+    {
+      "title": "Microsoft kills official way to activate Windows 11/10 without internet",
+      "url": "https://www.neowin.net/news/report-microsoft-quietly-kills-official-way-to-activate-windows-1110-without-internet/",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "How to watch the Nvidia CES 2026 keynote",
+      "url": "https://mashable.com/article/how-to-watch-nvidia-ces-2026-keynote-address",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [
+        "gpu"
+      ],
+      "priority": "LOW",
+      "score": 30
+    },
+    {
+      "title": "OpenAI bets big on audio as Silicon Valley declares war on screens",
+      "url": "https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Here’s How Long You Should Walk Every Day to Prevent Back Pain",
+      "url": "https://www.wired.com/story/heres-how-long-you-should-walk-every-day-to-prevent-back-pain/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "The ABCs of Apple Cider Vinegar: Benefits, Dosage and Your Safety",
+      "url": "https://www.cnet.com/health/nutrition/apple-cider-vinegar-benefits-side-effects-dosage/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "OpenAI reorganizes some teams to build audio-based AI hardware products",
+      "url": "https://arstechnica.com/ai/2026/01/openai-plans-new-voice-model-in-early-2026-audio-based-hardware-in-2027/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [
+        "products"
+      ],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Meta’s New Privacy Policy Opens Up AI Chats for Targeted Ads",
+      "url": "https://gizmodo.com/metas-new-privacy-policy-opens-up-ai-chats-for-targeted-ads-2000704852",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "How to watch the NVIDIA CES 2026 presentation live",
+      "url": "https://www.engadget.com/computing/how-to-watch-the-nvidia-ces-2026-press-conference-live-jan-5-130028279.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [
+        "gpu"
+      ],
+      "priority": "LOW",
+      "score": 30
+    },
+    {
+      "title": "Google AI Overviews put people at risk of harm with misleading health advice",
+      "url": "https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Apple Vision Pro is failing. Heres why that matters.",
+      "url": "https://mashable.com/article/vision-pro-cut",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "India orders Musk’s X to fix Grok over ‘obscene’ AI content",
+      "url": "https://techcrunch.com/2026/01/02/india-orders-musks-x-to-fix-grok-over-obscene-ai-content/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "AI Labor Is Boring. AI Lust Is Big Business",
+      "url": "https://www.wired.com/story/expired-tired-wired-sexy-chatbots/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Amazon's base Kindle is $20 off right now",
+      "url": "https://www.engadget.com/deals/amazons-base-kindle-is-20-off-right-now-183302484.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "10 years of personal finances in plain text files",
+      "url": "https://sgoel.dev/posts/10-years-of-personal-finances-in-plain-text-files/",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "xAI admits that Grok generated images of minors in minimal clothing, part of a larger problem with deepfakes",
+      "url": "https://mashable.com/article/grok-generates-images-of-minors-in-minimal-clothing",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "In 2026, AI will move from hype to pragmatism",
+      "url": "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Instagram Chief Says AI Images Are Evolving Fast and He's Worried About Us Keeping Up",
+      "url": "https://www.cnet.com/tech/services-and-software/instagram-adam-mosseri-ai-images-authenticity-and-trust/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "xAI silent after Grok sexualized images of kids; dril mocks Grok’s “apology”",
+      "url": "https://arstechnica.com/tech-policy/2026/01/xai-silent-after-grok-sexualized-images-of-kids-dril-mocks-groks-apology/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Drake Accused of Manipulating Streaming Play Counts With Bots in New Lawsuit",
+      "url": "https://gizmodo.com/drake-accused-of-manipulating-streaming-play-counts-with-bots-in-new-lawsuit-2000705004",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    }
+  ]
+}

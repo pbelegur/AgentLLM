@@ -670,183 +670,183 @@
   },
   "https://arstechnica.com/tech-policy/2025/12/openais-child-exploitation-reports-increased-sharply-this-year/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "Ars Technica",
     "tag": "CVE_SECURITY"
   },
   "https://www.engadget.com/gaming/rainbow-six-siege-servers-are-back-online-after-shutting-down-in-response-to-marketplace-hacks-191049079.html?src=rss": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T18:43:33.346921+00:00",
+    "count": 75,
     "source": "Engadget",
-    "tag": "OUTAGE"
+    "tag": "CVE_SECURITY"
   },
   "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T21:23:50.650679+00:00",
+    "count": 24,
     "source": "HackerNews",
     "tag": "OUTAGE"
   },
   "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 101,
     "source": "TechCrunch",
-    "tag": "PRODUCT_FEATURE"
+    "tag": "INFRA"
   },
   "https://www.wired.com/story/expired-tired-wired-gpt-5/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "WIRED",
     "tag": "MODEL_RELEASE"
   },
   "https://gizmodo.com/elizabeth-warren-finally-used-chatgpt-2000704050": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T18:07:11.230124+00:00",
+    "count": 6,
     "source": "Gizmodo",
-    "tag": "MODEL_RELEASE"
+    "tag": "PRICING"
   },
   "https://mashable.com/article/framework-price-hike-ddr5-ram-memory-shortage": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "Mashable",
     "tag": "PRICING"
   },
   "https://www.cnet.com/tech/services-and-software/these-google-maps-ai-tools-can-help-keep-your-holiday-travel-plans-on-track/#ftag=cadf328eec": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "CNET",
     "tag": "OTHER"
   },
   "https://arstechnica.com/tech-policy/2025/12/us-cant-deport-hate-speech-researcher-for-protected-speech-lawsuit-says/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 66,
     "source": "Ars Technica",
     "tag": "RESEARCH"
   },
   "https://www.engadget.com/home/samsung-plans-to-integrate-google-photos-into-its-tvs-132739713.html?src=rss": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T22:07:36.934362+00:00",
+    "count": 5,
     "source": "Engadget",
     "tag": "OTHER"
   },
   "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "HackerNews",
     "tag": "OTHER"
   },
   "https://techcrunch.com/2025/12/29/samsung-plans-to-bring-google-photos-to-its-tvs-in-2026/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 66,
     "source": "TechCrunch",
     "tag": "OTHER"
   },
   "https://www.wired.com/story/3-tricks-google-gemini-live-latest-major-upgrade/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 101,
     "source": "WIRED",
     "tag": "OTHER"
   },
   "https://gizmodo.com/trumps-crusade-against-woke-climate-research-threatens-solar-science-2000704041": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T19:23:40.011981+00:00",
+    "count": 13,
     "source": "Gizmodo",
-    "tag": "SDK_CHANGE"
+    "tag": "RESEARCH"
   },
   "https://mashable.com/article/google-photos-nano-banana-coming-to-samsung-tvs": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "Mashable",
     "tag": "OTHER"
   },
   "https://www.cnet.com/tech/services-and-software/google-gmail-address-change-without-losing-your-data/#ftag=cadf328eec": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "CNET",
     "tag": "OTHER"
   },
   "https://arstechnica.com/tech-policy/2025/12/china-drafts-worlds-strictest-rules-to-end-ai-encouraged-suicide-violence/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T21:56:40.175435+00:00",
+    "count": 27,
     "source": "Ars Technica",
     "tag": "OTHER"
   },
   "https://www.engadget.com/ai/openai-is-hiring-a-new-head-of-preparedness-to-try-to-predict-and-mitigate-ais-harms-220330486.html?src=rss": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "Engadget",
     "tag": "HIRING"
   },
   "https://www.circusscientist.com/2025/12/29/google-is-dead-where-do-we-go-now/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T01:22:39.988356+00:00",
+    "count": 24,
     "source": "HackerNews",
     "tag": "OTHER"
   },
   "https://techcrunch.com/2025/12/28/the-google-pixel-watch-4-made-me-like-smartwatches-again/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "TechCrunch",
     "tag": "OTHER"
   },
   "https://www.wired.com/gallery/best-pet-hair-vacuums/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 66,
     "source": "WIRED",
     "tag": "OTHER"
   },
   "https://gizmodo.com/legendary-dev-loses-his-mind-over-ai-agents-unsolicited-act-of-kindness-2000704001": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "Gizmodo",
     "tag": "OTHER"
   },
   "https://www.engadget.com/deals/apple-airtag-four-packs-are-on-sale-for-65-right-now-202333053.html?src=rss": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T23:01:01.699651+00:00",
+    "count": 27,
     "source": "Engadget",
     "tag": "OTHER"
   },
   "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T21:56:40.175435+00:00",
+    "count": 27,
     "source": "HackerNews",
     "tag": "OTHER"
   },
   "https://techcrunch.com/2025/12/28/openai-is-looking-for-a-new-head-of-preparedness/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "TechCrunch",
     "tag": "OTHER"
   },
   "https://www.wired.com/story/people-who-drink-bottled-water-on-a-daily-basis-ingest-90000-more-microplastics-per-year/": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 66,
     "source": "WIRED",
     "tag": "OTHER"
   },
@@ -866,23 +866,702 @@
   },
   "https://mashable.com/article/google-gmail-users-change-email-address": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "Mashable",
     "tag": "OTHER"
   },
   "https://www.cnet.com/tech/the-trick-to-scoring-amazon-prime-deals-for-free/#ftag=cadf328eec": {
     "first_seen": "2025-12-30T05:36:48.207386+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 3,
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 4,
     "source": "CNET",
     "tag": "OTHER"
   },
   "https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/": {
     "first_seen": "2025-12-30T05:40:18.166117+00:00",
-    "last_seen": "2025-12-30T05:47:37.307638+00:00",
-    "count": 2,
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 100,
     "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://deepclause.substack.com/p/coming-soon": {
+    "first_seen": "2025-12-30T05:58:25.706483+00:00",
+    "last_seen": "2025-12-30T05:58:25.706483+00:00",
+    "count": 1,
+    "source": "HackerNews",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://mashable.com/article/dec-30-chatplayground-ai-unlimited-plan-lifetime-subscriptions": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T01:22:39.988356+00:00",
+    "count": 42,
+    "source": "Mashable",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.cnet.com/tech/services-and-software/real-vs-ai-your-deepfake-spotters-guide-for-ai-generated-videos/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 62,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/computing/how-to-watch-the-nvidia-ces-2026-presentation-live-130028065.html?src=rss": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 97,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://mwilczynski.dev/posts/riscv-gpu-zink/": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 62,
+    "source": "HackerNews",
+    "tag": "INFRA"
+  },
+  "https://mashable.com/article/dec-30-internxt-cloud-storage-lifetime-subscription-20tb": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T03:22:26.362601+00:00",
+    "count": 53,
+    "source": "Mashable",
+    "tag": "INFRA"
+  },
+  "https://www.cnet.com/tech/returning-a-gift-here-are-all-the-major-retailers-holiday-return-policies/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 61,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/entertainment/streaming/netflix-has-released-a-trailer-for-the-stranger-things-finale-171204480.html?src=rss": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 97,
+    "source": "Engadget",
+    "tag": "OSS_RELEASE"
+  },
+  "https://gizmodo.com/meta-buys-ai-agent-startup-for-2-billion-says-it-will-cut-all-ties-with-china-2000704284": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T17:59:53.398441+00:00",
+    "count": 67,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/what-is-brainrot-reels-tiktoks-fyp-inescapable": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 62,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/30/the-best-ai-powered-dictation-apps-of-2025/": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T18:43:33.346921+00:00",
+    "count": 66,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/the-stranger-things-finale-trailer-goes-to-eleven-2000704153": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-30T22:51:08.446565+00:00",
+    "count": 28,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/video/stranger-things-season-5-finale-trailer": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 39,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 46,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/tcls-new-paper-like-tablet-has-a-bunch-of-ai-in-it-2000703992": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-30T21:56:40.175435+00:00",
+    "count": 22,
+    "source": "Gizmodo",
+    "tag": "RESEARCH"
+  },
+  "https://arstechnica.com/information-technology/2025/12/how-do-ai-coding-agents-work-we-look-under-the-hood/": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-30T19:34:34.998638+00:00",
+    "count": 10,
+    "source": "Ars Technica",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/how-to/how-to-boil-eggs-in-air-fryer/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T17:56:17.094883+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 51,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://bits.logic.inc/p/ai-is-forcing-us-to-write-good-code": {
+    "first_seen": "2025-12-30T18:18:11.307656+00:00",
+    "last_seen": "2025-12-30T18:29:04.472836+00:00",
+    "count": 2,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://sderosiaux.substack.com/p/the-70-ai-productivity-myth-why-most": {
+    "first_seen": "2025-12-30T18:39:59.070767+00:00",
+    "last_seen": "2025-12-30T18:39:59.070767+00:00",
+    "count": 1,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://blog.lidskialf.net/2021/02/08/turning-an-old-kindle-into-a-eink-development-platform/": {
+    "first_seen": "2025-12-30T18:50:55.191033+00:00",
+    "last_seen": "2025-12-30T18:50:55.191033+00:00",
+    "count": 1,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://github.com/mprajyothreddy/brainkernel": {
+    "first_seen": "2025-12-30T19:01:50.788296+00:00",
+    "last_seen": "2025-12-31T00:06:53.776941+00:00",
+    "count": 29,
+    "source": "HackerNews",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://gizmodo.com/ai-ruined-job-applications-so-people-are-resorting-to-dating-apps-to-find-work-2000704287": {
+    "first_seen": "2025-12-30T19:12:45.235852+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 90,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/chatgpt-android-app-thinking-toggle": {
+    "first_seen": "2025-12-30T19:23:40.011981+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 54,
+    "source": "Mashable",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.engadget.com/ai/meta-buys-startup-known-for-its-ai-task-automation-agents-140045275.html?src=rss": {
+    "first_seen": "2025-12-30T19:34:34.998638+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 55,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/culture/2025/12/stranger-things-series-finale-trailer-is-here/": {
+    "first_seen": "2025-12-30T19:45:26.627195+00:00",
+    "last_seen": "2025-12-31T17:27:05.555086+00:00",
+    "count": 54,
+    "source": "Ars Technica",
+    "tag": "OTHER"
+  },
+  "https://media.ccc.de/v/39c3-escaping-containment-a-security-analysis-of-freebsd-jails": {
+    "first_seen": "2025-12-30T21:34:44.873231+00:00",
+    "last_seen": "2025-12-31T19:02:45.918812+00:00",
+    "count": 52,
+    "source": "HackerNews",
+    "tag": "SDK_CHANGE"
+  },
+  "https://www.cnet.com/tech/services-and-software/the-best-new-ai-features-in-photoshop-and-how-to-use-them-like-a-pro/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T21:45:45.559620+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 41,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/science/2025/12/feds-researchers-settle-suit-over-grants-blocked-by-now-illegal-order/": {
+    "first_seen": "2025-12-30T22:07:36.934362+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 57,
+    "source": "Ars Technica",
+    "tag": "RESEARCH"
+  },
+  "https://arxiv.org/abs/2512.14012": {
+    "first_seen": "2025-12-30T22:07:36.934362+00:00",
+    "last_seen": "2025-12-30T22:07:36.934362+00:00",
+    "count": 1,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026": {
+    "first_seen": "2025-12-30T22:29:25.762431+00:00",
+    "last_seen": "2025-12-31T23:11:50.876359+00:00",
+    "count": 48,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://mathvoices.ams.org/mathmedia/tonys-take-april-2022/": {
+    "first_seen": "2025-12-30T23:12:49.033335+00:00",
+    "last_seen": "2025-12-31T01:33:30.674252+00:00",
+    "count": 3,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/dec-30-sterling-stock-picker-lifetime-subscription": {
+    "first_seen": "2025-12-30T23:34:26.638416+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 31,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/mobile/samsung-200-galaxy-a17-brings-googles-circle-to-search-to-its-lower-priced-phone/#ftag=cadf328eec": {
+    "first_seen": "2025-12-30T23:45:15.415988+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 30,
+    "source": "CNET",
+    "tag": "PRICING"
+  },
+  "https://mashable.com/article/elon-musk-failed-to-deliver-on-2025-promises": {
+    "first_seen": "2025-12-31T01:33:30.674252+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 20,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://foodmedcenter.org/2026-center-for-food-as-medicine-longevity-airline-water-study/": {
+    "first_seen": "2025-12-31T01:44:20.582362+00:00",
+    "last_seen": "2025-12-31T04:34:25.385068+00:00",
+    "count": 14,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://animatedai.github.io/": {
+    "first_seen": "2025-12-31T04:01:41.469979+00:00",
+    "last_seen": "2025-12-31T04:56:20.363001+00:00",
+    "count": 4,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://opal.google/landing/": {
+    "first_seen": "2025-12-31T05:07:14.240507+00:00",
+    "last_seen": "2025-12-31T05:07:14.240507+00:00",
+    "count": 1,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/ai/2025/12/from-prophet-to-product-how-ai-came-back-down-to-earth-in-2025/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 45,
+    "source": "Ars Technica",
+    "tag": "OUTAGE"
+  },
+  "https://www.cnet.com/tech/services-and-software/how-to-save-money-for-travel-using-chatgpt/#ftag=cadf328eec": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T21:12:40.383103+00:00",
+    "count": 22,
+    "source": "CNET",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.wired.com/story/google-workspace-promo-code/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/5-popular-google-nano-banana-prompts-2025": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/security/2025/12/supply-chains-ai-and-the-cloud-the-biggest-failures-and-one-success-of-2025/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 45,
+    "source": "Ars Technica",
+    "tag": "INFRA"
+  },
+  "https://www.reuters.com/business/healthcare-pharmaceuticals/drugmakers-raise-us-prices-350-medicines-despite-pressure-trump-2025-12-31/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T17:48:58.427954+00:00",
+    "count": 4,
+    "source": "HackerNews",
+    "tag": "PRICING"
+  },
+  "https://www.cnet.com/tech/services-and-software/an-ai-masterclass-for-everyone-from-fear-to-fascination/#ftag=cadf328eec": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/2025-was-the-year-ai-slopified-all-our-gadgets-2000704461": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/dec-31-microsoft-office-2024-home-for-mac-or-pc": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T17:59:53.398441+00:00",
+    "count": 5,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://chipsandcheese.com/p/inside-nvidia-gb10s-memory-subsystem": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 33,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/services-and-software/what-i-want-from-ai-in-2026/#ftag=cadf328eec": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "CNET",
+    "tag": "PRODUCT_FEATURE"
+  },
+  "https://www.wired.com/gallery/best-over-the-counter-sleep-aid/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2025/12/31/every-fusion-startup-that-has-raised-over-100m/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/services-and-software/best-tv-shows-netflix-2025/#ftag=cadf328eec": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T19:56:54.524939+00:00",
+    "count": 14,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/poor-sleep-quality-accelerates-brain-aging/": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/dec-31-oral-b-deep-clean-electric-toothbrush-deal": {
+    "first_seen": "2025-12-31T17:16:10.929446+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 35,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/science/2025/12/trump-admin-orders-another-coal-plant-to-stay-open/": {
+    "first_seen": "2025-12-31T17:38:00.087368+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 33,
+    "source": "Ars Technica",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/mobile/trump-phone-delayed-until-2026/#ftag=cadf328eec": {
+    "first_seen": "2025-12-31T17:59:53.398441+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 31,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://www.ece.uvic.ca/~elec399/201409/akin%27s%20laws%20of%20spacecraft%20design.pdf": {
+    "first_seen": "2025-12-31T17:59:53.398441+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 6,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/trump-mobile-delayed-gold-t1-smartphone": {
+    "first_seen": "2025-12-31T18:10:48.023482+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 30,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/expired-tired-wired-ai-powered-dating/": {
+    "first_seen": "2025-12-31T18:10:48.023482+00:00",
+    "last_seen": "2025-12-31T23:01:01.699651+00:00",
+    "count": 27,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://storage.courtlistener.com/recap/gov.uscourts.cand.461878/gov.uscourts.cand.461878.1.0.pdf": {
+    "first_seen": "2025-12-31T18:32:38.077289+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 25,
+    "source": "HackerNews",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.reuters.com/investigations/meta-created-playbook-fend-off-pressure-crack-down-scammers-documents-show-2025-12-31/": {
+    "first_seen": "2025-12-31T18:43:33.346921+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 27,
+    "source": "HackerNews",
+    "tag": "OUTAGE"
+  },
+  "https://www.engadget.com/science/space/nasa-finally-has-a-leader-but-its-future-is-no-more-certain-201109072.html?src=rss": {
+    "first_seen": "2025-12-31T19:02:45.918812+00:00",
+    "last_seen": "2025-12-31T20:29:22.630655+00:00",
+    "count": 9,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/jujutsu-kaisen-modulo-jjk-gege-akutami-yuji-iwasaki-manga-sequel-culling-game-shonen-jump-2000704291": {
+    "first_seen": "2025-12-31T20:07:42.685707+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 20,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/social-media/instagram-chief-ai-is-so-ubiquitous-it-will-be-more-practical-to-fingerprint-real-media-than-fake-media-202620080.html?src=rss": {
+    "first_seen": "2025-12-31T20:40:11.745128+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 17,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/dec-31-1minai-pro-plan-lifetime-subscription": {
+    "first_seen": "2025-12-31T23:11:50.876359+00:00",
+    "last_seen": "2025-12-31T23:33:30.453810+00:00",
+    "count": 3,
+    "source": "Mashable",
+    "tag": "OUTAGE"
+  },
+  "https://gizmodo.com/tesla-sales-skid-even-with-cheaper-models-and-deep-discounts-2000704887": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Gizmodo",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://www.engadget.com/mobile/smartphones/minimal-phone-pioneer-punkt-is-back-with-a-new-privacy-focused-model-at-ces-110000705.html?src=rss": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Engadget",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://mashable.com/article/jan-2-google-nest-learning-thermostat-deal": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Mashable",
+    "tag": "PRICING"
+  },
+  "https://techcrunch.com/2026/01/02/nvidias-ai-empire-a-look-at-its-top-startup-investments/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.theverge.com/news/852630/microsoft-ceo-satya-nadella-scratchpad-blog-ai-slop-comments": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "The Verge",
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/heres-how-long-you-should-walk-every-day-to-prevent-back-pain/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/services-and-software/spacex-starlink-satellite-internet-orbit-altitude-collision-risk/#ftag=cadf328eec": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/alleged-ps5-jailbreak-method-spikes-prices-for-old-star-wars-game-on-ebay-2000704980": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Gizmodo",
+    "tag": "PRICING"
+  },
+  "https://www.engadget.com/gaming/playstation/prices-for-an-old-star-wars-game-have-ballooned-because-of-its-role-in-a-ps5-jailbreak-230604276.html?src=rss": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Engadget",
+    "tag": "PRICING"
+  },
+  "https://mashable.com/article/how-to-watch-nvidia-ces-2026-keynote-address": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2026/01/01/openai-bets-big-on-audio-as-silicon-valley-declares-war-on-screens/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.neowin.net/news/report-microsoft-quietly-kills-official-way-to-activate-windows-1110-without-internet/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://www.wired.com/story/expired-tired-wired-sexy-chatbots/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "WIRED",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/metas-new-privacy-policy-opens-up-ai-chats-for-targeted-ads-2000704852": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/computing/how-to-watch-the-nvidia-ces-2026-press-conference-live-jan-5-130028279.html?src=rss": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/grok-generates-images-of-minors-in-minimal-clothing": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2026/01/02/india-orders-musks-x-to-fix-grok-over-obscene-ai-content/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.theguardian.com/technology/2026/jan/02/google-ai-overviews-risk-harm-misleading-health-information": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/health/nutrition/apple-cider-vinegar-benefits-side-effects-dosage/#ftag=cadf328eec": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/ai/2026/01/openai-plans-new-voice-model-in-early-2026-audio-based-hardware-in-2027/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Ars Technica",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/drake-accused-of-manipulating-streaming-play-counts-with-bots-in-new-lawsuit-2000705004": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://www.engadget.com/deals/amazons-base-kindle-is-20-off-right-now-183302484.html?src=rss": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Engadget",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/jan-2-kindle-deal": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T01:50:58.800212+00:00",
+    "count": 5,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://techcrunch.com/2026/01/02/in-2026-ai-will-move-from-hype-to-pragmatism/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "TechCrunch",
+    "tag": "OTHER"
+  },
+  "https://www.businessinsider.com/yann-lecun-alexandr-wang-criticism-inexperienced-meta-ai-future-2026-1": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:01:49.931451+00:00",
+    "count": 6,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "https://www.cnet.com/tech/services-and-software/instagram-adam-mosseri-ai-images-authenticity-and-trust/#ftag=cadf328eec": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "CNET",
+    "tag": "OTHER"
+  },
+  "https://arstechnica.com/tech-policy/2026/01/xai-silent-after-grok-sexualized-images-of-kids-dril-mocks-groks-apology/": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 10,
+    "source": "Ars Technica",
+    "tag": "OTHER"
+  },
+  "https://gizmodo.com/andor-season-2-opening-scene-star-wars-2000704967": {
+    "first_seen": "2026-01-03T01:25:55.753625+00:00",
+    "last_seen": "2026-01-03T02:12:39.246768+00:00",
+    "count": 7,
+    "source": "Gizmodo",
+    "tag": "OTHER"
+  },
+  "https://mashable.com/article/vision-pro-cut": {
+    "first_seen": "2026-01-03T02:01:49.931451+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 5,
+    "source": "Mashable",
+    "tag": "OTHER"
+  },
+  "https://nealstephenson.substack.com/p/kdk-kinetik-der-kontinua-part-1-introduction": {
+    "first_seen": "2026-01-03T02:12:39.246768+00:00",
+    "last_seen": "2026-01-03T02:34:17.833988+00:00",
+    "count": 3,
+    "source": "HackerNews",
+    "tag": "OTHER"
+  },
+  "http://www.observationalhazard.com/2025/12/c-java-java-llm.html": {
+    "first_seen": "2026-01-03T02:23:28.464888+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 3,
+    "source": "HackerNews",
+    "tag": "MODEL_RELEASE"
+  },
+  "https://sgoel.dev/posts/10-years-of-personal-finances-in-plain-text-files/": {
+    "first_seen": "2026-01-03T02:45:07.053585+00:00",
+    "last_seen": "2026-01-03T02:45:07.053585+00:00",
+    "count": 1,
+    "source": "HackerNews",
     "tag": "OTHER"
   }
 }

@@ -7,7 +7,7 @@
       "source": "Ars Technica",
       "tag": "CVE_SECURITY",
       "topics": [
-        "models"
+        "security"
       ],
       "priority": "HIGH",
       "score": 85
@@ -25,7 +25,7 @@
       "title": "Tesla's 4680 battery supply chain collapses as partner writes down deal by 99%",
       "url": "https://electrek.co/2025/12/29/tesla-4680-battery-supply-chain-collapses-partner-writes-down-dea/",
       "source": "HackerNews",
-      "tag": "OUTAGE",
+      "tag": "OTHER",
       "topics": [],
       "priority": "MED",
       "score": 60
@@ -34,8 +34,10 @@
       "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
       "url": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
       "source": "TechCrunch",
-      "tag": "PRODUCT_FEATURE",
-      "topics": [],
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
       "priority": "MED",
       "score": 50
     },
@@ -98,15 +100,15 @@
       "score": 15
     },
     {
-      "title": "Nvidia takes $5B stake in Intel under September agreement",
-      "url": "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/",
+      "title": "Reflections on a Year of Prolog and LLMs",
+      "url": "https://deepclause.substack.com/p/coming-soon",
       "source": "HackerNews",
-      "tag": "OTHER",
+      "tag": "MODEL_RELEASE",
       "topics": [
-        "gpu"
+        "models"
       ],
-      "priority": "LOW",
-      "score": 30
+      "priority": "MED",
+      "score": 50
     },
     {
       "title": "Meta just bought Manus, an AI startup everyone has been talking about",
@@ -178,13 +180,15 @@
       "score": 15
     },
     {
-      "title": "Google is dead. Where do we go now?",
-      "url": "https://www.circusscientist.com/2025/12/29/google-is-dead-where-do-we-go-now/",
+      "title": "Nvidia takes $5B stake in Intel under September agreement",
+      "url": "https://www.reuters.com/legal/transactional/nvidia-takes-5-billion-stake-intel-under-september-agreement-2025-12-29/",
       "source": "HackerNews",
       "tag": "OTHER",
-      "topics": [],
+      "topics": [
+        "gpu"
+      ],
       "priority": "LOW",
-      "score": 15
+      "score": 30
     },
     {
       "title": "Samsung plans to bring Google Photos to its TVs in 2026",
@@ -252,8 +256,8 @@
       "score": 10
     },
     {
-      "title": "High-performance C++ hash table using grouped SIMD metadata scanning",
-      "url": "https://github.com/Cranot/grouped-simd-hashtable",
+      "title": "Google is dead. Where do we go now?",
+      "url": "https://www.circusscientist.com/2025/12/29/google-is-dead-where-do-we-go-now/",
       "source": "HackerNews",
       "tag": "OTHER",
       "topics": [],

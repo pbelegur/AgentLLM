@@ -1,0 +1,286 @@
+{
+  "date": "2025-12-31_0100",
+  "signals": [
+    {
+      "title": "Rainbow Six Siege servers are back online after shutting down in response to Marketplace hacks",
+      "url": "https://www.engadget.com/gaming/rainbow-six-siege-servers-are-back-online-after-shutting-down-in-response-to-marketplace-hacks-191049079.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "MED",
+      "score": 60
+    },
+    {
+      "title": "Escaping containment: A security analysis of FreeBSD jails [video]",
+      "url": "https://media.ccc.de/v/39c3-escaping-containment-a-security-analysis-of-freebsd-jails",
+      "source": "HackerNews",
+      "tag": "OSS_RELEASE",
+      "topics": [],
+      "priority": "MED",
+      "score": 60
+    },
+    {
+      "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
+      "url": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
+      "source": "TechCrunch",
+      "tag": "INFRA",
+      "topics": [
+        "models",
+        "products"
+      ],
+      "priority": "MED",
+      "score": 50
+    },
+    {
+      "title": "ChatGPT’s Android app now has a real Thinking mode",
+      "url": "https://mashable.com/article/chatgpt-android-app-thinking-toggle",
+      "source": "Mashable",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 50
+    },
+    {
+      "title": "Samsung's $200 Galaxy A17 Brings Google's Circle to Search to Its Lower-Priced Phone",
+      "url": "https://www.cnet.com/tech/mobile/samsung-200-galaxy-a17-brings-googles-circle-to-search-to-its-lower-priced-phone/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "PRICING",
+      "topics": [],
+      "priority": "MED",
+      "score": 45
+    },
+    {
+      "title": "3 New Tricks to Try With Google Gemini Live After Its Latest Major Upgrade",
+      "url": "https://www.wired.com/story/3-tricks-google-gemini-live-latest-major-upgrade/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Meta Buys AI Agent Startup for $2 Billion, Says It Will Cut All Ties With China",
+      "url": "https://gizmodo.com/meta-buys-ai-agent-startup-for-2-billion-says-it-will-cut-all-ties-with-china-2000704284",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [
+        "agents"
+      ],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Lawsuit over Trump rejecting medical research grants is settled",
+      "url": "https://arstechnica.com/science/2025/12/feds-researchers-settle-suit-over-grants-blocked-by-now-illegal-order/",
+      "source": "Ars Technica",
+      "tag": "RESEARCH",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "How to watch the NVIDIA CES 2026 presentation live",
+      "url": "https://www.engadget.com/computing/how-to-watch-the-nvidia-ces-2026-presentation-live-130028065.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [
+        "gpu"
+      ],
+      "priority": "LOW",
+      "score": 30
+    },
+    {
+      "title": "Igniting the GPU: From Kernel Plumbing to 3D Rendering on RISC-V",
+      "url": "https://mwilczynski.dev/posts/riscv-gpu-zink/",
+      "source": "HackerNews",
+      "tag": "INFRA",
+      "topics": [
+        "gpu"
+      ],
+      "priority": "MED",
+      "score": 40
+    },
+    {
+      "title": "Meta just bought Manus, an AI startup everyone has been talking about",
+      "url": "https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Running out of cloud storage? Get 20TB for life for $390.",
+      "url": "https://mashable.com/article/dec-30-internxt-cloud-storage-lifetime-subscription-20tb",
+      "source": "Mashable",
+      "tag": "INFRA",
+      "topics": [],
+      "priority": "LOW",
+      "score": 25
+    },
+    {
+      "title": "Photoshop Has a Lot of AI. This Is Your Guide to the Tools Worth Exploring",
+      "url": "https://www.cnet.com/tech/services-and-software/the-best-new-ai-features-in-photoshop-and-how-to-use-them-like-a-pro/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "The Best Vacuum for Pet Hair—We Tested Many to Find Which Ones Work Best (2026)",
+      "url": "https://www.wired.com/gallery/best-pet-hair-vacuums/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "AI Ruined Job Applications, So People Are Resorting to Dating Apps to Find Work",
+      "url": "https://gizmodo.com/ai-ruined-job-applications-so-people-are-resorting-to-dating-apps-to-find-work-2000704287",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "OpenAI's cash burn will be one of the big bubble questions of 2026",
+      "url": "https://www.economist.com/leaders/2025/12/30/openais-cash-burn-will-be-one-of-the-big-bubble-questions-of-2026",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Samsung plans to bring Google Photos to its TVs in 2026",
+      "url": "https://techcrunch.com/2025/12/29/samsung-plans-to-bring-google-photos-to-its-tvs-in-2026/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Heres everything Elon Musk promised in 2025 – and failed to deliver",
+      "url": "https://mashable.com/article/elon-musk-failed-to-deliver-on-2025-promises",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Is That Video Real or AI? Why It's So Hard to Spot a Deepfake and What to Look For",
+      "url": "https://www.cnet.com/tech/services-and-software/real-vs-ai-your-deepfake-spotters-guide-for-ai-generated-videos/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "People Who Drink Bottled Water on a Daily Basis Ingest 90,000 More Microplastic Particles Each Year",
+      "url": "https://www.wired.com/story/people-who-drink-bottled-water-on-a-daily-basis-ingest-90000-more-microplastics-per-year/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "The best AI-powered dictation apps of 2025",
+      "url": "https://techcrunch.com/2025/12/30/the-best-ai-powered-dictation-apps-of-2025/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Invest smarter with this $56 AI-powered investment tool",
+      "url": "https://mashable.com/article/dec-30-sterling-stock-picker-lifetime-subscription",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Need to Return a Gift? Here Are All the Major Retailers' Holiday Return Policies",
+      "url": "https://www.cnet.com/tech/returning-a-gift-here-are-all-the-major-retailers-holiday-return-policies/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Stranger Things series finale trailer is here",
+      "url": "https://arstechnica.com/culture/2025/12/stranger-things-series-finale-trailer-is-here/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Netflix has released a trailer for the Stranger Things finale",
+      "url": "https://www.engadget.com/entertainment/streaming/netflix-has-released-a-trailer-for-the-stranger-things-finale-171204480.html?src=rss",
+      "source": "Engadget",
+      "tag": "OSS_RELEASE",
+      "topics": [],
+      "priority": "LOW",
+      "score": 25
+    },
+    {
+      "title": "Quality of drinking water varies significantly by airline",
+      "url": "https://foodmedcenter.org/2026-center-for-food-as-medicine-longevity-airline-water-study/",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "VCs predict enterprises will spend more on AI in 2026 — through fewer vendors",
+      "url": "https://techcrunch.com/2025/12/30/vcs-predict-enterprises-will-spend-more-on-ai-in-2026-through-fewer-vendors/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "What is brainrot content? And why cant we escape it?",
+      "url": "https://mashable.com/article/what-is-brainrot-reels-tiktoks-fyp-inescapable",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Imagine Still Using a Stove for Eggs When the Air Fryer Exists. I Could Never",
+      "url": "https://www.cnet.com/how-to/how-to-boil-eggs-in-air-fryer/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "US can’t deport hate speech researcher for protected speech, lawsuit says",
+      "url": "https://arstechnica.com/tech-policy/2025/12/us-cant-deport-hate-speech-researcher-for-protected-speech-lawsuit-says/",
+      "source": "Ars Technica",
+      "tag": "RESEARCH",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    }
+  ]
+}

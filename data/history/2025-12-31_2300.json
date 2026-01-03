@@ -1,0 +1,291 @@
+{
+  "date": "2025-12-31_2300",
+  "signals": [
+    {
+      "title": "Meta created 'playbook' to fend off pressure to crack down on scammers",
+      "url": "https://www.reuters.com/investigations/meta-created-playbook-fend-off-pressure-crack-down-scammers-documents-show-2025-12-31/",
+      "source": "HackerNews",
+      "tag": "OUTAGE",
+      "topics": [],
+      "priority": "MED",
+      "score": 65
+    },
+    {
+      "title": "From prophet to product: How AI came back down to earth in 2025",
+      "url": "https://arstechnica.com/ai/2025/12/from-prophet-to-product-how-ai-came-back-down-to-earth-in-2025/",
+      "source": "Ars Technica",
+      "tag": "OUTAGE",
+      "topics": [
+        "products"
+      ],
+      "priority": "MED",
+      "score": 60
+    },
+    {
+      "title": "When creativity slows down, this AI platform helps move things along for $25",
+      "url": "https://mashable.com/article/dec-31-1minai-pro-plan-lifetime-subscription",
+      "source": "Mashable",
+      "tag": "OUTAGE",
+      "topics": [],
+      "priority": "MED",
+      "score": 60
+    },
+    {
+      "title": "How to use the new ChatGPT app integrations, including DoorDash, Spotify, Uber, and others",
+      "url": "https://techcrunch.com/2025/12/29/how-to-use-the-new-chatgpt-app-integrations-including-doordash-spotify-uber-and-others/",
+      "source": "TechCrunch",
+      "tag": "INFRA",
+      "topics": [
+        "products"
+      ],
+      "priority": "MED",
+      "score": 50
+    },
+    {
+      "title": "How to watch the NVIDIA CES 2026 presentation live",
+      "url": "https://www.engadget.com/computing/how-to-watch-the-nvidia-ces-2026-presentation-live-130028065.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [
+        "gpu"
+      ],
+      "priority": "LOW",
+      "score": 30
+    },
+    {
+      "title": "Google Workspace Promo Code: Up to 14% Off in 2026",
+      "url": "https://www.wired.com/story/google-workspace-promo-code/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "‘Jujutsu Kaisen Modulo’ Is Better Than the OG Manga Series",
+      "url": "https://gizmodo.com/jujutsu-kaisen-modulo-jjk-gege-akutami-yuji-iwasaki-manga-sequel-culling-game-shonen-jump-2000704291",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Trump Fails to Deliver on Promise of $500 Gold Phone in 2025. Could We See It Next Year?",
+      "url": "https://www.cnet.com/tech/mobile/trump-phone-delayed-until-2026/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Court report detailing ChatGPT's involvement with a recent murder suicide [pdf]",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.461878/gov.uscourts.cand.461878.1.0.pdf",
+      "source": "HackerNews",
+      "tag": "MODEL_RELEASE",
+      "topics": [
+        "models"
+      ],
+      "priority": "MED",
+      "score": 50
+    },
+    {
+      "title": "Supply chains, AI, and the cloud: The biggest failures (and one success) of 2025",
+      "url": "https://arstechnica.com/security/2025/12/supply-chains-ai-and-the-cloud-the-biggest-failures-and-one-success-of-2025/",
+      "source": "Ars Technica",
+      "tag": "INFRA",
+      "topics": [],
+      "priority": "LOW",
+      "score": 25
+    },
+    {
+      "title": "5 of the most popular Google Nano Banana prompts users loved in 2025",
+      "url": "https://mashable.com/article/5-popular-google-nano-banana-prompts-2025",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [
+        "policy"
+      ],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Meta just bought Manus, an AI startup everyone has been talking about",
+      "url": "https://techcrunch.com/2025/12/29/meta-just-bought-manus-an-ai-startup-everyone-has-been-talking-about/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "Netflix has released a trailer for the Stranger Things finale",
+      "url": "https://www.engadget.com/entertainment/streaming/netflix-has-released-a-trailer-for-the-stranger-things-finale-171204480.html?src=rss",
+      "source": "Engadget",
+      "tag": "OSS_RELEASE",
+      "topics": [],
+      "priority": "LOW",
+      "score": 25
+    },
+    {
+      "title": "3 New Tricks to Try With Google Gemini Live After Its Latest Major Upgrade",
+      "url": "https://www.wired.com/story/3-tricks-google-gemini-live-latest-major-upgrade/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "2025 Was the Year AI Slopified All Our Gadgets",
+      "url": "https://gizmodo.com/2025-was-the-year-ai-slopified-all-our-gadgets-2000704461",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "An AI MasterClass for Everyone: From Fear to Fascination",
+      "url": "https://www.cnet.com/tech/services-and-software/an-ai-masterclass-for-everyone-from-fear-to-fascination/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Nvidia GB10's Memory Subsystem, from the CPU Side",
+      "url": "https://chipsandcheese.com/p/inside-nvidia-gb10s-memory-subsystem",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [
+        "gpu"
+      ],
+      "priority": "LOW",
+      "score": 30
+    },
+    {
+      "title": "Here we go again: Retiring coal plant forced to stay open by Trump Admin",
+      "url": "https://arstechnica.com/science/2025/12/trump-admin-orders-another-coal-plant-to-stay-open/",
+      "source": "Ars Technica",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Start your new year goals with 33% off this AI-powered Oral-B toothbrush",
+      "url": "https://mashable.com/article/dec-31-oral-b-deep-clean-electric-toothbrush-deal",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Investors predict AI is coming for labor in 2026",
+      "url": "https://techcrunch.com/2025/12/31/investors-predict-ai-is-coming-for-labor-in-2026/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Meta buys startup known for its AI task automation agents",
+      "url": "https://www.engadget.com/ai/meta-buys-startup-known-for-its-ai-task-automation-agents-140045275.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [
+        "agents"
+      ],
+      "priority": "LOW",
+      "score": 15
+    },
+    {
+      "title": "The Best Over-the-Counter Sleep Aids (2025), Tested and Reviewed",
+      "url": "https://www.wired.com/gallery/best-over-the-counter-sleep-aid/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "AI Ruined Job Applications, So People Are Resorting to Dating Apps to Find Work",
+      "url": "https://gizmodo.com/ai-ruined-job-applications-so-people-are-resorting-to-dating-apps-to-find-work-2000704287",
+      "source": "Gizmodo",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Trumps golden phone is delayed. Again.",
+      "url": "https://mashable.com/article/trump-mobile-delayed-gold-t1-smartphone",
+      "source": "Mashable",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Akin's Laws of Spacecraft Design [pdf] (2011)",
+      "url": "https://www.ece.uvic.ca/~elec399/201409/Akin%27s%20Laws%20of%20Spacecraft%20Design.pdf",
+      "source": "HackerNews",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Lawsuit over Trump rejecting medical research grants is settled",
+      "url": "https://arstechnica.com/science/2025/12/feds-researchers-settle-suit-over-grants-blocked-by-now-illegal-order/",
+      "source": "Ars Technica",
+      "tag": "RESEARCH",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Every fusion startup that has raised over $100M",
+      "url": "https://techcrunch.com/2025/12/31/every-fusion-startup-that-has-raised-over-100m/",
+      "source": "TechCrunch",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Instagram chief: AI is so ubiquitous 'it will be more practical to fingerprint real media than fake media'",
+      "url": "https://www.engadget.com/social-media/instagram-chief-ai-is-so-ubiquitous-it-will-be-more-practical-to-fingerprint-real-media-than-fake-media-202620080.html?src=rss",
+      "source": "Engadget",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "Poor Sleep Quality Accelerates Brain Aging",
+      "url": "https://www.wired.com/story/poor-sleep-quality-accelerates-brain-aging/",
+      "source": "WIRED",
+      "tag": "OTHER",
+      "topics": [],
+      "priority": "LOW",
+      "score": 10
+    },
+    {
+      "title": "What I Want to See From AI in 2026: Labels, Better Phone Features and a Plan for the Environment",
+      "url": "https://www.cnet.com/tech/services-and-software/what-i-want-from-ai-in-2026/#ftag=CADf328eec",
+      "source": "CNET",
+      "tag": "PRODUCT_FEATURE",
+      "topics": [
+        "products"
+      ],
+      "priority": "LOW",
+      "score": 10
+    }
+  ]
+}
