@@ -1,7 +1,7 @@
 import time
 import main
 
-INTERVAL_SECONDS = 600  # 10 minutes
+INTERVAL_SECONDS = 600 
 
 if __name__ == "__main__":
     while True:

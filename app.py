@@ -41,7 +41,7 @@ def _strip_heavy_fields(payload: dict) -> dict:
         s.pop("tag_trace", None)
         s.pop("drop_trace", None)
 
-        # keep LLM outputs for UI (summary/action); drop traces only
+  
         s.pop("llm_trace", None)
         return s
 
@@ -49,7 +49,7 @@ def _strip_heavy_fields(payload: dict) -> dict:
         if key in p and isinstance(p[key], list):
             p[key] = [clean_signal(x) for x in p[key]]
 
-    # dropped: keep only agent+reason
+
     if "dropped" in p and isinstance(p["dropped"], list):
         short = []
         for d in p["dropped"][:120]:
@@ -86,12 +86,11 @@ def run():
     include_dropped = _get_bool("include_dropped", False)
     mode = request.args.get("mode", "product").lower()
 
-    # If scheduler is running, serve the latest snapshot (fast + always updating)
     if not force:
         latest = _read_latest()
         if latest is not None:
             data = latest
-            cached = True  # served from latest.json
+            cached = True
         else:
             data, cached = _run_cached(force=False)
     else:
@@ -119,8 +118,8 @@ def ui():
   <title>AI Radar</title>
   <style>
     :root{
-      --bg0:#070a14;
-      --bg1:#0b1020;
+      --bg0:
+      --bg1:
       --card: rgba(255,255,255,.06);
       --card2: rgba(255,255,255,.04);
       --border: rgba(255,255,255,.10);
@@ -145,7 +144,7 @@ def ui():
       min-height: 100vh;
     }
 
-    a { color: #7dd3fc; text-decoration: none; }
+    a { color: 
     a:hover { text-decoration: underline; }
 
     .topbar{
